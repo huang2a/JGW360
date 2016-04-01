@@ -1,0 +1,453 @@
+.l-seach-box
+{
+    width: 410px;
+    margin:20px auto 0 194px;
+}
+.l-seach-hot{
+    width: 410px;
+    padding: 10px 0 0 0;
+    overflow: hidden;
+    a{
+        padding: 4px 13px;
+        font-size: 14px;
+        .col-hui();
+        &:hover{
+            .col-cheng();
+        }
+    }
+}
+
+
+.searchTxt
+{
+    position: relative;
+    z-index: 20;
+
+    float: left;
+
+    width: 338px;
+    height: 39px;
+
+    border: 2px solid #2c3444;
+    border-right: 0;
+    background: #2c3444;
+}
+.searchTxt .radius
+{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+
+    overflow: hidden;
+
+    width: 1px;
+    height: 1px;
+
+    background: #2c3444;
+}
+.searchTxtHover
+{
+    position: relative;
+    z-index: 20;
+
+    float: left;
+
+    width: 338px;
+    height: 39px;
+
+    border: 2px solid #2c3444;
+    border-right: 0;
+    background: #2c3444;
+}
+.searchTxtHover .radius
+{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+
+    overflow: hidden;
+
+    width: 1px;
+    height: 1px;
+
+    background: #2c3444;
+}
+
+.searchTxt .searchMenu
+{
+    float: left;
+
+    width: 98px;
+
+    background: url(../../images/icon-drop-down.png)  #2c3444 no-repeat 72px center;
+}
+.searchTxt .searchMenu .searchSelected
+{
+    font-size: 16px;
+    line-height: 39px;
+    width: 98px;
+    height: 39px;
+    cursor: pointer;
+    text-align: left;
+    color: #f6f1ee;
+    text-indent: 14px;
+}
+
+.searchTxt .searchMenu .searchTab
+{
+    position: absolute;
+    z-index: 20;
+    top: 39px;
+    left: -2px;
+
+    display: none;
+
+    width: 75px;
+    height: auto;
+
+    border: 2px solid #2c3444;
+    border-top: 0;
+    background: #2c3444;
+}
+.searchTxt .searchMenu .searchTab li
+{
+    font-size: 16px;
+    line-height: 28px;
+    width: 75px;
+    height: 28px;
+    cursor: pointer;
+    text-align: left;
+    color: #f6f1ee;
+    text-indent: 14px;
+}
+.searchTxt .searchMenu .searchTab li.selected
+{
+    color: #f6f1ee;
+    background: #8D919A;
+}
+
+.searchTxt input
+{
+    font: 16px '宋体',verdana,tahoma,arial,'SimSun',sans-serif;
+    float: left;
+    width: 200px;
+    height: 31px;
+    margin: 0;
+    padding: 4px;
+    color: #f6f1ee;
+    border: 0;
+    outline: medium none;
+    background: #2c3444;
+}
+.searchTxt .sosoLogo
+{
+    display: inline;
+    float: right;
+
+    margin: 8px 6px 0 0;
+}
+.searchBtn
+{
+    float: left;
+}
+.searchBtn button
+{
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+    width: 70px;
+    height: 43px;
+    cursor: pointer;
+    color: #fff;
+    border: 0;
+    z-index: -99999;
+    background:url(../../images/icon-search-btn.png) #2c3444 center no-repeat;
+}
+
+
+/*浮动搜索栏*/
+.ScrollNav
+{
+    position: fixed;
+    /*display: block;*/
+    z-index: 9999;
+    top: 0;
+    left: 0;
+
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
+}
+#layout_float_nav
+{
+    width: 100%;
+    height: 52px;
+    background: rgba(44, 52, 68, 0.75);
+    /*position: fixed;*/
+    /*top: 0;*/
+}
+#float_nav
+{
+    position: relative;
+    width: 1190px;
+    margin: 0 auto;
+}
+#layout_float_nav .sort_index_down
+{
+    display: none;
+}
+#layout_float_nav .ng_search
+{
+    margin-left: 330px;
+    background-color: #fff;
+}
+#layout_float_nav #searchKeywords
+{
+    width: 348px;
+}
+#layout_float_nav .login
+{
+    line-height: 33px;
+
+    position: absolute;
+    top: 7px;
+    left: 995px;
+
+    overflow: hidden;
+    float: left;
+    background-color: #fff;
+    height: 35px;
+    padding: 0 10px;
+}
+#layout_float_nav .login:hover
+{
+    background: #eee;
+}
+#layout_float_nav .login a:hover
+{
+    color: #F35929;
+    text-decoration: underline;
+}
+#layout_float_nav .che
+{
+    line-height: 33px;
+
+    display: block;
+    float: left;
+    overflow: hidden;
+
+    padding: 0 10px;
+    color: #fff;
+    background: url("../../images/bg_right.png") no-repeat -35px -22px;
+}
+#layout_float_nav .che em
+{
+    font-size: 18px;
+    line-height: 30px;
+
+    display: inline-block;
+
+    width: 16px;
+    margin-right: 7px;
+}
+#layout_float_nav .che span
+{
+    font-family: '微软雅黑';
+    font-size: 14px;
+    line-height: 30px;
+}
+#layout_float_nav a .yuan
+{
+    position: relative;
+    top: 2px;
+    left: -2px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    color: #fff;
+    border-radius: 16px;
+    background: #F35929;
+    font-family: '宋体';
+}
+#layout_float_nav a .yuan .num
+{
+    font-size: 12px;
+    line-height: 15px;
+
+    position: relative;
+    top: -8px;
+    left: .5px;
+}
+#layout_float_nav .sort_index
+{
+    position: absolute;
+    top: 7px;
+    left: 0;
+}
+#layout_float_nav .ng_search
+{
+    position: absolute;
+    top: 6px;
+    left: 330px;
+
+    margin-left: 0;
+}
+#layout_float_nav .che
+{
+    position: absolute;
+    top: 6px;
+    left: 1095px;
+
+    padding: 0;
+}
+
+#layout_float_nav .sort_index_top:hover
+{
+    color: #fff;
+}
+
+/*头部全站导航结束*/
+/*搜索栏目*/
+#search
+{
+    position: relative;
+
+    width: 1190px;
+    height: 100px;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+    /*background: red;*/
+}
+#search .logo
+{
+    display: block;
+    float: left;
+    overflow: hidden;
+
+    width: 190px;
+    height: 80px;
+
+    background: url(../img/s_pic1.png) -84px -248px;
+}
+#search .main_search
+{
+    position: absolute;
+    top: 0;
+    left: 370px;
+
+    width: 600px;
+    height: 100px;
+}
+#search form
+{
+    margin: 0;
+    padding: 0;
+}
+#search .main_search .ng_search
+{
+    position: relative;
+
+    display: inline-block;
+    float: right;
+
+    width: 600px;
+    margin: 28px 0 0;
+    /*background: #ccc;*/
+}
+.search-keyword-box
+{
+    position: relative;
+
+    float: left;
+    /*height: 45px;*/
+
+    padding-left: 6px;
+
+    border-width: 2px medium 2px 2px;
+    border-style: solid none solid solid;
+    border-color: #F35929;
+}
+#searchKeywords
+{
+    font-size: 14px;
+    line-height: 18px;
+
+    width: 458px;
+    height: 18px;
+    margin-top: 0;
+    padding: 8px 10px 8px 0;
+
+    color: #2C3444;
+    border: medium none;
+    border-radius: 0;
+    background: #fff none repeat scroll 0 0;
+}
+.search-btn
+{
+    font-family: 'MicroSoft YaHei';
+    font-size: 16px;
+    font-weight: bold;
+
+    float: left;
+
+    width: 100px;
+    height: 38px;
+    margin-top: 0;
+    padding: 0 30px;
+
+    cursor: pointer;
+    letter-spacing: 7px;
+
+    color: #fff;
+    border: 0 none;
+    border-radius: 0;
+    background: #F35929;
+}
+.search-btn:hover
+{
+    background: #f80;
+}
+.hotwords
+{
+    float: left;
+    overflow: hidden;
+
+    width: 100%;
+    height: 18px;
+    margin-top: 5px;
+
+    color: #999;
+}
+.hotwords a
+{
+    font-size: 12px;
+
+    float: left;
+
+    margin-right: 10px;
+
+    white-space: nowrap;
+
+    color: #999;
+}
+.hotwords a:hover
+{
+    color: #f60;
+}
+.erweima
+{
+    /*margin-top: 10px;*/
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+    float: right;
+}
+.erweima a
+{
+    display: inline-block;
+    float: right;
+
+    width: 180px;
+    height: 100px;
+    /*overflow: hidden;*/
+}

@@ -1,0 +1,104 @@
+#list-page{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    .items{
+        min-width: 650px;
+        _float: none;
+        _width: 760px;
+        _margin-left: auto;
+        _margin-right: auto;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        ul{
+            display: inline-block;
+            margin: 0 auto;
+        }
+        li{
+            position: relative;
+            float: left;
+            color: #3e3e3e;
+            width: 35px;
+            text-align: center;
+            cursor: pointer;
+            -webkit-transition: all .1s linear;
+            -moz-transition: all .1s linear;
+            -o-transition: all .1s linear;
+            transition: all .1s linear;
+            a{
+                position: relative;
+                z-index: 1;
+                display:block;
+                height: 33px;
+                line-height: 33px;
+                border: solid 1px #ededed;
+                text-decoration: none;
+                font-size: 14px;
+                background-color: #fff;
+                &:hover{
+                    color: #f40;
+                    border-color: #f40;
+                }
+            }
+            span{
+                height: 35px;
+                line-height: 35px;
+            }
+            .active{
+                    position: relative;
+                    z-index: 1;
+                    background: #f40;
+                    color: #fff;
+                    border-color: #f40;
+                    cursor: default;
+                    text-decoration: none;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            .dot{
+                border: none;
+                width: 24px;
+                cursor: default;
+            }
+        }
+        .prev,.next{
+            width: 70px;
+            font-weight: 400;
+        }
+        .prev-disabled {
+            color: #ccc;
+            &:hover{
+                border-color: #ededed;
+                color: #ccc;
+                cursor: no-drop;
+            }
+        }
+        .total{
+            min-width: 80px;
+            text-align: right;
+
+        }
+        .input{
+            width: 55px;
+            input{
+                width: 50px;
+                height: 20px;
+                float: left;
+                margin-top: 6px;
+            }
+        }
+        .btn{
+            width: 66px;
+            a{
+                display: inline-block;
+                border:#ddd solid 1px;
+                width: 60px;
+                height: 24px;
+                line-height: 24px;
+                text-align: center;
+                margin-top: 6px;
+            }
+        }
+    }
+}

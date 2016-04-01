@@ -1,0 +1,77 @@
+.l-entrance-box{
+  width:312px;
+  border-left:#ddd solid 1px;
+  border-top: #2C3444 solid 4px;
+  li{
+    position: relative;
+    float: left;
+    width: 155px;
+    height: 56px;
+    background: #f6f1ee;
+    border-bottom: #ddd solid 1px;
+    border-right: #ddd solid 1px;
+    overflow: hidden;
+    span{
+      position: relative;
+      display: block;
+      font-weight: 500;
+      cursor: pointer;
+      padding-left: 58px;
+      .centered-line(56px);
+      .text-al();
+      .font18();
+      .col-zhong();
+      i{
+        display: inline-block;
+        position: absolute;
+        left: 6px;
+        width: 48px;
+        height: 56px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .icon-kfs{
+        background-image: url(../../images/icon-portal-i01.png);
+      }
+      .icon-cbf{
+        background-image: url(../../images/icon-portal-i02.png);
+      }
+      .icon-lwf{
+        background-image: url(../../images/icon-portal-i03.png);
+      }
+      .icon-gys{
+        background-image: url(../../images/icon-portal-i04.png);
+      }
+      .icon-wyfb{
+        background-image: url(../../images/icon-portal-i05.png);
+      }
+      .icon-wybj{
+        background-image: url(../../images/icon-portal-i06.png);
+      }
+    }
+    .popup-nav{
+      background: rgba(0, 0, 0, 0.8);
+      width: 155px;
+      height: 56px;
+      z-index: 999;
+      position: absolute;
+      color: #fff;
+      top: 0;
+      left: -155px;
+      overflow: hidden;
+      z-index: 9999;
+      a{
+        float: left;
+        display: block;
+        padding: 4px 6px;
+        &:hover{
+          .col-cheng();
+        }
+      }
+    }
+    &:hover .popup-nav{
+      left: 0;
+      transition: left 0.5s ease-out;
+    }
+  }
+}

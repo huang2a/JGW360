@@ -1,0 +1,96 @@
+@import "lib/all.less";
+@support-ie-version: 10;
+@default-font-size: 14px;
+@support-ie-version: 7;
+@use-autoprefixer: false;
+@support-html5: true;
+@default-text-color:#6c6c6c;
+@default-input-placeholder-color:#999;
+@default-base-font-family:"SimSun", Arial, sans-serif;
+@default-heading-font-family:"Helvetica Neue", Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+@default-old-ie-heading-font-family:"Microsoft YaHei", Arial, sans-serif;
+@default-code-font-family:Monaco, Consolas, monospace;
+@default-border-radius:5px;
+@default-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25);
+// global scope
+.global-normalize-opentype();
+// global scope
+.global-reset();
+// global scope
+.reset-html5();
+// // global scope
+// .global-normalize();
+body {
+    font-family:
+        "ff-tisa-web-pro-1",
+        "ff-tisa-web-pro-2",
+        "Lucida Grande",
+        "Hiragino Sans GB",
+        "Hiragino Sans GB W3",
+        "Microsoft YaHei",
+        "wenquanyi micro hei",
+        sans-serif;
+        color: #2c3444;
+        font-size: 14px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+// float layout
+.l-left{
+    float: left;
+}
+.l-right{
+    float: right;
+}
+.l-float{
+    .clearfix();
+}
+
+
+.pd4{
+    padding: 4px 0;
+}
+.pd10{
+    padding: 10px 0;
+}
+.pd20{
+    padding: 20px 0;
+}
+.pdt36{
+    padding-top: 36px;
+}
+.pdl10{
+    padding-left: 10px;
+}
+.pdl20{
+    padding-left: 20px;
+}
+.pdl52{
+    padding-left: 52px;
+}
+.pdb30{
+    padding-bottom: 30px;
+}
+.mb10{
+    margin-bottom: 10px;
+}
+.mb16{
+    margin-bottom: 16px;
+}
+.mb26{
+    margin-bottom: 26px !important;
+}
+.mb40{
+    margin-bottom: 40px !important;
+}
+.mr10{
+    margin-right: 10px;
+}
+.mr24{
+    margin-right: 24px !important;
+}
+.mr54{
+    margin-right: 54px;
+}

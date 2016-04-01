@@ -1,0 +1,123 @@
+.l-top-nav{
+  background:#b5ab9f;
+  height:28px;
+  .top-logo{
+    line-height: 28px;
+    color: #fff;
+    padding-left: 26px;
+    background: url(../../images/icon-top-nav-logo.png) left center no-repeat;
+  }
+  .top-nav{
+    color: #fff;
+    line-height: 28px;
+    li{
+      list-style-type: none;
+      float: left;
+      a{
+        display: inline-block;
+        padding:0 4px;
+      }
+      span{
+        display: inline-block;
+        padding-right: 4px;
+      }
+    }
+  }
+}
+.top-nav-right {
+    float: right;
+    width: 85px;
+    display: block;
+    line-height: 28px;
+    position: relative;
+    padding: 0 9px;
+    color: #fff;
+    border: 1px #b5ab9f solid;
+    border-top: 0px #fff solid;
+    border-bottom: 0px #fff solid;
+    .arrow {
+      position: absolute;
+      left: 70px;
+      top: 12px;
+      transition: transform 0.2s ease-in 0s;
+    }
+    &:hover {
+      background: #fff;
+      border: 1px #ddd solid;
+      height: 28px;
+      border-top: 0px #fff solid;
+      border-bottom: 0px #fff solid;
+      z-index: 998;
+      color:#2c3444;
+      .arrow {
+        transform: rotate(180deg);
+      }
+    }
+}
+.wangzhandaohang{
+  display: none;
+  width: 1200px;
+  height: 220px;
+  border: 1px solid #DDDDDD;
+  border-top: none;
+  background: #fff;
+  position: absolute;
+  top: 28px;
+  right: -1px;
+  overflow: hidden;
+  z-index: 99999;
+  box-shadow: 0 2px 4px #ddd;
+  dl{
+    border-right: 1px solid #eee;
+    float: left;
+    padding-left: 20px;
+    width:176px;
+    margin-top: 25px;
+    color: #2c3444;
+  }
+  dt{
+    font-family: "微软雅黑";
+    font-size: 14px;
+    height: 25px;
+    line-height: 17px;
+    width: 100%;
+    color: #2c3444;
+  }
+  dd{
+    overflow: hidden;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    width: 78px;
+    display: inline-block;
+    color: #666;
+    a:hover{
+      color: #f35929;
+      text-decoration: underline;
+    }
+  }
+}
+.l-header-box{
+  padding: 10px 0;
+  .logo-box{
+    position: relative;
+    width: 235px;
+    height: 110px;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
+  .map{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #7b594a;
+  }
+
+  .wechat{
+    width:81px;
+    height:81px;
+    padding: 20px 120px 0 0;
+  }
+}
