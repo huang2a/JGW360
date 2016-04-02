@@ -31,6 +31,9 @@
         transition: background .3s ease-in;
       }
     }
+    .active{
+      .bg-zhong();
+    }
   }
 }
 .down-navhide{
@@ -65,10 +68,15 @@
       line-height: 26px;
       dt{
         font-size: 16px;
-        padding: 2px 0 0 4px;
+        padding-top: 2px;
+        padding-left: 4px;
         font-weight: 600;
         overflow: hidden;
         position: relative;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        transition: all .3s ease;
       }
       dd{
         margin-right: 8px;
@@ -89,6 +97,11 @@
         background:#f6f1ee;
         transition: background .4s ease;
         transition: border .8s ease;
+    }
+    &:hover .father{
+      dt{
+          padding-left:8px;
+        }
     }
   }
   .list:hover{

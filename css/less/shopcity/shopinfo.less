@@ -533,8 +533,75 @@ div.jqZoomPup
     text-align: left;
     line-height: 150%;
 }
+
+// 评论
 .u-comment{
-    width: 830px;
+    width: 800px;
+    padding: 0 15px;
     margin-left: 80px;
     overflow: hidden;
+    border:solid 1px #ddd;
+    .myd{
+        p{
+            font-size: 16px;
+            color: #2c3444;
+            font-weight: 600;
+            padding: 14px 0;
+        }
+
+    }
+}
+
+.u-star{
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    text-indent: -9999px;
+    background: url(../../images/icon-star02.png) center no-repeat;
+}
+.comment-star{
+    padding: 10px 0;
+    width: 100%;
+    a{
+        color: #7b594a;
+        font-size: 16px;
+        font-weight: 600;
+        padding-right: 40px;
+    }
+}
+.commentlist{
+    table{
+        margin-bottom: 10px;
+        border-bottom: #ddd dashed 1px;
+        .title{
+        background:#f6f1ee;
+            td{
+                text-indent: 6px;
+                border-bottom: #ddd solid 1px;
+                border-top: #ddd solid 1px;
+            }
+        }
+    }
+    #commentpage{
+        text-align: center;
+        margin-bottom: 10px;
+        ul{
+            display: inline-block;
+            margin: 0 auto;
+        }
+        li{
+            padding: 0 2px;
+            float: left;
+            a{
+                display: inline-block;
+                padding: 4px 10px;
+                border:solid 1px #2c3444;
+            }
+            a:hover,.active{
+                border:solid 1px #D03100;
+                .bg-cheng();
+                .col-bai();
+            }
+        }
+    }
 }

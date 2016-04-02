@@ -128,11 +128,24 @@
     .shop-img{
         display: block;
         width: 200px;
-        height: 250px;
+        height: 200px;
         text-align: center;
         overflow: hidden;
+        &:hover{
+            img{
+                transform: scale(1.05);
+                -ms-transform: scale(1.05);
+                -moz-transform: scale(1.05);
+                -webkit-transform: scale(1.05);
+                -o-transform: scale(1.05);
+            }
+        }
         img{
             width: 100%;
+            transition: all .6s;
+            -moz-transition: all .6s;
+            -ms-transition: all .6s;
+            -webkit-transition: all .6s;
         }
     }
     .price{
