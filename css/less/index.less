@@ -75,28 +75,29 @@
   padding: 0 30px;
 }
 .billboard-list{
+  display: table;
   height: 64px;
   padding: 3px 4px;
   .row{
     height: 64px;
-    float: left;
     overflow: hidden;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 20px;
   }
   .row1{
     width:21px;
-    height: 64px;
-    line-height: 64px;
     font-size: 14px;
     color: #fff;
-    margin-right: 6px;
+    padding-right: 6px;
     text-align: center;
     background: url(../../images/icon-star.png) left center no-repeat;
   }
   .row2{
-    width: 124px;
+    width: 132px;
     margin-right: 6px;
-    height: 64px;
-    line-height: 32px;
+    height: 100%;
+    padding-right: 8px;
   }
   .row3{
     width:76px;
@@ -112,9 +113,8 @@
     line-height: 64px;
   }
   .row5{
-    width:214px;
+    width:235px;
     margin-right: 6px;
-    line-height: 32px;
   }
 }
 .collect-end{

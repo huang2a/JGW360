@@ -1,3 +1,73 @@
+#subnav{
+    display: block;
+    width: 260px;
+    background-color: #fff;
+    position: relative;
+    border-bottom: solid 1px #ddd;
+    .list{
+        height: 66px;
+        border: solid 1px #ddd;
+        border-bottom: none;
+        h3{
+            height: 66px;
+            line-height: 66px;
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+        }
+        &:hover {
+            background: #f6f1ee;
+            border-top: #2c3444 solid 1px;
+            border-bottom: #2c3444 solid 1px;
+            border-right: #f6f1ee solid 1px;
+            border-left: #2c3444 solid 1px;
+        }
+        &:hover .down-subnav{
+            display: block;
+        }
+        .down-subnav{
+            position: absolute;
+            top: 0;
+            left: 260px;
+            width: 236px;
+            height: 535px;
+            border: #2c3444 solid 1px;
+            border-left: none;
+            z-index: 9999;
+            background:#f6f1ee;
+        }
+        .item{
+            padding: 10px 15px;
+            li{
+                float: left;
+                width: 50%;
+                a{
+                    display: inline-block;
+                    width: 100%;
+                    text-align: left;
+                    padding: 4px 0;
+                    font-size: 14px;
+                }
+            }
+        }
+        .item-ad{
+            position: absolute;
+            bottom: 0;
+            padding: 9px;
+            li{
+                margin-bottom: 10px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+.down-subnav{
+    display: none;
+}
+
+
 #chengjiao{
     position: relative;
     width: 820px;
@@ -70,17 +140,18 @@
         li{
             float: left;
             text-align: center;
+            display:table;
+            height: 106px;
             span{
                 display: block;
-                height: 106px;
-                line-height: 106px;
                 font-size: 16px;
+                height: 100%;
+                display: table-cell;
+                vertical-align: middle;
             }
         }
         .row1{
-            display:table;
             width: 478px;
-            height: 106px;
             text-align: left;
             font-size: 18px;
             padding-left: 20px;
@@ -89,6 +160,7 @@
                 height: 100%;
                 display: table-cell;
                 vertical-align: middle;
+                line-height: 24px;
                 &:hover{
                     text-decoration: underline;
                     .col-cheng();
@@ -105,6 +177,25 @@
     .row5{
         width: 250px;
     }
+    .row6{
+        width:396px;
+        padding-left: 12px;
+        font-size: 18px;
+        a{
+            height: 100%;
+            display: table-cell;
+            text-align: left;
+            vertical-align: middle;
+            line-height: 24px;
+            &:hover{
+                text-decoration: underline;
+                .col-cheng();
+            }
+        }
+    }
+    .row7{
+        width: 120px;
+    }
 }
 
 .u-tuijian{
@@ -118,5 +209,38 @@
             .box-shadow(0 4px 8px rgba(0, 0, 0, 0.6));
             transition: box-shadow 0.3s ease-in;
         }
+    }
+    .margin10{
+        margin: 10px 9px;
+    }
+}
+
+// 详情页面
+#xiangqing{
+    padding: 10px 24px;
+    .title{
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: 500;
+        border-bottom: #2c3444 solid 1px;
+    }
+    table{
+        td{
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .xian{
+            border-top: dashed #ddd 1px;
+        }
+        .tip{
+            color: #7b594a;
+            font-size: 12px;
+        }
+    }
+    #info{
+        padding: 20px 0;
+        font-size: 14px;
+        color: #2c3444;
+        line-height: 180%;
     }
 }
