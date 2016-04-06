@@ -1,0 +1,122 @@
+#chengjiao{
+    position: relative;
+    width: 820px;
+    height: 30px;
+    overflow: hidden;
+    ul{
+        display: block;
+    }
+    li{
+        float: left;
+        width: 820px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .roll-banner-next {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-family: 宋体;
+        background-color: #2C3444;
+        text-align: center;
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        z-index: 999;
+        .border-radius(5px);
+    }
+    .roll-banner-prev {
+        position: absolute;
+        top: 0px;
+        right: 50px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-family: 宋体;
+        background-color: #2C3444;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        z-index: 999;
+        .border-radius(5px);
+    }
+}
+
+#xuqiu{
+    .title{
+        display: block;
+        height: 50px;
+        li{
+            float: left;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    .item{
+        display: block;
+        height: 106px;
+        border-top: #ddd solid 1px;
+        &:hover{
+            background:#f6f1ee;
+            transition: background 0.3s ease-in;
+        }
+        li{
+            float: left;
+            text-align: center;
+            span{
+                display: block;
+                height: 106px;
+                line-height: 106px;
+                font-size: 16px;
+            }
+        }
+        .row1{
+            display:table;
+            width: 478px;
+            height: 106px;
+            text-align: left;
+            font-size: 18px;
+            padding-left: 20px;
+            color: #2c3444;
+            a{
+                height: 100%;
+                display: table-cell;
+                vertical-align: middle;
+                &:hover{
+                    text-decoration: underline;
+                    .col-cheng();
+                }
+            }
+        }
+    }
+    .row1{
+        width: 498px;
+    }
+    .row2,.row3,.row4{
+        width: 150px;
+    }
+    .row5{
+        width: 250px;
+    }
+}
+
+.u-tuijian{
+    padding: 26px 7px;
+    li{
+        float: left;
+        width: 260px;
+        margin: 0 18px;
+        overflow: hidden;
+        &:hover{
+            .box-shadow(0 4px 8px rgba(0, 0, 0, 0.6));
+            transition: box-shadow 0.3s ease-in;
+        }
+    }
+}
