@@ -590,50 +590,32 @@
     </div>
     <div class="main mb26">
         <div class="u-sign-tit">
-            <a href=""><img src="../images/usercenter/u-signstep-1.png" alt=""></a>
+            <a href=""><img src="../images/usercenter/u-signstep-2.png" alt=""></a>
         </div>
         <div class="u-sign-box">
-            <div class="l-register-left l-left">
-                    <div class="form">
-                        <div class="div-name">
-                        <label for="phone">手机号码：</label>
-                        <input type="text" id="phone" class="infos inputs" placeholder="请输入手机号" />
-                        <em>*</em>
+            <div class="l-register-second">
+                    <form method="get" id="registerform">
+                        <div class="form">
+                            <div class="div-name">
+                                <label for="phone">手机号码：</label><label for="phone">18924918891</label>
+                            </div>
+                            <div class="div-name">
+                                <label for="password">密码：</label><input type="password" name="password" id="password" class="infos inputs register-second-tip" title="密码长度只能是6-20位数字或字母组成"/><em></em>
+                            </div>
+                            <div class="div-name">
+                                <label for="passwordq">确认密码：</label><input type="passwordq" name="passwordq" id="passwordq" class="infos inputs register-second-tip" title="再输入一次密码" /><em>*</em>
+                            </div>
+                            <div class="div-name">
+                                <label for="username">用户名称：</label><input type="passwordq" name="passwordq" id="passwordq" class="infos inputs register-second-tip" title="输入用户名称" /><em>*</em>
+                            </div>
+                            <div class="div-name">
+                                <label for="mailbox">常用邮箱：</label><input type="text" name="mailbox" id="mailbox" class="infos inputs register-second-tip" placeholder="dome@ehuashidai.com" title="尽量使用您最常用的邮箱，方便以后登录"/><em>*</em>
+                            </div>
+                            <div class="div-conform">
+                                <a href="u-register03.html" class="conform register-finish">完成注册</a>
+                            </div>
                         </div>
-                        <div class="div-ranks">
-                            <label for="ranks">验证码：</label>
-                            <input type="text" id="ranks" class="infos inputs"/>
-                            <em>*</em>
-                            <span class="yzm"><img src="../images/usercenter/yanzhengma.png" height="34" width="80" alt=""></span>
-                            <a href="" title="看不清楚，换一张">看不清楚，换一张</a>
-                        </div>
-                        <div class="div-phone">
-                            <label for="name">短信验证码：</label><input type="text" id="name" class="infos inputs" placeholder="请输入验证码" />
-                            <em>*</em>
-                            <a href="javascript:;" class="send1" onclick="sends.send();">免费获取短信验证码</a>
-                        </div>
-
-                        <div class="div-agreement">
-                            <input type="checkbox" class="checkbox l-left" checked="checked" id="readme" onclick="agreeonProtocol();">
-                            <p class="l-left"  for="protocol">同意并已阅读<a href="#" id="protocol">《建工网用户服务协议》</a></p>
-                        </div>
-                        <div class="div-conform">
-                            <a href="u-register02.html" class="conform" onclick="sends.conform();">下一步</a>
-                        </div>
-                    </div>
-                </div>
-            <div class="u-signbox-r l-right">
-                <div class="u-numed-box">
-                    <div class="u-numed-tit">
-                        <h1>已有建工网账号?</h1>
-                        <p class="pd10">成为建工网会员，可以免费发布供求信息，查看行业需求信息，更可免费快速帮您撮合达成交易。</p>
-                        <a href="javascript:;" class="u-numed-btn">立即登录</a>
-                    </div>
-                </div>
-                <div class="u-numed-box" style="border: none;">
-                    <h1>建工网客服热线：</h1>
-                    <div class="text-ac pd10"><img src="../images/usercenter/u-sign-phone.png" alt=""></div>
-                </div>
+                    </form>
             </div>
         </div>
     </div>
