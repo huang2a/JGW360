@@ -3977,3 +3977,365 @@ div.jqZoomPup {
 .jiancai-list .ml26 {
   margin-left: 26px;
 }
+.u-sign-tit {
+  width: 1200px;
+  height: 46px;
+  display: block;
+  margin-bottom: 36px;
+}
+.u-sign-tit a {
+  display: inline-block;
+  width: 1200px;
+  height: 46px;
+}
+.u-sign-box {
+  overflow: hidden;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+.u-sign-box:before,
+.u-sign-box:after {
+  display: table;
+  content: "";
+}
+.u-sign-box:after {
+  clear: both;
+}
+.form div {
+  overflow: hidden;
+  padding: 5px 0;
+  margin-bottom: 14px;
+}
+.form label {
+  display: block;
+  float: left;
+  width: 136px;
+  text-align: right;
+  font-weight: 500;
+  color: #535353;
+  height: 36px;
+  line-height: 36px;
+  font-size: 20px;
+}
+.form .div-phone a.send1 {
+  display: block;
+  float: left;
+  width: 140px;
+  height: 30px;
+  margin-left: 5px;
+  padding: 2px;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  border-radius: 2px;
+  background: #ddd;
+  border: 1px solid #535353;
+  font-family: '宋体';
+  font-size: 14px;
+  line-height: 30px;
+}
+.form .div-phone a.send1:hover {
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+  text-decoration: none;
+  background: #535353;
+}
+.form span.error {
+  display: block;
+  float: left;
+  width: 100px;
+  height: 26px;
+  margin-left: 10px;
+  padding: 2px;
+  padding-left: 20px;
+  color: red;
+  background: url(../../images/error.png) no-repeat left center;
+  font-family: '宋体';
+  font-size: 14px;
+  line-height: 26px;
+}
+.form .inputs {
+  width: 200px;
+  float: left;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.form .div-conform {
+  padding-right: 153px;
+}
+.form .yzm {
+  float: left;
+  margin-left: 5px;
+  overflow: hidden;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.form .div-ranks a {
+  display: inline-block;
+  float: left;
+  margin-left: 12px;
+  height: 30px;
+  line-height: 30px;
+}
+.form .div-ranks a:hover {
+  color: #535353;
+}
+.form .div-agreement {
+  font-size: 14px;
+  padding-left: 133px;
+}
+.form .div-agreement a:hover {
+  text-decoration: underline;
+  color: #ffe501;
+}
+.form .div-conform a.conform {
+  display: block;
+  float: left;
+  overflow: hidden;
+  width: 180px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  border-radius: 2px;
+  background: #f35929;
+  margin-left: 133px;
+}
+.register-finish {
+  width: 278px !important;
+  margin-left: 50px !important;
+}
+#address {
+  width: 546px !important;
+}
+.div-name em,
+.div-phone em,
+.div-ranks em {
+  display: inline-block;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #f00;
+  text-indent: 6px;
+}
+.div-name .required-tip {
+  border: #512c09 solid 1px;
+  box-shadow: #FF6C6C 0 0 4px;
+}
+.l-register-left {
+  width: 760px;
+  height: auto;
+  border-right: #ddd solid 1px;
+}
+.l-register-left .form {
+  margin: 45px 30px;
+  width: 716px;
+}
+.l-register-second {
+  width: 700px;
+  margin-left: 400px;
+}
+.l-register-third {
+  width: 444px;
+  margin: 0 auto 100px auto;
+  margin-bottom: 100px;
+  padding-left: 130px;
+  background: url(../../images/usercenter/u-sign-success.png) left top no-repeat;
+}
+.l-register-third h1 {
+  font-size: 30px;
+  color: #3ba114;
+  line-height: 34px;
+}
+.l-register-third p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+  line-height: 34px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.l-register-third span {
+  margin-left: 20px;
+  font-size: 16px;
+}
+.l-register-third .u-go-usercontent {
+  display: inline-block;
+  padding: 12px 14px;
+  background: #3ba114;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+.l-register-third .u-go-index {
+  display: inline-block;
+  padding: 12px 14px;
+  background: #f35929;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+.u-signbox-r {
+  display: block;
+  width: 382px;
+  height: auto;
+}
+.u-signbox-r .u-numed-box {
+  display: block;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin: 20px;
+}
+.u-signbox-r .u-numed-box .u-numed-tit {
+  display: block;
+}
+.u-signbox-r .u-numed-box .u-numed-tit h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.u-signbox-r .u-numed-box .u-numed-tit a {
+  display: inline-block;
+  background: #2c3444;
+  border-radius: 3px;
+  padding: 14px 68px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin: 10px 0;
+}
+.l-login {
+  display: block;
+  width: 1200px;
+  height: 500px;
+  overflow: hidden;
+  background: url(../../images/usercenter/u-login-bg.png) left no-repeat;
+  padding-top: 26px;
+  padding-left: 700px;
+}
+.l-login-page-form {
+  display: block;
+  position: relative;
+  top: 54px;
+  width: 348px;
+  height: auto;
+  background: #fff;
+  padding: 20px 36px;
+}
+.l-login-page-form h2 {
+  font-size: 24px;
+  color: #7b594a;
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+.l-login-page-form .register {
+  display: block;
+  width: 80px;
+  height: 24px;
+  line-height: 24px;
+  background: url(../../images/usercenter/u-ic-arrow.png) left center no-repeat;
+  text-align: right;
+  color: #7b594a;
+}
+.l-login-page-form input {
+  display: block;
+  width: 292px;
+  height: 46px;
+  margin: 26px auto 0 auto;
+  padding-left: 56px;
+  border: 1px #ddd solid;
+  font-size: 16px;
+  color: #664B4B;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.l-login-page-form .i-user-name {
+  background: url(../../images/usercenter/u-ic-name.png) #ffffff left center no-repeat;
+}
+.l-login-page-form .i-user-pwd {
+  background: url(../../images/usercenter/u-ic-key.png) #ffffff left center no-repeat;
+}
+.l-login-page-form .f-login-bnt {
+  width: 334px;
+  margin: 26px auto;
+  display: block;
+  background: #2c3444;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 20px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  height: 46px;
+  line-height: 46px;
+}
+.l-login-page-form .div-remember {
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+.l-login-page-form .div-remember input {
+  width: 14px;
+  height: 14px;
+  margin-top: 4px !important;
+}
+.l-login-page-form .div-remember p {
+  margin-left: 8px;
+  color: #7b594a;
+}
+.l-login-page-form .div-remember a {
+  color: #7b594a;
+}
+.l-login-page-form .div-remember a:hover {
+  text-decoration: underline;
+}
+.l-login-page-form .login-third {
+  display: block;
+  overflow: hidden;
+}
+.l-login-page-form .login-third p {
+  color: #7b594a;
+}
+.l-login-page-form .login-third .login-third-ic {
+  display: block;
+  height: 30px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.l-login-page-form .login-third .login-third-ic a {
+  display: block;
+  width: auto;
+  height: 30px;
+  margin-left: 54px;
+}
+.l-login-page-form .login-third .login-third-ic .ic-qq {
+  width: 30px;
+  background: url(../../images/usercenter/u-ic-qq.png) left center no-repeat;
+}
+.l-login-page-form .login-third .login-third-ic .ic-weibo {
+  width: 30px;
+  background: url(../../images/usercenter/u-ic-weibo.png) left center no-repeat;
+}
+.l-login-page-form .login-third .login-third-ic .ic-renren {
+  width: 55px;
+  background: url(../../images/usercenter/u-ic-renren.png) left center no-repeat;
+}
