@@ -1,0 +1,234 @@
+#subnav-jc{
+    width: 258px;
+    border-top: #2c3444 solid 3px;
+    border-right: #ddd solid 1px;
+    border-left: #ddd solid 1px;
+    li{
+        height: 118px;
+        border-bottom: #ddd solid 1px;
+        border-left: #fff solid 3px;
+        &:hover{
+            border-left: #2c3444 solid 3px;
+            background: #f6f1ee;
+            margin-left: -1px;
+            transition: background 0.3s ease-in;
+            transition: border 0.3s ease-in;
+        }
+    }
+    .father{
+        height: 118px;
+        overflow: hidden;
+        position: relative;
+        z-index: 4;
+        line-height: 26px;
+        dt{
+            font-size: 16px;
+            padding-top: 10px;
+            padding-left: 12px;
+            margin-bottom: 4px;
+            font-weight: 500;
+            overflow: hidden;
+            position: relative;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -ms-transition: all .3s ease;
+            transition: all .3s ease;
+        }
+         dd {
+            padding-left: 12px;
+            a {
+                display: inline-block;
+                margin-right: 10px;
+                font-size: 14px;
+                &:hover {
+                    color: #f35929;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+#jc-rk{
+    border-top: 4px #2c3444 solid;
+    border-right: #ddd solid 1px;
+    border-bottom: #ddd solid 1px;
+    border-left: #ddd solid 1px;
+    font-size: 18px;
+    ul{
+        .l-float();
+    }
+    li{
+        float: left;
+        width: 163.5px;
+        height: 64px;
+        text-align: center;
+        background: #f6f1ee;
+        a{
+            display: block;
+            position: relative;
+            line-height: 64px;
+            .l-float();
+            img{
+                float: left;
+                margin-top: 16px;
+                margin-left: 24px;
+                margin-right: 6px;
+            }
+            span{
+                float: left;
+            }
+        }
+    }
+}
+
+// 团购页面
+#tuangou{
+    padding: 4px 0;
+    .item{
+        width:400px;
+        margin:6px;
+        padding:4px;
+        float: left;
+        &:hover{
+            -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            transition: box-shadow 0.3s ease-in;
+            img{
+                transform: scale(0.95);
+                -ms-transform: scale(0.95);
+                -moz-transform: scale(0.95);
+                -webkit-transform: scale(0.95);
+                -o-transform: scale(0.95);
+            }
+        }
+    }
+    img{
+        transition: all .6s;
+        -moz-transition: all .6s;
+        -ms-transition: all .6s;
+        -webkit-transition: all .6s;
+    }
+    .title{
+        &:hover{
+            .col-cheng();
+        }
+        .hover-link();
+    }
+    .number{
+        margin-top: 14px;
+    }
+    .price-end{
+        padding-left: 10px;
+        color: #b5ab9f;
+        text-decoration:line-through;
+    }
+}
+
+// 预采
+#yucai{
+    padding: 4px 0;
+    .bg-yucai-btn{
+        height: 40px;
+        padding: 12px 0 12px 10px;
+        background: url(../../images/jiancai/icon-yucai-btn.png) left center no-repeat;
+    }
+    .item{
+        position: relative;
+        width:320px;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+    .title{
+        &:hover{
+            .col-cheng();
+        }
+        .hover-link();
+    }
+    .yucai-btn{
+        display: inline-block;
+        width: 124px;
+        height: 40px;
+        margin-right: 23px;
+        text-indent: -99999px;
+    }
+    .time{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(243,89,41,0.8);
+        padding: 10px;
+        .col-bai();
+    }
+}
+
+#chujia{
+    select {
+        border: #f35929 solid 1px;
+        width: 76px;
+        height: 24px;
+        color: #f35929;
+        line-height: 24px;
+    }
+    table{
+        tr{
+            &:hover{
+                background: #f6f1ee;
+            }
+        }
+        td{
+            text-align: center;
+            a:hover{
+                text-decoration: underline;
+                .col-cheng();
+            }
+        }
+    }
+}
+#jingpai-gy{
+    width: 100%;
+    padding: 6px 0;
+    font-size: 18px;
+    text-indent: 2px;
+    margin-bottom: 14px;
+    border-bottom: #2c3444 solid 4px;
+}
+.jiancai-list{
+    ul{
+        display: inline-block;
+        width: 100%
+    }
+    li{
+        position: relative;
+        float: left;
+        width: 200px;
+        height: 240px;
+        margin-right: 26px;
+        border:#2c3444 solid 2px;
+        overflow: hidden;
+        h4{
+            line-height: 24px;
+        }
+        p{
+            padding: 4px 0;
+        }
+        .box{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 4px;
+            width: 192px;
+            .rgba-background(rgba(44, 52, 68, 0.77));
+        }
+    }
+    .item:hover {
+        -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        transition: box-shadow 0.3s ease-in;
+    }
+    .ml26{
+        margin-left: 26px;
+    }
+}

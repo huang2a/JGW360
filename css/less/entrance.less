@@ -50,6 +50,7 @@
       }
     }
     .popup-nav{
+      display: table;
       background: rgba(0, 0, 0, 0.8);
       width: 155px;
       height: 56px;
@@ -61,17 +62,45 @@
       overflow: hidden;
       z-index: 9999;
       a{
-        float: left;
-        display: block;
+        display: inline-block;
         padding: 4px 6px;
         &:hover{
           .col-cheng();
         }
       }
+      .table-cell{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        height: 100%;
+      }
     }
     &:hover .popup-nav{
       left: 0;
       transition: left 0.5s ease-out;
+    }
+  }
+}
+
+
+// 项目在线页面入口
+#xm-rk{
+  width:160px;
+  border-right: #ddd solid 1px;
+  border-left: #ddd solid 1px;
+  border-bottom: #ddd solid 1px;
+  li{
+    width: 100%;
+    height:155px;
+    border-top: #ddd solid 1px;
+    text-align: center;
+    img{
+      display: block;
+      margin: 40px auto 10px auto;
+    }
+    p{
+      font-size: 18px;
+      color: #7b594a;
     }
   }
 }

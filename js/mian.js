@@ -98,6 +98,14 @@ $(function() {
         prevElement: $('#roll-indexad-next6'),
         nextElement: $('#roll-indexad-prev6')
     });
+  $('#gc-banner-marquee').marquee({
+        auto: false,
+        speed: 500,
+        showNum: 4,
+        stepLen: 1,
+        prevElement: $('#gc-banner-next'),
+        nextElement: $('#gc-banner-prev')
+    });
 });
 
 
