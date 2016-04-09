@@ -1,0 +1,249 @@
+#subnav-jx{
+    width: 258px;
+    border-top: #2c3444 solid 3px;
+    border-right: #ddd solid 1px;
+    border-left: #ddd solid 1px;
+    li{
+        height: 82px;
+        border-bottom: #ddd solid 1px;
+        border-left: #fff solid 3px;
+        &:hover{
+            border-left: #2c3444 solid 3px;
+            background: #f6f1ee;
+            margin-left: -1px;
+            transition: background 0.3s ease-in;
+            transition: border 0.3s ease-in;
+        }
+    }
+    .father{
+        height: 82px;
+        overflow: hidden;
+        position: relative;
+        z-index: 4;
+        line-height: 26px;
+        dt{
+            font-size: 16px;
+            padding-top: 2px;
+            padding-left: 5px;
+            font-weight: 500;
+            overflow: hidden;
+            position: relative;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -ms-transition: all .3s ease;
+            transition: all .3s ease;
+        }
+         dd {
+            padding-left: 5px;
+            a {
+                display: inline-block;
+                margin-right: 10px;
+                font-size: 14px;
+                &:hover {
+                    color: #f35929;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+#jixie-bannner{
+    .big{
+        width:300px;
+        height: 418px;
+        position: relative;
+        overflow: hidden;
+    }
+    .small{
+        width:240px;
+    }
+    .dis-b{
+        position: relative;
+        width: 240px;
+        height: 198px;
+        overflow: hidden;
+    }
+    .lable{
+        position: absolute;
+        display: inline-block;
+        top:0;
+        right: 0;
+        padding: 4px 10px;
+        font-size: 14px;
+        color: #fff;
+        .bg-cheng();
+    }
+    .title{
+        position: absolute;
+        bottom: 10px;
+        width: 94%;
+        padding: 10px 3%;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        .rgba-background(rgba(44,52,68,0.6));
+    }
+    .big:hover img,.dis-b:hover img {
+        transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -o-transform: scale(1.05);
+    }
+    img{
+        transition: all .6s;
+        -moz-transition: all .6s;
+        -ms-transition: all .6s;
+        -webkit-transition: all .6s;
+    }
+}
+
+
+// 品牌专区
+.pingpai{
+    li{
+        float: left;
+        width: 167px;
+        overflow: hidden;
+        border-right: #ddd  solid 1px;
+    }
+}
+
+// 为你推荐
+.tuijian-box{
+    li{
+        float: left;
+        width: 168px;
+        overflow: hidden;
+    }
+    .dis-b{
+        position: relative;
+        height: 214px;
+        overflow: hidden;
+    }
+    .text-box{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        .rgba-background(rgba(44,52,68,0.6));
+        p{
+            color: #fff;
+            padding: 4px;
+        }
+
+    }
+    .cha-btn{
+        height: 24px;
+        line-height: 24px;
+        width: 100%;
+        .bg-cheng();
+        a{
+            display: inline-block;
+            text-indent: 4px;
+            color: #fff;
+
+        }
+    }
+
+}
+
+// 二手评估
+#ershou-pg{
+    select{
+        width: 100px;
+        border:#f35929 solid 1px;
+        height: 24px;
+        line-height: 24px;
+        text-indent: 4px;
+        color: #f35929;
+    }
+
+}
+#ershou-jx{
+    tr{
+        &:hover{
+            .bg-column();
+        }
+        p{
+            line-height: 20px;
+            a{
+                &:hover{
+                .col-cheng();
+                text-decoration: underline;
+            }
+            }
+        }
+    }
+}
+#ershou-zp{
+    select{
+        width: 100px;
+        border: #f35929 solid 1px;
+        height: 24px;
+        line-height: 24px;
+        text-indent: 4px;
+        color: #f35929;
+    }
+    .input1{
+        width: 100px;
+        border: #f35929 solid 1px;
+        height: 24px;
+        line-height: 24px;
+        text-indent: 4px;
+        color: #f35929;
+    }
+}
+#jixie-bl{
+    border-right: none;
+    li{
+        float: left;
+        width: 238.812px;
+        border-right: #ddd  solid 1px;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+}
+#jixie-dg{
+    li{
+        float: left;
+        .est-layout-page(1198px/5);
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    .dis-b{
+        position: relative;
+        width: 100%;
+        height: 238px;
+        overflow: hidden;
+    }
+    .box{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding:20px 2%;
+        color: #fff;
+        width: 98%;
+        text-align: center;
+        font-size: 18px;
+        .rgba-background(rgba(44,52,68,0.6));
+    }
+    .title{
+        padding: 7px 10px;
+        height: 38px;
+        overflow: hidden;
+        line-height: 22px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .intro{
+        padding:7px 10px;
+        height: 38px;
+        line-height: 20px;
+        overflow: hidden;
+    }
+}
