@@ -106,6 +106,30 @@ $(function() {
         prevElement: $('#gc-banner-next'),
         nextElement: $('#gc-banner-prev')
     });
+  $('#qyk-banner-marquee').marquee({
+        auto: false,
+        speed: 500,
+        showNum: 5,
+        stepLen: 1,
+        prevElement: $('#qyk-banner-next'),
+        nextElement: $('#qyk-banner-prev')
+    });
+  $('#qyk1-banner-marquee').marquee({
+        auto: false,
+        speed: 500,
+        showNum: 5,
+        stepLen: 1,
+        prevElement: $('#qyk1-banner-next'),
+        nextElement: $('#qyk1-banner-prev')
+    });
+  $('#new-banner-marquee').marquee({
+        auto: false,
+        speed: 500,
+        showNum: 1,
+        stepLen: 1,
+        prevElement: $('#new-banner-next'),
+        nextElement: $('#new-banner-prev')
+    });
 });
 
 

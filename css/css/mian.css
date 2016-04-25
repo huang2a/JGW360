@@ -1198,6 +1198,9 @@ input:-ms-input-placeholder {
 .h232 {
   height: 230px !important;
 }
+.h320 {
+  height: 320px !important;
+}
 .h360 {
   height: 360px !important;
 }
@@ -2188,6 +2191,13 @@ input:-ms-input-placeholder {
 }
 .shoplist-box li .title:hover:hover {
   text-decoration: underline;
+}
+.shoplist-box-hot li {
+  width: 240px !important;
+}
+.shoplist-box-hot li .shop-img {
+  width: 240px;
+  height: 240px;
 }
 /*产品详细页*/
 .product .one {
@@ -4621,4 +4631,189 @@ div.jqZoomPup {
   height: 38px;
   line-height: 20px;
   overflow: hidden;
+}
+#subnav-qyk {
+  width: 258px;
+  border-top: #2c3444 solid 3px;
+  border-right: #ddd solid 1px;
+  border-left: #ddd solid 1px;
+}
+#subnav-qyk li {
+  height: 102px;
+  border-bottom: #ddd solid 1px;
+  border-left: #fff solid 3px;
+}
+#subnav-qyk li:hover {
+  border-left: #2c3444 solid 3px;
+  background: #f6f1ee;
+  margin-left: -1px;
+  transition: background 0.3s ease-in;
+  transition: border 0.3s ease-in;
+}
+#subnav-qyk .father {
+  height: 102px;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+  line-height: 26px;
+}
+#subnav-qyk .father dt {
+  font-size: 16px;
+  padding-top: 10px;
+  padding-left: 12px;
+  margin-bottom: 4px;
+  font-weight: 500;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+}
+#subnav-qyk .father dd {
+  padding-left: 12px;
+}
+#subnav-qyk .father dd select {
+  display: inline-block;
+  padding: 2px 0;
+  color: #2c3444;
+  min-width: 50px;
+  border: #2c3444 solid 1px;
+}
+#subnav-qyk .father dd a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 14px;
+}
+#subnav-qyk .father dd a:hover {
+  color: #f35929;
+  text-decoration: underline;
+}
+#subnav-qyk .father dd .btn-s {
+  display: inline-block;
+  width: 100px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 18px;
+  color: #fff;
+  background: #2c3444;
+  text-align: center;
+}
+.qyk-banner {
+  position: relative;
+  width: 100%;
+  height: 86px;
+  overflow: hidden;
+}
+.qyk-banner li {
+  list-style-type: none;
+  float: left;
+}
+.qyk-banner .qyk-banner-prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 86px;
+  line-height: 86px;
+  font-family: '宋体';
+  background-color: #2c3444;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+.qyk-banner .qyk-banner-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 86px;
+  line-height: 86px;
+  font-family: '宋体';
+  background-color: #2c3444;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+.qyk-banner .qyk-banner-list {
+  margin-left: 46px;
+}
+.qyk-banner .qyk-banner-list li {
+  float: left;
+  margin: 0 10px;
+  border: #2c3444 solid 2px;
+}
+.qyk-column-box {
+  width: 594px;
+  border: #ddd solid 1px;
+}
+.qyk-column-box .column-title {
+  padding: 10px 0;
+}
+.qyk-column-box .column-title h3 {
+  padding-left: 14px;
+  font-size: 18px;
+  color: #7b594a;
+}
+.qyk-column-box .u-rome {
+  font-size: 16px;
+  color: #7b594a;
+  padding-right: 10px;
+  display: inline-block;
+  font-family: 宋体;
+}
+.qyk-column-main {
+  font-size: 16px;
+}
+.qyk-column-main table tr:hover {
+  background: #fafafa !important;
+}
+.qyk-column-main table th {
+  font-weight: 600;
+  padding-left: 14px;
+  background: #fafafa;
+  border-right: #fff solid 2px;
+}
+.qyk-column-main table td {
+  padding-left: 14px;
+  border-right: #fff solid 2px;
+}
+.qyk-column-main table a:hover {
+  color: #f35929;
+  text-decoration: underline;
+}
+.qyk-column-main table .title {
+  display: inline-block;
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.qyk-column-class table .bb {
+  border-bottom: #ddd solid 1px;
+}
+.qyk-column-class table .br {
+  border-right: #ddd solid 1px;
+}
+.qyk-column-class table td {
+  padding-top: 10px;
+  padding-left: 14px;
+  vertical-align: top;
+}
+.qyk-column-class table td h2 {
+  font-size: 18px;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+.qyk-column-class table td a {
+  display: inline-block;
+  padding-right: 4px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.qyk-column-class table td a:hover {
+  color: #f35929;
+  text-decoration: underline;
 }
