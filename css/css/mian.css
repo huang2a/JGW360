@@ -4922,12 +4922,11 @@ div.jqZoomPup {
   padding-right: 15px;
 }
 .new-dt-div {
-  display: inline-block;
   width: 397px;
   height: 122px;
   overflow: hidden;
 }
-.new-dt-div p {
+.new-dt-p {
   width: 397px;
   height: 72px;
   overflow: hidden;
