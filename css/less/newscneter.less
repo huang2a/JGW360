@@ -1,0 +1,202 @@
+.new-banner{
+    position: relative;
+    display: block;
+    height: 360px;
+    overflow: hidden;
+    .new-banner-prev{
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -25px;
+        width: 30px;
+        height: 50px;
+        line-height: 50px;
+        background: rgba(44, 52, 68, 0.6);
+        color: rgb(255, 255, 255);
+        z-index: 999;
+        font-family: 宋体;
+        font-size: 34px;
+        text-align: center;
+        opacity: 1;
+    }
+    .new-banner-next{
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -25px;
+        width: 30px;
+        height: 50px;
+        line-height: 50px;
+        background: rgba(44, 52, 68, 0.6);
+        color: rgb(255, 255, 255);
+        z-index: 999;
+        font-family: 宋体;
+        font-size: 34px;
+        text-align: center;
+        opacity: 1;
+     }
+}
+
+.new-banner-list{
+    li{
+        position: relative;
+        a{
+            img{
+                display: block;
+            }
+        }
+        .box{
+            position: absolute;
+            bottom: 0;
+            width: 820px;
+            padding: 10px;
+            color: #fff;
+            .rgba-background(rgba(0,0,0,.8));
+            .title{
+                font-size: 14px;
+                font-weight: 600;
+                padding: 4px 0;
+            }
+            .intro{
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+.news-jgdt{
+    padding: 10px;
+    .one{
+        margin-bottom: 8px;
+    }
+    .title{
+        .ov-text();
+        &:hover{
+            text-decoration:underline;
+            .col-cheng();
+        }
+        padding-left: 14px;
+        background: url(../../images/xinwen/icon-point.png) left center no-repeat;
+    }
+    .intro{
+        line-height: 18px;
+    }
+    p{
+        em{
+            color: #b5ab9f;
+        }
+    }
+    .two{
+        line-height: 32px;
+        border-bottom: #ddd dashed 1px;
+        padding-left: 12px;
+        background: url(../../images/xinwen/icon-point.png) left center no-repeat;
+        .l-float();
+        a{
+            float: left;
+            width: 420px;
+            display: inline-block;
+            .ov-text();
+            &:hover{
+                .col-cheng();
+                text-decoration: underline;
+            }
+        }
+        em{
+            float: right;
+            color: #b5ab9f;
+        }
+    }
+}
+
+// --------------------新闻列表页面
+#news-sub{
+    width: 258px;
+    border-top: #2c3444 solid 4px;
+    border-right: #ddd solid 1px;
+    border-bottom:#ddd solid 1px;
+    border-left: #ddd solid 1px;
+    .accordion{
+        height: 34px;
+        line-height: 34px;
+        padding-left: 24px;
+        font-size: 16px;
+        color: #2c3444;
+        border-bottom: #ddd dashed 1px;
+        background: url(../../images/xinwen/icon-list.png) 5px center no-repeat;
+    }
+    .accordion-desc{
+        background: #f6f1ee;
+        p{
+            height: 34px;
+            padding-left: 30px;
+            background: url(../../images/xinwen/icon-jiant.png) 14px 9px no-repeat;
+            &:hover{
+                background: url(../../images/xinwen/icon-jiant.png) #fff 14px 9px no-repeat;
+            }
+            a{
+                line-height: 34px;
+                font-size: 14px;
+                &:hover{
+                    text-decoration: underline;
+                    .col-cheng();
+                }
+            }
+        }
+    }
+}
+#news-list{
+    width: 896px;
+    padding: 10px;
+    border:#ddd solid 1px;
+    border-top: #2c3444 solid 4px;
+    .one{
+        border-bottom: #2c3444 solid 1px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .title{
+            padding-left: 14px;
+            background: url(../../images/xinwen/icon-point.png) left center no-repeat;
+            .ov-text();
+            a:hover{
+                text-decoration: underline;
+                .col-cheng();
+            }
+        }
+        p{
+            em{
+                color: #b5ab9f;
+            }
+        }
+    }
+}
+#news-info{
+    width: 896px;
+    padding: 10px;
+    border: #ddd solid 1px;
+    border-top: #2c3444 solid 4px;
+    .news-info-title{
+        font-size: 24px;
+        text-align: left;
+        padding: 10px 0;
+        color: #2c3444;
+    }
+    .news-info-intro{
+        padding-bottom: 10px;
+        border-bottom: #2c3444 solid 1px;
+        margin-bottom: 10px;
+        .l-float();
+        em{
+            color: #b5ab9f;
+            font-size: 12px;
+        }
+    }
+    .news-info-box{
+        font-size: 14px;
+        color: #2c3444;
+        line-height: 180%;
+    }
+}
