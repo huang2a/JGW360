@@ -1,0 +1,121 @@
+.usercentent-sub{
+    border:#ddd solid 1px;
+    border-bottom: transparent;
+    h3{
+        color: #fff;
+        line-height: 40px;
+        padding-left: 20px;
+        .bg-hui();
+        .font18();
+    }
+    ul{
+        li{
+            padding: 10px 0 10px 20px;
+            background: #f6f1ee;
+            border-bottom: #ddd solid 1px;
+            .font16();
+            a:hover{
+                text-decoration: underline;
+                .col-cheng();
+            }
+        }
+    }
+}
+#userBasic{
+    padding: 20px 30px;
+    .user-table{
+        font-size: 16px;
+        .bar-title{
+            display: inline-block;
+            width:70px;
+            text-align: left;
+        }
+    }
+    .user-box{
+        width: 96px;
+        height: 96px;
+        overflow:hidden;
+        position: relative;
+    }
+    .masking{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 96px;
+        height: 96px;
+        z-index: 999;
+        background: url(../../images/usercenter/user-masking.png) center no-repeat;
+    }
+    .img{
+        width: 96px;
+        height: 96px;
+        z-index: 99;
+        background: url(../../images/usercenter/user-default.png) center no-repeat;
+    }
+    .p-bar {
+
+        display: inline-block;
+        width: 100px;
+        height: 8px;
+        margin-top: 10px;
+        background: #e6e6e6;
+        overflow: hidden;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+    }
+    .p-bar-cheng {
+        height: 8px;
+        background:#f35929;
+    }
+    .user-privilege{
+        li{
+            img{
+                display: block;
+                margin: 4px auto
+            }
+            float: left;
+            width: 60px;
+            margin-right: 6px;
+        }
+    }
+    .shortcut-release{
+        width: 463px;
+        text-align: center;
+    }
+}
+.tabel-list{
+    th,td{
+        border: #ddd solid 1px;
+        text-align: center;
+    }
+    th{
+        background: #fafafa;
+        font-size: 16px;
+    }
+}
+.user-ylove{
+    padding-left: 2px;
+    a{
+        display: inline-block;
+        width: 200px;
+        height: 140px;
+        overflow: hidden;
+    }
+    img{
+        width: 200px;
+        display: inline-block;
+        width: 100%;
+        transition: all .6s;
+        -moz-transition: all .6s;
+        -ms-transition: all .6s;
+        -webkit-transition: all .6s;
+        &:hover{
+            transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+            -o-transform: scale(1.05);
+        }
+    }
+}

@@ -1,0 +1,79 @@
+#storelist-box{
+    background: #fff;
+    .storelist{
+        padding:20px 10px 20px 20px;
+        border-bottom: #ddd solid 1px;
+    }
+    .basic-text{
+        width: 650px;
+        padding-top: 4px;
+        h2{
+            display: block;
+            font-size: 22px;
+            padding-bottom: 20px;
+            .ov-text();
+        }
+        .nian{
+            padding-bottom: 20px;
+        }
+        ul{
+            li{
+                float: left;
+                padding: 10px 0;
+                font-size: 16px;
+                .ov-text();
+            }
+            .w400{
+                width: 400px;
+            }
+            .w250{
+                width: 250px;
+            }
+        }
+
+    }
+    .tags-shopping{
+        width:510px;
+        ul{
+            li{
+                float: left;
+                width: 150px;
+                height: 194px;
+                margin-right: 10px;
+                padding: 4px;
+                border: #ddd solid 1px;
+                background: #fff;
+                &:hover{
+                    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+                    -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+                    transition: box-shadow 0.3s ease-in;
+                }
+                img{
+                    display: block;
+                    margin-bottom: 6px;
+                    width: 100%;
+                    transition: all .6s;
+                    -moz-transition: all .6s;
+                    -ms-transition: all .6s;
+                    -webkit-transition: all .6s;
+                }
+                h3{
+                    font-size: 16px;
+                    &:hover{
+                        text-decoration: underline;
+                        .col-cheng();
+                    }
+                }
+                a:hover img {
+                    transform: scale(1.05);
+                    -ms-transform: scale(1.05);
+                    -moz-transform: scale(1.05);
+                    -webkit-transform: scale(1.05);
+                    -o-transform: scale(1.05);
+                }
+            }
+        }
+
+    }
+}
