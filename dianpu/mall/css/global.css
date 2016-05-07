@@ -1,0 +1,144 @@
+/*top-header*/
+.l-company{
+    font-size:24px;
+    width:350px;
+    height: 110px;
+    overflow: hidden;
+    display: table;
+
+}
+.l-company span{
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 28px;
+}
+
+/*seach*/
+.search-but{
+    color: #ffffff;
+    font-size: 16px;
+    padding:11px 15px;
+    border: 2px solid #2c3444;
+    background: #2c3444;
+}
+/*banner*/
+.l-banner-box{
+    width: 1200px;
+    height: 387px;
+    overflow: hidden;
+}
+img {
+    border: 0;
+}
+.ck-slide ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.ck-slide {
+    position: relative;
+    overflow: hidden;
+    width: 1200px;
+    height: 387px;
+    z-index: 1;
+}
+.ck-slide ul.ck-slide-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+.ck-slide ul.ck-slide-wrapper li {
+    position: absolute; margin-top:0px;
+}
+.ck-slide ul.ck-slide-wrapper li a{
+    /*a标签是行内元素，宽高对a标签不起作用，
+    这里必须添加line-height:0px;display:black，否则垂直滚动<li>之间会出现间隔*/
+    line-height:0px;
+    display:block;
+}
+.ck-slide ul.ck-slide-wrapper li a img{
+    width: 1200px;
+    height: 390px;
+    overflow: hidden;
+}
+.ck-slide .ck-prev, .ck-slide .ck-next {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 30px;
+    height: 70px;
+    margin-top: -35px;
+    opacity: .15;
+    background: red;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    transition: opacity .2s linear 0s;
+}
+
+.ck-slidebox {
+    position: absolute;
+    left: 50%;
+    padding-bottom: 15px;
+    bottom: 0px;
+    z-index: 30;
+}
+
+.ck-slidebox ul li {
+    float: left;
+    margin: 0 5px;
+}
+.ck-slidebox ul li em {
+    display: block;
+    color: #ffffff;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 24px;
+    cursor: pointer;
+    background-color: #acbbcc;
+}
+
+.ck-slidebox ul li.current em {
+    background-color: #3167a5;
+}
+.ck-slidebox ul li em:hover {
+    background-color: #3167a5;
+}
+/*大商品列表*/
+.fserch-p{
+    position: relative;
+}
+.foot-serch{
+    width: 160px;
+    height: 26px;
+    line-height: 26px;
+    text-indent: 14px;
+    border: none;
+    background: transparent;
+    outline:none;
+}
+.serch-p {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 196px;
+    height: 28px;
+    background: url(../images/shoplist-search-bg.png) left center no-repeat;
+}
+.serch-a{
+    display: inline-block;
+    width: 35px;
+    height: 28px;
+    text-indent: -9999px;
+}
+#box-dist li{
+    margin: 10px 5px!important;
+}
+#sl-box{
+    padding: 15px 12px!important;
+}
+

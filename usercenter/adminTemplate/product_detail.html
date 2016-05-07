@@ -153,14 +153,14 @@
                         <span class="errorTips">错误提示信息...</span>
                     </li>
                     <li>
-                        <span class="item_name" style="width:120px;">商品货号：</span>
-                        <input type="text" class="textbox" placeholder="商品货号..."/>
+                        <span class="item_name" style="width:120px;">商品品牌：</span>
+                        <input type="text" class="textbox" placeholder="商品品牌..."/>
                         <span class="errorTips">错误提示信息...</span>
                     </li>
                     <li>
-                        <span class="item_name" style="width:120px;">品牌：</span>
+                        <span class="item_name" style="width:120px;">商品类型 ：</span>
                         <select class="select">
-                            <option>选择品牌</option>
+                            <option>商品类型 </option>
                         </select>
                         <span class="errorTips">错误提示信息...</span>
                     </li>
@@ -214,45 +214,178 @@
                             <img src="upload/goods01.jpg" height="100" width="100" alt="">
                             <img src="upload/goods02.jpg" height="100" width="100" alt="">
                             <img src="upload/goods03.jpg" height="100" width="100" alt="">
+                            <img src="upload/goods01.jpg" height="100" width="100" alt="">
+                            <img src="upload/goods02.jpg" height="100" width="100" alt="">
+                            <img src="upload/goods03.jpg" height="100" width="100" alt="">
                         </div>
+                    </li>
+                    <li>
+                        <span class="item_name" style="width:120px;">规格型号：</span>
+                        <input type="button" value="新增规格" class="group_btn" id="showPopTxt"/>
+                        <!--弹出框效果-->
+                        <script>
+                         $(document).ready(function(){
+                         //弹出文本性提示框
+                         $("#showPopTxt").click(function(){
+                           $(".pop_bg").fadeIn();
+                           });
+                         //弹出：确认按钮
+                         $(".trueBtn").click(function(){
+                           alert("你点击了确认！");//测试
+                           $(".pop_bg").fadeOut();
+                           });
+                         //弹出：取消或关闭按钮
+                         $(".falseBtn").click(function(){
+                           alert("你点击了取消/关闭！");//测试
+                           $(".pop_bg").fadeOut();
+                           });
+                         });
+                         </script>
+                        <section class="pop_bg">
+                            <div class="pop_cont">
+                                <!--title-->
+                                <h3>新增规格型号</h3>
+                                <!--content-->
+                                <div class="pop_cont_input">
+                                    <ul>
+                                        <li>
+                                            <span>规格</span>
+                                            <input type="text" placeholder="比如：颜色、高度等..." class="textbox"/>
+                                        </li>
+                                        <li>
+                                            <span class="ttl">城市</span>
+                                            <select class="select">
+                                                <option>选择省份</option>
+                                            </select>
+                                            <select class="select">
+                                                <option>选择城市</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <span class="ttl">价格</span>
+                                            <input type="text" placeholder="商品价格..." class="textbox"/>
+                                        </li>
+                                        <li><span class="ttl">折扣</span>
+                                            <input type="text" placeholder="留空为不打折..." class="textbox"/></li>
+                                        <li>
+                                            <span class="ttl">运费</span>
+                                            <select class="select">
+                                                <option>选择运费</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <span class="ttl">库存</span>
+                                            <input type="text" placeholder="产品的库存数..." class="textbox"/>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--以pop_cont_text分界-->
+                                <div class="pop_cont_text">这里是文字性提示信息！</div>
+                                <!--bottom:operate->
+                                button-->
+                                <div class="btm_btn">
+                                    <input type="button" value="确认" class="input_btn trueBtn"/>
+                                    <input type="button" value="关闭" class="input_btn falseBtn"/>
+                                </div>
+                            </div>
+                        </section>
+                        <section style="margin-left:50px;width: 1000px; ">
+                            <table class="table">
+                               <tr class="center">
+                                <th>规格</th>
+                                <th>地区</th>
+                                <th>价格</th>
+                                <th>运费</th>
+                                <th>库存</th>
+                                <th>操作</th>
+                               </tr>
+                               <tr>
+                                <td class="center">高度：30cm；颜色：白色</td>
+                                <td class="center">广州</td>
+                                <td class="center"><strong class="rmb_icon">59.00</strong></td>
+                                <td class="center">包</td>
+                                <td class="center">5559</td>
+                                <td class="center">
+                                 <a href="product_detail.html" title="编辑" class="link_icon">&#101;</a>
+                                 <a href="#" title="删除" class="link_icon">&#100;</a>
+                                </td>
+                               </tr>
+                               <tr>
+                                <td class="center">高度：20cm；颜色：蓝色</td>
+                                <td class="center">中山</td>
+                                <td class="center"><strong class="rmb_icon">59.00</strong></td>
+                                <td class="center">5559</td>
+                                <td class="center">包</td>
+                                <td class="center">
+                                 <a href="product_detail.html" title="编辑" class="link_icon">&#101;</a>
+                                 <a href="#" title="删除" class="link_icon">&#100;</a>
+                                </td>
+                               </tr>
+                              </table>
+                        </section>
                     </li>
                     <li>
                         <span class="item_name" style="width:120px;">产品详情：</span>
-                        <script id="editor" type="text/plain" style="width:1024px;height:500px;margin-left:120px;margin-top:0;"></script>
-                        <!--ueditor可删除下列信息-->
-                        <div id="btns" style="margin-left:120px;margin-top:8px;">
-                            <div>
-                                <button onclick="getAllHtml()">获得整个html的内容</button>
-                                <button onclick="getContent()">获得内容</button>
-                                <button onclick="setContent()">写入内容</button>
-                                <button onclick="setContent(true)">追加内容</button>
-                                <button onclick="getContentTxt()">获得纯文本</button>
-                                <button onclick="getPlainTxt()">获得带格式的纯文本</button>
-                                <button onclick="hasContent()">判断是否有内容</button>
-                                <button onclick="setFocus()">使编辑器获得焦点</button>
-                                <button onmousedown="isFocus(event)">编辑器是否获得焦点</button>
-                                <button onmousedown="setblur(event)" >编辑器失去焦点</button>
-
-                            </div>
-                            <div>
-                                <button onclick="getText()">获得当前选中的文本</button>
-                                <button onclick="insertHtml()">插入给定的内容</button>
-                                <button id="enable" onclick="setEnabled()">可以编辑</button>
-                                <button onclick="setDisabled()">不可编辑</button>
-                                <button onclick=" UE.getEditor('editor').setHide()">隐藏编辑器</button>
-                                <button onclick=" UE.getEditor('editor').setShow()">显示编辑器</button>
-                                <button onclick=" UE.getEditor('editor').setHeight(300)">设置高度为300默认关闭了自动长高</button>
-                            </div>
-
-                            <div>
-                                <button onclick="getLocalData()" >获取草稿箱内容</button>
-                                <button onclick="clearLocalData()" >清空草稿箱</button>
-                            </div>
-
-                        </div>
                     </li>
                     <li>
-                        <span class="item_name" style="width:120px;"></span>
+                        <script>
+                         $(document).ready(function(){
+                         //tab
+                         $(".admin_tab li a").click(function(){
+                          var liindex = $(".admin_tab li a").index(this);
+                          $(this).addClass("active").parent().siblings().find("a").removeClass("active");
+                          $(".admin_tab_cont").eq(liindex).fadeIn(150).siblings(".admin_tab_cont").hide();
+                         });
+                         });
+                         </script>
+                        <section>
+                            <ul class="admin_tab" style="margin-left: 50px;width: 1000px;">
+                                <li style="margin:0">
+                                    <a class="active">电脑端详情</a>
+                                </li>
+                                <li style="margin:0">
+                                    <a>手机端详情</a>
+                                </li>
+                            </ul>
+                            <!--tabCont-->
+                            <div class="admin_tab_cont" style="display:block;">
+                                <script id="editor-pc" type="text/plain" style="width:1000px;height:400px;margin-left:50px;margin-top:0;"></script>
+                                <!--ueditor可删除下列信息-->
+                                <div id="btns" style="margin-left:50px;margin-top:8px;">
+                                    <div>
+                                        <button onclick="getAllHtml()">获得整个html的内容</button>
+                                        <button onclick="getContent()">获得内容</button>
+                                        <button onclick="setContent()">写入内容</button>
+                                        <button onclick="setContent(true)">追加内容</button>
+                                        <button onclick="getContentTxt()">获得纯文本</button>
+                                        <button onclick="getPlainTxt()">获得带格式的纯文本</button>
+                                        <button onclick="hasContent()">判断是否有内容</button>
+                                        <button onclick="setFocus()">使编辑器获得焦点</button>
+                                        <button onmousedown="isFocus(event)">编辑器是否获得焦点</button>
+                                        <button onmousedown="setblur(event)" >编辑器失去焦点</button>
+                                    </div>
+                                    <div>
+                                        <button onclick="getText()">获得当前选中的文本</button>
+                                        <button onclick="insertHtml()">插入给定的内容</button>
+                                        <button id="enable" onclick="setEnabled()">可以编辑</button>
+                                        <button onclick="setDisabled()">不可编辑</button>
+                                        <button onclick=" UE.getEditor('editor').setHide()">隐藏编辑器</button>
+                                        <button onclick=" UE.getEditor('editor').setShow()">显示编辑器</button>
+                                        <button onclick=" UE.getEditor('editor').setHeight(300)">设置高度为300默认关闭了自动长高</button>
+                                    </div>
+                                    <div>
+                                        <button onclick="getLocalData()" >获取草稿箱内容</button>
+                                        <button onclick="clearLocalData()" >清空草稿箱</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="admin_tab_cont">
+                                <script id="editor-app" type="text/plain" style="width:640px;height:400px;    margin: 0 auto;"></script>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
+                        <span class="item_name" style="width:50px;"></span>
                         <input type="submit" class="link_btn"/>
                     </li>
                 </ul>
@@ -265,63 +398,61 @@
 
     //实例化编辑器
     //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
-    var ue = UE.getEditor('editor');
-
-
+    var ue = UE.getEditor('editor-pc');
     function isFocus(e){
-        alert(UE.getEditor('editor').isFocus());
+        alert(UE.getEditor('editor-pc').isFocus());
         UE.dom.domUtils.preventDefault(e)
     }
     function setblur(e){
-        UE.getEditor('editor').blur();
+        UE.getEditor('editor-pc').blur();
         UE.dom.domUtils.preventDefault(e)
     }
     function insertHtml() {
         var value = prompt('插入html代码', '');
-        UE.getEditor('editor').execCommand('insertHtml', value)
+        UE.getEditor('editor-pc').execCommand('insertHtml', value)
     }
     function createEditor() {
         enableBtn();
-        UE.getEditor('editor');
+        UE.getEditor('editor-pc');
     }
     function getAllHtml() {
-        alert(UE.getEditor('editor').getAllHtml())
+        alert(UE.getEditor('editor-pc').getAllHtml())
     }
     function getContent() {
         var arr = [];
         arr.push("使用editor.getContent()方法可以获得编辑器的内容");
         arr.push("内容为：");
-        arr.push(UE.getEditor('editor').getContent());
+        arr.push(UE.getEditor('editor-pc').getContent());
         alert(arr.join("\n"));
     }
     function getPlainTxt() {
         var arr = [];
         arr.push("使用editor.getPlainTxt()方法可以获得编辑器的带格式的纯文本内容");
         arr.push("内容为：");
-        arr.push(UE.getEditor('editor').getPlainTxt());
+        arr.push(UE.getEditor('editor-pc').getPlainTxt());
         alert(arr.join('\n'))
     }
     function setContent(isAppendTo) {
         var arr = [];
         arr.push("使用editor.setContent('欢迎使用ueditor')方法可以设置编辑器的内容");
-        UE.getEditor('editor').setContent('欢迎使用ueditor', isAppendTo);
+        UE.getEditor('editor-pc').setContent('欢迎使用ueditor', isAppendTo);
         alert(arr.join("\n"));
     }
     function setDisabled() {
-        UE.getEditor('editor').setDisabled('fullscreen');
+        UE.getEditor('editor-pc').setDisabled('fullscreen');
         disableBtn("enable");
     }
 
     function setEnabled() {
-        UE.getEditor('editor').setEnabled();
+        UE.getEditor('editor-pc').setEnabled();
         enableBtn();
     }
 
     function getText() {
         //当你点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
-        var range = UE.getEditor('editor').selection.getRange();
+        var range = UE.getEditor('editor-pc').selection.getRange();
         range.select();
-        var txt = UE.getEditor('editor').selection.getText();
+        var txt = UE.getEditor('editor-pc').selection.getText();
         alert(txt)
     }
 
@@ -329,22 +460,22 @@
         var arr = [];
         arr.push("使用editor.getContentTxt()方法可以获得编辑器的纯文本内容");
         arr.push("编辑器的纯文本内容为：");
-        arr.push(UE.getEditor('editor').getContentTxt());
+        arr.push(UE.getEditor('editor-pc').getContentTxt());
         alert(arr.join("\n"));
     }
     function hasContent() {
         var arr = [];
         arr.push("使用editor.hasContents()方法判断编辑器里是否有内容");
         arr.push("判断结果为：");
-        arr.push(UE.getEditor('editor').hasContents());
+        arr.push(UE.getEditor('editor-pc').hasContents());
         alert(arr.join("\n"));
     }
     function setFocus() {
-        UE.getEditor('editor').focus();
+        UE.getEditor('editor-pc').focus();
     }
     function deleteEditor() {
         disableBtn();
-        UE.getEditor('editor').destroy();
+        UE.getEditor('editor-pc').destroy();
     }
     function disableBtn(str) {
         var div = document.getElementById('btns');
@@ -366,11 +497,122 @@
     }
 
     function getLocalData () {
-        alert(UE.getEditor('editor').execCommand( "getlocaldata" ));
+        alert(UE.getEditor('editor-pc').execCommand( "getlocaldata" ));
     }
 
     function clearLocalData () {
-        UE.getEditor('editor').execCommand( "clearlocaldata" );
+        UE.getEditor('editor-pc').execCommand( "clearlocaldata" );
+        alert("已清空草稿箱")
+    }
+</script>
+   <script type="text/javascript">
+
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    var ue = UE.getEditor('editor-app');
+    function isFocus(e){
+        alert(UE.getEditor('editor-app').isFocus());
+        UE.dom.domUtils.preventDefault(e)
+    }
+    function setblur(e){
+        UE.getEditor('editor-app').blur();
+        UE.dom.domUtils.preventDefault(e)
+    }
+    function insertHtml() {
+        var value = prompt('插入html代码', '');
+        UE.getEditor('editor-app').execCommand('insertHtml', value)
+    }
+    function createEditor() {
+        enableBtn();
+        UE.getEditor('editor-app');
+    }
+    function getAllHtml() {
+        alert(UE.getEditor('editor-app').getAllHtml())
+    }
+    function getContent() {
+        var arr = [];
+        arr.push("使用editor.getContent()方法可以获得编辑器的内容");
+        arr.push("内容为：");
+        arr.push(UE.getEditor('editor-app').getContent());
+        alert(arr.join("\n"));
+    }
+    function getPlainTxt() {
+        var arr = [];
+        arr.push("使用editor.getPlainTxt()方法可以获得编辑器的带格式的纯文本内容");
+        arr.push("内容为：");
+        arr.push(UE.getEditor('editor-app').getPlainTxt());
+        alert(arr.join('\n'))
+    }
+    function setContent(isAppendTo) {
+        var arr = [];
+        arr.push("使用editor.setContent('欢迎使用ueditor')方法可以设置编辑器的内容");
+        UE.getEditor('editor-app').setContent('欢迎使用ueditor', isAppendTo);
+        alert(arr.join("\n"));
+    }
+    function setDisabled() {
+        UE.getEditor('editor-app').setDisabled('fullscreen');
+        disableBtn("enable");
+    }
+
+    function setEnabled() {
+        UE.getEditor('editor-app').setEnabled();
+        enableBtn();
+    }
+
+    function getText() {
+        //当你点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
+        var range = UE.getEditor('editor-app').selection.getRange();
+        range.select();
+        var txt = UE.getEditor('editor-app').selection.getText();
+        alert(txt)
+    }
+
+    function getContentTxt() {
+        var arr = [];
+        arr.push("使用editor.getContentTxt()方法可以获得编辑器的纯文本内容");
+        arr.push("编辑器的纯文本内容为：");
+        arr.push(UE.getEditor('editor-app').getContentTxt());
+        alert(arr.join("\n"));
+    }
+    function hasContent() {
+        var arr = [];
+        arr.push("使用editor.hasContents()方法判断编辑器里是否有内容");
+        arr.push("判断结果为：");
+        arr.push(UE.getEditor('editor-app').hasContents());
+        alert(arr.join("\n"));
+    }
+    function setFocus() {
+        UE.getEditor('editor-app').focus();
+    }
+    function deleteEditor() {
+        disableBtn();
+        UE.getEditor('editor-app').destroy();
+    }
+    function disableBtn(str) {
+        var div = document.getElementById('btns');
+        var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+        for (var i = 0, btn; btn = btns[i++];) {
+            if (btn.id == str) {
+                UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+            } else {
+                btn.setAttribute("disabled", "true");
+            }
+        }
+    }
+    function enableBtn() {
+        var div = document.getElementById('btns');
+        var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+        for (var i = 0, btn; btn = btns[i++];) {
+            UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+        }
+    }
+
+    function getLocalData () {
+        alert(UE.getEditor('editor-app').execCommand( "getlocaldata" ));
+    }
+
+    function clearLocalData () {
+        UE.getEditor('editor-app').execCommand( "clearlocaldata" );
         alert("已清空草稿箱")
     }
 </script>

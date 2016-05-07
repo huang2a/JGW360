@@ -115,7 +115,7 @@
                         <a href="ad_list.html">站点广告列表</a>
                     </dd>
                     <dd>
-                        <a href="ad_detail.html">添加站点广告</a>
+                        <a class="active" href="ad_detail.html">添加站点广告</a>
                     </dd>
                 </dl>
             </li>
@@ -126,7 +126,7 @@
                         <a href="express_list.html">配送方式</a>
                     </dd>
                     <dd>
-                        <a class="active" href="pay_list.html">支付方式</a>
+                        <a href="pay_list.html">支付方式</a>
                     </dd>
                 </dl>
             </li>
@@ -150,75 +150,59 @@
     <section class="rt_wrap content mCustomScrollbar">
         <div class="rt_content">
             <div class="page_title">
-                <h2 class="fl">支付方式</h2>
-                <a href="product_detail.html" class="fr top_rt_btn add_icon">添加支付方式</a>
+                <h2 class="fl">添加广告</h2>
+                <a href="ad_list.html" class="fr top_rt_btn">分类管理</a>
             </div>
-            <table class="table">
-                <tr>
-                    <th>缩略图</th>
-                    <th>支付名称</th>
-                    <th>收款账号</th>
-                    <th>支付描述</th>
-                    <th>操作</th>
-                </tr>
-                <tr>
-                    <td class="center">
-                        <img src="upload/alipay.png" width="165" height="65"/>
-                    </td>
-                    <td class="center">支付宝</td>
-                    <td class="center"><span style="color: #19a97b;">SHW293318</span></td>
-                    <td>
-                        <p>
-                            支付宝,全球领先的独立第三方支付平台,致力于为广大用户提供安全快速的电子支付/网上支付/安全支付/手机支付体验,及转账收款/水电煤缴费/信用卡还款/AA收款等生活...
-                        </p>
-                    </td>
-                    <td class="center">
-                        <a href="product_detail.html" title="编辑" class="link_icon">&#101;</a>
-                        <a href="#" title="删除" class="link_icon">&#100;</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="center">
-                        <img src="upload/tenpay.png" width="165" height="65"/>
-                    </td>
-                    <td class="center">财付通</td>
-                    <td class="center"><span style="color: #19a97b;">SHW293318</span></td>
-                    <td>
-                        <p>
-                            财付通（Tenpay）是腾讯公司于2005年9月正式推出专业在线支付平台，其核心业务是帮助在互联网上进行交易的双方完成支付和收款。致力于为互联网用户和企业提供安...
-                        </p>
-                    </td>
-                    <td class="center">
-                        <a href="product_detail.html" title="编辑" class="link_icon">&#101;</a>
-                        <a href="#" title="删除" class="link_icon">&#100;</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="center">
-                        <img src="upload/wechatpay.png" width="165" height="65"/>
-                    </td>
-                    <td class="center">微信支付</td>
-                    <td class="center"><span style="color: #19a97b;">SHW293318</span></td>
-                    <td>
-                        <p>
-                            微信支付是集成在微信客户端的支付功能，用户可以通过手机完成快速的支付流程。微信支付以绑定银行卡的快捷支付为基础，向用户提供安全、快捷、高效的支付服务。2014年9月26日...
-                        </p>
-                    </td>
-                    <td class="center">
-                        <a href="product_detail.html" title="编辑" class="link_icon">&#101;</a>
-                        <a href="#" title="删除" class="link_icon">&#100;</a>
-                    </td>
-                </tr>
-            </table>
-            <aside class="paging">
-                <a>第一页</a>
-                <a>1</a>
-                <a>2</a>
-                <a>3</a>
-                <a>…</a>
-                <a>1004</a>
-                <a>最后一页</a>
-            </aside>
+            <ul class="ulColumn2">
+                <li>
+                  <span class="item_name" style="width:120px;">上传图片：</span>
+                  <label class="uploadImg">
+                    <input type="file">
+                    <span>上传广告图</span>
+                  </label>
+                  <span class="errorTips">上传1200*390大小的jpg、png图片...</span>
+                </li>
+                <li>
+                  <span class="item_name" style="width:120px;">效果预览：</span>
+                  <span> <img src="upload/top-banner.jpg" width="120" alt=""></span>
+                </li>
+                <li>
+                  <span class="item_name" style="width:120px;">广告分类：</span>
+                  <select class="select">
+                    <option>滚动大图</option>
+                  </select>
+                </li>
+                <li>
+                  <span class="item_name" style="width:120px;">是否启用：</span>
+                  <label class="single_selection">
+                    <input type="radio" name="name">
+                    是
+                  </label>
+                  <label class="single_selection">
+                    <input type="radio" name="name">
+                    否
+                  </label>
+                </li>
+                <li>
+                    <span class="item_name" style="width:120px;">广告名称：</span>
+                    <input type="text" class="textbox textbox_225" placeholder="广告的名称..."/>
+                    <span class="errorTips">错误提示信息...</span>
+                </li>
+                <li>
+                    <span class="item_name" style="width:120px;">排序：</span>
+                    <input type="text" class="textbox textbox_225"  placeholder="排序..."/>
+                    <span class="errorTips">数值越大越前面...</span>
+                </li>
+                <li>
+                    <span class="item_name" style="width:120px;">地址：</span>
+                    <input type="text" class="textbox textbox_295"  placeholder="如：http://www/jgw360.com..."/>
+                    <span class="errorTips">输入的地址必须带http://</span>
+                </li>
+                <li>
+                    <span class="item_name" style="width:120px;"></span>
+                    <input type="submit" class="link_btn" value="更新/保存"/>
+                </li>
+            </ul>
         </div>
     </section>
 </body>
