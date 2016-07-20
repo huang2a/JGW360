@@ -1,52 +1,98 @@
 #subnav-jc{
     width: 258px;
-    border-top: #2c3444 solid 3px;
-    border-right: #ddd solid 1px;
-    border-left: #ddd solid 1px;
-    li{
-        height: 118px;
+    background: #FFF;
+    position: relative;
+    border: #ddd solid 1px;
+    border-bottom: none;
+    .item{
+        height: 34px;
         border-bottom: #ddd solid 1px;
-        border-left: #fff solid 3px;
         &:hover{
-            border-left: #2c3444 solid 3px;
-            background: #f6f1ee;
-            margin-left: -1px;
+            background: #fff;
             transition: background 0.3s ease-in;
-            transition: border 0.3s ease-in;
+            transition: background 0.3s ease-in;
+            transition: color 0.1s ease-in;
+            transition: box-shadow 0.3s ease-in;
+            .title{
+                text-indent: 18px;
+                background:#2C3444;
+                color: #fff;
+                transition: text-indent 0.3s ease-in;
+                transition: background 0.3s ease-in;
+                transition: color 0.1s ease-in;
+                -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+                -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+                transition: box-shadow 0.3s ease-in;
+            }
         }
-    }
-    .father{
-        height: 118px;
-        overflow: hidden;
-        position: relative;
-        z-index: 4;
-        line-height: 26px;
-        dt{
-            font-size: 16px;
-            padding-top: 10px;
-            padding-left: 12px;
-            margin-bottom: 4px;
-            font-weight: 500;
-            overflow: hidden;
-            position: relative;
-            -webkit-transition: all .3s ease;
-            -moz-transition: all .3s ease;
-            -ms-transition: all .3s ease;
-            transition: all .3s ease;
+        .title{
+            display: block;
+            width: 100%;
+            height: 34px;
+            text-indent: 12px;
+            line-height: 34px;
+            font-size: 14px;
+            transition: text-indent 0.3s ease-in;
         }
-         dd {
-            padding-left: 12px;
-            a {
-                display: inline-block;
-                margin-right: 10px;
-                font-size: 14px;
-                &:hover {
-                    color: #f35929;
-                    text-decoration: underline;
+        &:hover .down-subnav{
+            display: block;
+        }
+        .down-subnav{
+            display: none;
+        }
+        .down-subnav{
+            position: absolute;
+            top: -1px;
+            left: 258px;
+            width: 582px;
+            height: 489px;
+            border: #2c3444 solid 1px;
+            z-index: 9999;
+            background: #fff;
+            .items{
+                padding: 10px 15px;
+                li{
+                    float: left;
+                    width: 50%;
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                        text-align: left;
+                        padding: 4px 0;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .filtrate-box{
+            dt{
+                font-size: 16px;
+                line-height: 26px;
+                padding: 10px 0 5px;
+                border-bottom: 1px dashed #d9dce1;
+                margin-bottom: 5px;
+                a{
+                    color: #000;
+                    word-wrap: nowrap;
+                    word-break: keep-all;
+                    white-space: nowrap;
+                }
+            }
+            dd{
+                font-size: 12px;
+                line-height: 22px;
+                .split{
+                    display: inline-block;
+                    font-style: normal;
+                    width: 10px;
+                    text-align: center;
+                    color: #e5e5e5;
                 }
             }
         }
     }
+
 }
 
 #jc-rk{

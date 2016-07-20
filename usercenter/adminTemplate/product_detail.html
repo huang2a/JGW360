@@ -187,6 +187,105 @@
                         </label>
                     </li>
                     <li>
+                        <span class="item_name" style="width:120px;">适用工程：</span>
+                        <label class="single_selection">
+                            <input type="checkbox" id="checkbox-inl-1" checked="checked" name="checkbox">
+                            土建工程
+                        </label>
+                        <label class="single_selection">
+                            <input type="checkbox" id="checkbox-inl-2">
+                            安装工程
+                        </label>
+                        <label class="single_selection">
+                            <input type="checkbox" id="checkbox-inl-3">
+                            装饰工程
+                        </label>
+                        <label class="single_selection">
+                            <input type="checkbox" id="checkbox-inl-3">
+                            市政工程
+                        </label>
+                    </li>
+                    <li>
+                        <span class="item_name" style="width:120px;">工程类别：</span>
+                        <input type="button" value="地基基础工程" class="link_btn" id="showPopTxt2" value="checkbox" checked="false" >
+                        <input type="button" value="建筑主体工程" class="link_btn" id="showPopTxt3">
+                        <input type="button" value="防水、防腐工程" class="link_btn" id="showPopTxt4">
+                        <!--弹出框效果-->
+                        <script>
+                         $(document).ready(function(){
+                         //弹出文本性提示框
+                         $("#showPopTxt2").click(function(){
+                           $(".pop_bg2").fadeIn();
+                           });
+                         //弹出：确认按钮
+                         $(".trueBtn2").click(function(){
+                           $(".pop_bg2").fadeOut();
+                           });
+                         //弹出：取消或关闭按钮
+                         $(".falseBtn2").click(function(){
+                           $(".pop_bg2").fadeOut();
+                           });
+                         });
+                         </script>
+                        <section class="pop_bg pop_bg2">
+                            <div class="pop_cont">
+                                <!--title-->
+                                <h3>地基基础工程</h3>
+                                <!--content-->
+                                <div class="pop_cont_input">
+                                    <ul>
+                                        <li>
+                                            <label class="single_selection">
+                                                <input type="checkbox" id="checkbox-inl-3">
+                                                静压桩
+                                            </label>
+                                            <label class="single_selection">
+                                                <input type="checkbox" id="checkbox-inl-3">
+                                                锤机桩
+                                            </label>
+                                            <label class="single_selection">
+                                                <input type="checkbox" id="checkbox-inl-3">
+                                                挖掘桩
+                                            </label>
+                                            <label class="single_selection">
+                                                <input type="checkbox" id="checkbox-inl-3">
+                                                冲孔桩
+                                            </label>
+                                            <label class="single_selection">
+                                                <input type="checkbox" id="checkbox-inl-3">
+                                                人工挖孔桩
+                                            </label>
+                                            <label class="single_selection">
+                                                <input type="checkbox" id="checkbox-inl-3">
+                                                钻孔桩
+                                            </label>
+                                            <label class="single_selection">
+                                                <input type="checkbox" id="checkbox-inl-3">
+                                                钢板桩
+                                            </label>
+                                            <label class="single_selection">
+                                                <input type="checkbox" id="checkbox-inl-3">
+                                                搅拌桩
+                                            </label>
+                                            <label class="single_selection">
+                                                <input type="checkbox" id="checkbox-inl-3">
+                                                灌注桩
+                                            </label>
+                                            <label class="single_selection">
+                                                <input type="checkbox" id="checkbox-inl-3">
+                                                碎石桩
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btm_btn">
+                                    <input type="button" value="确认" class="input_btn trueBtn trueBtn2"/>
+                                    <input type="button" value="关闭" class="input_btn falseBtn falseBtn2"/>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li>
                         <span class="item_name" style="width:120px;">上传封面：</span>
                         <label class="uploadImg">
                             <input type="file"/>
@@ -221,27 +320,27 @@
                     </li>
                     <li>
                         <span class="item_name" style="width:120px;">规格型号：</span>
-                        <input type="button" value="新增规格" class="group_btn" id="showPopTxt"/>
+                        <input type="button" value="新增规格" class="group_btn" id="showPopTxt1"/>
                         <!--弹出框效果-->
                         <script>
                          $(document).ready(function(){
                          //弹出文本性提示框
-                         $("#showPopTxt").click(function(){
-                           $(".pop_bg").fadeIn();
+                         $("#showPopTxt1").click(function(){
+                           $(".pop_bg1").fadeIn();
                            });
                          //弹出：确认按钮
-                         $(".trueBtn").click(function(){
+                         $(".trueBtn1").click(function(){
                            alert("你点击了确认！");//测试
-                           $(".pop_bg").fadeOut();
+                           $(".pop_bg1").fadeOut();
                            });
                          //弹出：取消或关闭按钮
-                         $(".falseBtn").click(function(){
+                         $(".falseBtn1").click(function(){
                            alert("你点击了取消/关闭！");//测试
-                           $(".pop_bg").fadeOut();
+                           $(".pop_bg1").fadeOut();
                            });
                          });
                          </script>
-                        <section class="pop_bg">
+                        <section class="pop_bg pop_bg1">
                             <div class="pop_cont">
                                 <!--title-->
                                 <h3>新增规格型号</h3>
@@ -284,8 +383,8 @@
                                 <!--bottom:operate->
                                 button-->
                                 <div class="btm_btn">
-                                    <input type="button" value="确认" class="input_btn trueBtn"/>
-                                    <input type="button" value="关闭" class="input_btn falseBtn"/>
+                                    <input type="button" value="确认" class="input_btn trueBtn trueBtn1"/>
+                                    <input type="button" value="关闭" class="input_btn falseBtn falseBtn1"/>
                                 </div>
                             </div>
                         </section>
@@ -395,7 +494,6 @@
     <script src="js/ueditor.config.js"></script>
     <script src="js/ueditor.all.min.js"></script>
     <script type="text/javascript">
-
     //实例化编辑器
     //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
     var ue = UE.getEditor('editor-pc');
@@ -415,206 +513,7 @@
         enableBtn();
         UE.getEditor('editor-pc');
     }
-    function getAllHtml() {
-        alert(UE.getEditor('editor-pc').getAllHtml())
-    }
-    function getContent() {
-        var arr = [];
-        arr.push("使用editor.getContent()方法可以获得编辑器的内容");
-        arr.push("内容为：");
-        arr.push(UE.getEditor('editor-pc').getContent());
-        alert(arr.join("\n"));
-    }
-    function getPlainTxt() {
-        var arr = [];
-        arr.push("使用editor.getPlainTxt()方法可以获得编辑器的带格式的纯文本内容");
-        arr.push("内容为：");
-        arr.push(UE.getEditor('editor-pc').getPlainTxt());
-        alert(arr.join('\n'))
-    }
-    function setContent(isAppendTo) {
-        var arr = [];
-        arr.push("使用editor.setContent('欢迎使用ueditor')方法可以设置编辑器的内容");
-        UE.getEditor('editor-pc').setContent('欢迎使用ueditor', isAppendTo);
-        alert(arr.join("\n"));
-    }
-    function setDisabled() {
-        UE.getEditor('editor-pc').setDisabled('fullscreen');
-        disableBtn("enable");
-    }
-
-    function setEnabled() {
-        UE.getEditor('editor-pc').setEnabled();
-        enableBtn();
-    }
-
-    function getText() {
-        //当你点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
-        var range = UE.getEditor('editor-pc').selection.getRange();
-        range.select();
-        var txt = UE.getEditor('editor-pc').selection.getText();
-        alert(txt)
-    }
-
-    function getContentTxt() {
-        var arr = [];
-        arr.push("使用editor.getContentTxt()方法可以获得编辑器的纯文本内容");
-        arr.push("编辑器的纯文本内容为：");
-        arr.push(UE.getEditor('editor-pc').getContentTxt());
-        alert(arr.join("\n"));
-    }
-    function hasContent() {
-        var arr = [];
-        arr.push("使用editor.hasContents()方法判断编辑器里是否有内容");
-        arr.push("判断结果为：");
-        arr.push(UE.getEditor('editor-pc').hasContents());
-        alert(arr.join("\n"));
-    }
-    function setFocus() {
-        UE.getEditor('editor-pc').focus();
-    }
-    function deleteEditor() {
-        disableBtn();
-        UE.getEditor('editor-pc').destroy();
-    }
-    function disableBtn(str) {
-        var div = document.getElementById('btns');
-        var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
-        for (var i = 0, btn; btn = btns[i++];) {
-            if (btn.id == str) {
-                UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
-            } else {
-                btn.setAttribute("disabled", "true");
-            }
-        }
-    }
-    function enableBtn() {
-        var div = document.getElementById('btns');
-        var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
-        for (var i = 0, btn; btn = btns[i++];) {
-            UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
-        }
-    }
-
-    function getLocalData () {
-        alert(UE.getEditor('editor-pc').execCommand( "getlocaldata" ));
-    }
-
-    function clearLocalData () {
-        UE.getEditor('editor-pc').execCommand( "clearlocaldata" );
-        alert("已清空草稿箱")
-    }
 </script>
-   <script type="text/javascript">
 
-    //实例化编辑器
-    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
-    var ue = UE.getEditor('editor-app');
-    function isFocus(e){
-        alert(UE.getEditor('editor-app').isFocus());
-        UE.dom.domUtils.preventDefault(e)
-    }
-    function setblur(e){
-        UE.getEditor('editor-app').blur();
-        UE.dom.domUtils.preventDefault(e)
-    }
-    function insertHtml() {
-        var value = prompt('插入html代码', '');
-        UE.getEditor('editor-app').execCommand('insertHtml', value)
-    }
-    function createEditor() {
-        enableBtn();
-        UE.getEditor('editor-app');
-    }
-    function getAllHtml() {
-        alert(UE.getEditor('editor-app').getAllHtml())
-    }
-    function getContent() {
-        var arr = [];
-        arr.push("使用editor.getContent()方法可以获得编辑器的内容");
-        arr.push("内容为：");
-        arr.push(UE.getEditor('editor-app').getContent());
-        alert(arr.join("\n"));
-    }
-    function getPlainTxt() {
-        var arr = [];
-        arr.push("使用editor.getPlainTxt()方法可以获得编辑器的带格式的纯文本内容");
-        arr.push("内容为：");
-        arr.push(UE.getEditor('editor-app').getPlainTxt());
-        alert(arr.join('\n'))
-    }
-    function setContent(isAppendTo) {
-        var arr = [];
-        arr.push("使用editor.setContent('欢迎使用ueditor')方法可以设置编辑器的内容");
-        UE.getEditor('editor-app').setContent('欢迎使用ueditor', isAppendTo);
-        alert(arr.join("\n"));
-    }
-    function setDisabled() {
-        UE.getEditor('editor-app').setDisabled('fullscreen');
-        disableBtn("enable");
-    }
-
-    function setEnabled() {
-        UE.getEditor('editor-app').setEnabled();
-        enableBtn();
-    }
-
-    function getText() {
-        //当你点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
-        var range = UE.getEditor('editor-app').selection.getRange();
-        range.select();
-        var txt = UE.getEditor('editor-app').selection.getText();
-        alert(txt)
-    }
-
-    function getContentTxt() {
-        var arr = [];
-        arr.push("使用editor.getContentTxt()方法可以获得编辑器的纯文本内容");
-        arr.push("编辑器的纯文本内容为：");
-        arr.push(UE.getEditor('editor-app').getContentTxt());
-        alert(arr.join("\n"));
-    }
-    function hasContent() {
-        var arr = [];
-        arr.push("使用editor.hasContents()方法判断编辑器里是否有内容");
-        arr.push("判断结果为：");
-        arr.push(UE.getEditor('editor-app').hasContents());
-        alert(arr.join("\n"));
-    }
-    function setFocus() {
-        UE.getEditor('editor-app').focus();
-    }
-    function deleteEditor() {
-        disableBtn();
-        UE.getEditor('editor-app').destroy();
-    }
-    function disableBtn(str) {
-        var div = document.getElementById('btns');
-        var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
-        for (var i = 0, btn; btn = btns[i++];) {
-            if (btn.id == str) {
-                UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
-            } else {
-                btn.setAttribute("disabled", "true");
-            }
-        }
-    }
-    function enableBtn() {
-        var div = document.getElementById('btns');
-        var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
-        for (var i = 0, btn; btn = btns[i++];) {
-            UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
-        }
-    }
-
-    function getLocalData () {
-        alert(UE.getEditor('editor-app').execCommand( "getlocaldata" ));
-    }
-
-    function clearLocalData () {
-        UE.getEditor('editor-app').execCommand( "clearlocaldata" );
-        alert("已清空草稿箱")
-    }
-</script>
 </body>
 </html>

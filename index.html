@@ -186,7 +186,21 @@
         <a href="index.html">
           <img src="images/icon-logo.jpg" height="91" width="231" alt=""></a>
         <div class="map">
-          <a href="">广州【切换城市】</a>
+          <a id="popup-map-btn" href="##">广州【切换城市】</a>
+          <div id="popup-map-box">
+            <em class="close" id="popup-map-close">X</em>
+            <ul>
+              <li>
+                <span class="title">广东:</span><a href="">深圳</a><a href="">珠海</a><a href="">佛山</a><a href="">江门</a><a href="">肇庆</a><a href="">惠州</a><a href="">东莞</a><a href="">中山</a><a href="">汕头</a><a href="">湛江</a><a href="">清远</a><a href="">其他</a>
+              </li>
+              <li>
+                <span class="title">广东</span><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a>
+              </li>
+              <li>
+                <span class="title">广东</span><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="l-seach-box l-left">
@@ -235,9 +249,9 @@
               <dl class="father">
                 <dt>土建工程</dt>
                 <dd>
-                  <a href="dianpu/storeList.html">基地基础</a>
-                  <a href="dianpu/storeList.index.html">建筑主体</a>
-                  <a href="dianpu/storeList.html">防水、防腐</a>
+                  <a href="selection/index.html">基地基础</a>
+                  <a href="selection/index.html">建筑主体</a>
+                  <a href="selection/index.html">防水、防腐</a>
                 </dd>
               </dl>
               <div class="classification l-float">
@@ -245,9 +259,9 @@
                   <dl class="type-list l-float">
                     <dt>土建工程：</dt>
                     <dd>
-                      <a href="dianpu/storeList.html">基地基础</a>
-                      <a href="dianpu/storeList.html">建筑主体</a>
-                      <a href="dianpu/storeList.html">防水、防腐</a>
+                      <a href="selection/index.html">基地基础</a>
+                      <a href="selection/index.html">建筑主体</a>
+                      <a href="selection/index.html">防水、防腐</a>
                     </dd>
                   </dl>
                  </div>
@@ -1749,11 +1763,11 @@
     <p class="top_top">
       <a class="geren" href="####"></a>
     </p>
-    <p class="gwc">
+    <div class="gwc">
       <a class="gouwuche" href="####"></a>
-      <span class="tip" href="####">购物车</span>
+      <a class="tip" href="####">购物车</a>
       <span class="rows">0</span>
-    </p>
+    </div>
   </div>
   <div class="center">
 
@@ -1831,6 +1845,17 @@
   // $(".lazyload img").lazyload({
   //   effect : "fadeIn"
   // });
+  });
+  </script>
+  <!-- 地图 -->
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $("#popup-map-btn").click(function(){
+      $("#popup-map-box").fadeToggle(300);
+    });
+    $("#popup-map-close").click(function(){
+      $("#popup-map-box").fadeOut(300);
+    })
   });
   </script>
   <script src="js/echarts-all.js" type="text/javascript" charset="utf-8"></script>
