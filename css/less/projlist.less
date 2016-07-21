@@ -1,0 +1,80 @@
+.projlist-box{
+	display: block;
+	li{
+		display: block;
+		height: 160px;
+		padding: 10px 12px;
+		border-bottom: 1px dashed #ddd;
+		overflow: hidden;
+		.projimg{
+			display: block;
+			width: 160px;
+			height: 160px;
+			img{
+				width: 100%;
+			}
+		}
+		.projtit{
+			display: block;
+			width: 920px;
+			padding: 8px;
+			h2{
+				height: 24px;
+				line-height: 24px;
+				font-size: 18px;
+				font-weight: bold;
+				margin-bottom: 8px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				-o-text-overflow: ellipsis;
+				white-space: nowrap;
+				span{
+					margin-right: 4px;
+				}
+			}
+			.date{
+				font-size: 14px;
+				color: #bbb;
+				margin-bottom: 8px;
+			}
+			p.info{
+				display: -webkit-box;
+			    -webkit-line-clamp: 3;
+			    -webkit-box-orient: vertical;
+				height: 54px;
+				line-height: 18px;
+				margin-bottom: 14px;
+				overflow: hidden;
+			}
+			a.check{
+				color: #f35929;
+			}
+			a.check:hover{
+				text-decoration: underline;
+			}
+		}
+		.choose{
+			display: block;
+			margin: 14px 12px;
+			a{
+				display: inline-block;
+				padding: 6px 12px;
+				color: #fff;
+			}
+			a:hover{
+				color: rgba(255, 255, 255, 0.5);
+			}
+		}
+		&:hover{
+			background: #f6f1ee;
+		}
+	}
+}
+a.projchose{
+	display: inline-block;
+	padding: 12px 18px;
+	color: #fff;
+}
+a.projchose:hover{
+				color: rgba(255, 255, 255, 0.5);
+			}

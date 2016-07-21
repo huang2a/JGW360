@@ -468,6 +468,9 @@ a {
 .col-bai {
   color: #fff;
 }
+.col-slan {
+  color: #252f40;
+}
 .text-al {
   text-align: left;
 }
@@ -5915,4 +5918,84 @@ div.jqZoomPup {
   padding: 0 10px;
   margin-top: 2px;
   margin-left: 4px;
+}
+.projlist-box {
+  display: block;
+}
+.projlist-box li {
+  display: block;
+  height: 160px;
+  padding: 10px 12px;
+  border-bottom: 1px dashed #ddd;
+  overflow: hidden;
+}
+.projlist-box li .projimg {
+  display: block;
+  width: 160px;
+  height: 160px;
+}
+.projlist-box li .projimg img {
+  width: 100%;
+}
+.projlist-box li .projtit {
+  display: block;
+  width: 920px;
+  padding: 8px;
+}
+.projlist-box li .projtit h2 {
+  height: 24px;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.projlist-box li .projtit h2 span {
+  margin-right: 4px;
+}
+.projlist-box li .projtit .date {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 8px;
+}
+.projlist-box li .projtit p.info {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 54px;
+  line-height: 18px;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+.projlist-box li .projtit a.check {
+  color: #f35929;
+}
+.projlist-box li .projtit a.check:hover {
+  text-decoration: underline;
+}
+.projlist-box li .choose {
+  display: block;
+  margin: 14px 12px;
+}
+.projlist-box li .choose a {
+  display: inline-block;
+  padding: 6px 12px;
+  color: #fff;
+}
+.projlist-box li .choose a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.projlist-box li:hover {
+  background: #f6f1ee;
+}
+a.projchose {
+  display: inline-block;
+  padding: 12px 18px;
+  color: #fff;
+}
+a.projchose:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
