@@ -65,6 +65,11 @@
         float: left;
         margin-right: 10px;
     }
+    .w60{
+        width: 60px;
+        float: left;
+        margin-right: 10px;
+    }
     label {
         display: inline-block;
         max-width: 100%;
@@ -102,6 +107,39 @@
         }
         .hui{
             color: #ccc;
+        }
+    }
+    .form-pic{
+        display: block;
+        overflow: hidden;
+        img{
+            width: 80%;
+        }
+        span{
+            display: inline-block;
+            position: relative;
+            top: -26px;
+            width: 80%;
+            height: 24px;
+            line-height: 24px;
+            background: rgba(0, 0, 0, 0.5);
+            margin-left: -0;
+            text-indent: 4px;
+            color: #fff;
+            em{
+                display: inline-block;
+                width: 84%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -o-text-overflow: ellipsis;
+                white-space: nowrap;
+            }  
+        }
+        a.delete{
+            img{
+                width: auto;
+                vertical-align: middle;
+            }
         }
     }
 }
