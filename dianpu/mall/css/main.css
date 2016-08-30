@@ -1155,7 +1155,7 @@ input:-ms-input-placeholder {
 #nav li {
   float: left;
   height: 60px;
-  width: 134.28571429px;
+  width: 133.3333333px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1191,6 +1191,32 @@ input:-ms-input-placeholder {
   text-align: center;
   overflow: hidden;
 }
+.shoplist-box .price{
+  padding-top: 10px;
+}
+.shoplist-box .price .qian {
+    font-size: 20px;
+    color: #f35929;
+}
+.shoplist-box .price .zhi {
+    font-family: 宋体;
+    width: 47px;
+    height: 14px;
+    text-align: center;
+    vertical-align: middle;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    line-height: 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(229, 217, 173);
+    background: rgb(250, 255, 225);
+}
 .shoplist-box .shop-img:hover img {
   transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -1225,12 +1251,11 @@ input:-ms-input-placeholder {
   border: #ddd solid 1px;
 }
 .shoplist-box li .title {
-  display: block;
-  height: 50px;
-  padding-top: 6px;
-  padding-bottom: 10px;
-  line-height: 28px;
-  overflow: hidden;
+    display: block;
+    height: 46px;
+    padding-top: 6px;
+    line-height: 24px;
+    overflow: hidden;
 }
 .shoplist-box li .title:hover {
   color: #f35929;
