@@ -1504,6 +1504,7 @@ input:-ms-input-placeholder {
 #news-sub {
   width: 258px;
   border-top: #2c3444 solid 4px;
+  border-bottom: #ddd solid 1px;
 }
 #news-sub .accordion {
   height: 34px;
@@ -1514,6 +1515,7 @@ input:-ms-input-placeholder {
   border-bottom: #ddd dashed 1px;
   border-right: #ddd solid 1px;
   border-left: #ddd solid 1px;
+  cursor: pointer;
 }
 #news-sub .accordion a{
   display: inline-block;
@@ -1530,6 +1532,27 @@ input:-ms-input-placeholder {
   float: right;
   padding-right: 10px;
   font-family: '宋体';
+}
+#news-sub .accordion-desc {
+  background: #f6f1ee;
+}
+#news-sub .accordion-desc p {
+  height: 34px;
+  padding-left: 30px;
+  border-right: 1px #ddd solid;
+  border-left: 1px #ddd solid;
+  background: url(../../images/xinwen/icon-jiant.png) 14px 9px no-repeat;
+}
+#news-sub .accordion-desc p:hover {
+  background: url(../../images/xinwen/icon-jiant.png) #ffffff 14px 9px no-repeat;
+}
+#news-sub .accordion-desc p a {
+  line-height: 34px;
+  font-size: 14px;
+}
+#news-sub .accordion-desc p a:hover {
+  text-decoration: underline;
+  color: #f35929;
 }
 #news-list {
   width: 896px;
@@ -1859,7 +1882,7 @@ input:-ms-input-placeholder {
   margin: 10px 5px!important;
 }
 /* 项目首页 */
-#jdgc {
+/*#jdgc {
   min-height: 340px;
 }
 #jdgc .w264 {
@@ -1901,6 +1924,23 @@ input:-ms-input-placeholder {
   -moz-transform: scale(0.9);
   -webkit-transform: scale(0.9);
   -o-transform: scale(0.9);
+}*/
+#news-home{
+    width: 892px;
+    padding: 10px;
+}
+#news-home .one {
+    border-bottom: #2c3444 solid 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#news-home .title {
+    padding-left: 14px;
+    background: url(../images/icon-point.png) left center no-repeat;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
 }
 /* 项目首页 */
 #xmsy-list .title {

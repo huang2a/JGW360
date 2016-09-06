@@ -128,19 +128,19 @@
 #xuqiu{
     .title{
         display: block;
-        height: 50px;
+        height: 40px;
         li{
             float: left;
-            height: 50px;
-            line-height: 50px;
+            height: 40px;
+            line-height: 40px;
             text-align: center;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
         }
     }
     .item{
         display: block;
-        height: 106px;
+        height: 40px;
         border-top: #ddd solid 1px;
         &:hover{
             background:#f6f1ee;
@@ -149,27 +149,28 @@
         li{
             float: left;
             text-align: center;
-            display:table;
-            height: 106px;
+            display:block;
+            height: 40px;
+            line-height: 40px;
             span{
                 display: block;
-                font-size: 16px;
+                font-size: 12px;
                 height: 100%;
-                display: table-cell;
-                vertical-align: middle;
+            }
+            .btn-primary{
+                padding: 2px 20px !important;
             }
         }
         .row1{
             width: 478px;
             text-align: left;
-            font-size: 18px;
+            font-size: 14px;
             padding-left: 20px;
             color: #2c3444;
             a{
-                height: 100%;
-                display: table-cell;
-                vertical-align: middle;
-                line-height: 24px;
+                display:block;
+                width: 100%;
+                .ov-text();
                 &:hover{
                     text-decoration: underline;
                     .col-cheng();
@@ -190,13 +191,12 @@
     .row6{
         width:396px;
         padding-left: 12px;
-        font-size: 18px;
+        font-size: 14px;
         a{
-            height: 100%;
-            display: table-cell;
+            display: block;
+            width: 100%;
             text-align: left;
-            vertical-align: middle;
-            line-height: 24px;
+            .ov-text();
             &:hover{
                 text-decoration: underline;
                 .col-cheng();
@@ -233,13 +233,13 @@
     padding: 10px 24px;
     .title{
         line-height: 30px;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
         border-bottom: #2c3444 solid 1px;
     }
     table{
         td{
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
         }
         .xian{
