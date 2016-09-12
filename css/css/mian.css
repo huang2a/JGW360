@@ -129,9 +129,7 @@ kbd,
 q,
 s,
 samp,
-small,
 strike,
-strong,
 sub,
 sup,
 tt,
@@ -531,6 +529,11 @@ input:-ms-input-placeholder {
 }
 .border-xb {
   border-bottom: dashed #ddd 1px;
+}
+.radius5 {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 .pd4 {
   padding: 4px 0;
@@ -4449,10 +4452,11 @@ div.jqZoomPup {
   top: -1px;
   left: 258px;
   width: 582px;
-  height: 489px;
+  height: 454px;
   border: #2c3444 solid 1px;
   z-index: 9999;
   background: #fff;
+  overflow: auto;
 }
 #subnav-jc .item .down-subnav .items {
   padding: 10px 15px;
@@ -5119,6 +5123,8 @@ div.jqZoomPup {
 }
 .qyk-column-main {
   font-size: 16px;
+  height: 308px;
+  overflow: hidden;
 }
 .qyk-column-main table tr:hover {
   background: #fafafa !important;
