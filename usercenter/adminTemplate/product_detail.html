@@ -54,7 +54,7 @@
     </header>
     <!--aside nav-->
     <!--aside nav-->
-    <aside class="lt_aside_nav content mCustomScrollbar">
+    <aside class="lt_aside_nav content mCustomScrollbar _mCS_">
         <h2>
             <a href="index.html">起始页</a>
         </h2>
@@ -140,7 +140,7 @@
             </li>
         </ul>
     </aside>
-    <section class="rt_wrap content mCustomScrollbar">
+    <section class="rt_wrap content-mian">
         <div class="rt_content">
             <div class="page_title">
                 <h2 class="fl">商品添加</h2>
@@ -288,12 +288,40 @@
                     </li>
                     <li>
                         <span class="item_name" style="width:120px;">上传封面：</span>
-                        <label class="uploadImg">
-                            <input type="file"/>
+                        <label class="uploadImg" id="showPopTxt6">
                             <span>上传封面图</span>
                         </label>
                         <span class="errorTips">上传正方形的一张封面图片...</span>
                     </li>
+                    <script>
+                     $(document).ready(function(){
+                     //弹出文本性提示框
+                     $("#showPopTxt6").click(function(){
+                       $(".pop_bg6").fadeIn();
+                       });
+                     //弹出：确认按钮
+                     $(".trueBtn6").click(function(){
+                       $(".pop_bg6").fadeOut();
+                       });
+                     //弹出：取消或关闭按钮
+                     $(".falseBtn6").click(function(){
+                       $(".pop_bg6").fadeOut();
+                       });
+                     });
+                     </script>
+                     <section class="pop_bg pop_bg6">
+                            <div class="pop_cont" style="width: 566px;margin-left: -283px;">
+                                <!--title-->
+                                <h3>上传封面</h3>
+                                <!--content-->
+                                <iframe frameborder="0" scrolling="no" width="566" height="380" src="userimg/index.html" ></iframe>
+                                <div class="btm_btn">
+                                    <input type="button" value="确认" class="input_btn trueBtn trueBtn6"/>
+                                    <input type="button" value="关闭" class="input_btn falseBtn falseBtn6"/>
+                                </div>
+                            </div>
+                        </section>
+
                     <li>
                         <div class="uploadImg-show">
                             <span class="item_name" style="width:120px;">封面预览：</span>

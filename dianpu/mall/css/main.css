@@ -770,7 +770,19 @@ input:-ms-input-placeholder {
   text-decoration: underline;
 }
 .l-header-box {
+  position: relative;
   padding: 10px 0;
+}
+.l-header-box .shoucang{
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    right: 12px;
+    background: #F45929;
+    padding: 4px 10px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 3px;
 }
 .l-header-box .logo-box {
   width:210px;

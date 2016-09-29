@@ -432,6 +432,9 @@ textarea {
 .font20 {
   font-size: 20px;
 }
+.font22 {
+  font-size: 22px;
+}
 .font24 {
   font-size: 24px;
 }
@@ -2403,6 +2406,11 @@ input:-ms-input-placeholder {
   padding: 5px 13px;
   color: #666;
   border: 1px solid #cecbce;
+}
+.product .one .right .size .allowed {
+  cursor: not-allowed !important;
+  border: 1px dashed #ccc;
+  color: #999;
 }
 .product .one .right .size .on {
   color: #666;
@@ -4932,9 +4940,6 @@ div.jqZoomPup {
   text-indent: 4px;
   color: #f35929;
 }
-#jixie-bl {
-  border-right: none;
-}
 #jixie-bl li {
   float: left;
   width: 238.812px;
@@ -5150,6 +5155,9 @@ div.jqZoomPup {
   text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
   white-space: nowrap;
+}
+.qyk-column-class {
+  overflow: hidden;
 }
 .qyk-column-class table .bb {
   border-bottom: #ddd solid 1px;
