@@ -20,7 +20,18 @@
               $(".content .mCSB_container").append(data);
               //load new content inside .mCSB_container
               //scroll-to appended content
-              $(".content").mCustomScrollbar("scrollTo","h2:last");
+              $(".content").mCustomScrollbar(
+                // "scrollTo","h2:last"
+                    {
+                        scrollButtons:{
+                            enable:false,
+                            scrollType:"continuous",
+                            scrollSpeed:20,
+                            scrollAmount:40
+                        },
+                        horizontalScroll:false,
+                    }
+                );
             });
           });
           $(".content").delegate("a[href='top']","click",function(e){

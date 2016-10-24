@@ -62,6 +62,10 @@ small,weak{color:#666}
 .rmb_icon:before{content:"￥";margin-right:2px;}
 .ellipsis{text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
 .center{text-align:center;}
+.content-mian{
+    margin-right: 0 !important;
+    overflow-y: auto;
+}
 .fl{float:left;}
 .fr{float:right;}
 .mtb{margin:5px 0;overflow:hidden;}

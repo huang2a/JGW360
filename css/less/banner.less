@@ -5,7 +5,7 @@
 }
 .big-banner{
   overflow: hidden;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
   img{
     // width:100%;
   }
@@ -23,7 +23,7 @@
     width: 30px;
     height: 50px;
     line-height: 50px;
-    background: rgba(44, 52, 68,.6);;
+    // background: rgba(44, 52, 68,.3);
     color: #fff;
     z-index: 90;
     font-family: '宋体';
@@ -64,38 +64,45 @@
 }
 .roll-banner{
   position: relative;
-  width: 580px;
-  height: 105px;
+  width: 578px;
+  height: 103px;
+  padding: 4px 0;
   overflow: hidden;
+  background: #f6f1ee;
+  border:1px solid #ddd;
   li{
     list-style-type: none;
     float: left;
   }
   .roll-banner-prev{
     position: absolute;
-    top:0;
-    left: 0;
+    top:50%;
+    left: 5px;
     width: 30px;
-    height: 104px;
-    line-height: 104px;
+    height: 30px;
+    margin-top: -15px;
+    line-height: 30px;
     font-family: '宋体';
-    .bg-zhong();
+    .bg-hui();
     .text-ac();
     .font24();
     .col-bai();
+    .border-radius(30px);
   }
   .roll-banner-next{
     position: absolute;
-    top:0;
-    right: 0;
+    top:50%;
+    right: 5px;
     width: 30px;
-    height: 104px;
-    line-height: 104px;
+    height: 30px;
+    margin-top: -15px;
+    line-height: 30px;
     font-family: '宋体';
-    .bg-zhong();
+    .bg-hui();
     .text-ac();
     .font24();
     .col-bai();
+    .border-radius(30px);
   }
   #roll-banner-marquee{
     margin-left: 38px;

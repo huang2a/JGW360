@@ -10,24 +10,24 @@
     <![endif]-->
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script>
-      (function($){
-        $(window).load(function(){
-          $("a[rel='load-content']").click(function(e){
-            e.preventDefault();
-            var url=$(this).attr("href");
-            $.get(url,function(data){
-              $(".content .mCSB_container").append(data); //load new content inside .mCSB_container
-              //scroll-to appended content
-              $(".content").mCustomScrollbar("scrollTo","h2:last");
+    <script type="text/javascript" charset="utf-8" src="js/lang/zh-cn/zh-cn.js"></script>
+    <script type='text/javascript'>
+        (function($){
+            $(document).ready(function(){
+                $(".content").mCustomScrollbar(
+                    {
+                        scrollButtons:{
+                            enable:false,
+                            scrollType:"continuous",
+                            scrollSpeed:20,
+                            scrollAmount:40
+                        },
+                        horizontalScroll:false,
+                        mouseWheelPixels:600,
+                    }
+                );
             });
-          });
-          $(".content").delegate("a[href='top']","click",function(e){
-            e.preventDefault();
-            $(".content").mCustomScrollbar("scrollTo",$(this).attr("href"));
-          });
-        });
-      })(jQuery);
+        })(jQuery);
     </script>
 </head>
 <body>
@@ -53,7 +53,7 @@
     </header>
     <!--aside nav-->
     <!--aside nav-->
-    <aside class="lt_aside_nav content mCustomScrollbar">
+    <aside class="lt_aside_nav content mCustomScrollbar _mCS_">
         <h2>
             <a href="index.html">起始页</a>
         </h2>
@@ -139,7 +139,7 @@
             </li>
         </ul>
     </aside>
-    <section class="rt_wrap content mCustomScrollbar">
+    <section class="rt_wrap content-mian">
         <div class="rt_content">
             <div class="page_title">
                 <h2 class="fl">商品添加</h2>
@@ -287,12 +287,40 @@
                     </li>
                     <li>
                         <span class="item_name" style="width:120px;">上传封面：</span>
-                        <label class="uploadImg">
-                            <input type="file"/>
+                        <label class="uploadImg" id="showPopTxt6">
                             <span>上传封面图</span>
                         </label>
                         <span class="errorTips">上传正方形的一张封面图片...</span>
                     </li>
+                    <script>
+                     $(document).ready(function(){
+                     //弹出文本性提示框
+                     $("#showPopTxt6").click(function(){
+                       $(".pop_bg6").fadeIn();
+                       });
+                     //弹出：确认按钮
+                     $(".trueBtn6").click(function(){
+                       $(".pop_bg6").fadeOut();
+                       });
+                     //弹出：取消或关闭按钮
+                     $(".falseBtn6").click(function(){
+                       $(".pop_bg6").fadeOut();
+                       });
+                     });
+                     </script>
+                     <section class="pop_bg pop_bg6">
+                            <div class="pop_cont" style="width: 566px;margin-left: -283px;">
+                                <!--title-->
+                                <h3>上传封面</h3>
+                                <!--content-->
+                                <iframe frameborder="0" scrolling="no" width="566" height="380" src="userimg/index.html" ></iframe>
+                                <div class="btm_btn">
+                                    <input type="button" value="确认" class="input_btn trueBtn trueBtn6"/>
+                                    <input type="button" value="关闭" class="input_btn falseBtn falseBtn6"/>
+                                </div>
+                            </div>
+                        </section>
+
                     <li>
                         <div class="uploadImg-show">
                             <span class="item_name" style="width:120px;">封面预览：</span>
@@ -448,35 +476,7 @@
                             </ul>
                             <!--tabCont-->
                             <div class="admin_tab_cont" style="display:block;">
-                                <script id="editor-pc" type="text/plain" style="width:1000px;height:400px;margin-left:50px;margin-top:0;"></script>
-                                <!--ueditor可删除下列信息-->
-                                <div id="btns" style="margin-left:50px;margin-top:8px;">
-                                    <div>
-                                        <button onclick="getAllHtml()">获得整个html的内容</button>
-                                        <button onclick="getContent()">获得内容</button>
-                                        <button onclick="setContent()">写入内容</button>
-                                        <button onclick="setContent(true)">追加内容</button>
-                                        <button onclick="getContentTxt()">获得纯文本</button>
-                                        <button onclick="getPlainTxt()">获得带格式的纯文本</button>
-                                        <button onclick="hasContent()">判断是否有内容</button>
-                                        <button onclick="setFocus()">使编辑器获得焦点</button>
-                                        <button onmousedown="isFocus(event)">编辑器是否获得焦点</button>
-                                        <button onmousedown="setblur(event)" >编辑器失去焦点</button>
-                                    </div>
-                                    <div>
-                                        <button onclick="getText()">获得当前选中的文本</button>
-                                        <button onclick="insertHtml()">插入给定的内容</button>
-                                        <button id="enable" onclick="setEnabled()">可以编辑</button>
-                                        <button onclick="setDisabled()">不可编辑</button>
-                                        <button onclick=" UE.getEditor('editor').setHide()">隐藏编辑器</button>
-                                        <button onclick=" UE.getEditor('editor').setShow()">显示编辑器</button>
-                                        <button onclick=" UE.getEditor('editor').setHeight(300)">设置高度为300默认关闭了自动长高</button>
-                                    </div>
-                                    <div>
-                                        <button onclick="getLocalData()" >获取草稿箱内容</button>
-                                        <button onclick="clearLocalData()" >清空草稿箱</button>
-                                    </div>
-                                </div>
+                                <script id="editor-pc" type="text/plain" style="width:1000px;height:300px;margin-left:50px;margin-top:0;"></script>
                             </div>
                             <div class="admin_tab_cont">
                                 <script id="editor-app" type="text/plain" style="width:640px;height:400px;    margin: 0 auto;"></script>
@@ -493,26 +493,19 @@
     </section>
     <script src="js/ueditor.config.js"></script>
     <script src="js/ueditor.all.min.js"></script>
-    <script type="text/javascript">
+
+<script type="text/javascript">
+
     //实例化编辑器
     //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
-    var ue = UE.getEditor('editor-pc');
-    function isFocus(e){
-        alert(UE.getEditor('editor-pc').isFocus());
-        UE.dom.domUtils.preventDefault(e)
-    }
-    function setblur(e){
-        UE.getEditor('editor-pc').blur();
-        UE.dom.domUtils.preventDefault(e)
-    }
-    function insertHtml() {
-        var value = prompt('插入html代码', '');
-        UE.getEditor('editor-pc').execCommand('insertHtml', value)
-    }
-    function createEditor() {
-        enableBtn();
-        UE.getEditor('editor-pc');
-    }
+   var ue = UE.getEditor('editor-pc', {
+        autoHeightEnabled: false,
+        autoFloatEnabled: false,
+        toolbars: [
+            ['fullscreen', 'source', 'undo', 'redo'],
+            ['bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc']
+        ]
+    });
 </script>
 
 </body>

@@ -30,7 +30,7 @@
             top: 0;
             left: 260px;
             width: 236px;
-            height: 535px;
+            height: 468px;
             border: #2c3444 solid 1px;
             border-left: none;
             z-index: 9999;
@@ -66,7 +66,16 @@
 .down-subnav{
     display: none;
 }
-
+#gc-fabu{
+    background: #F35929;
+    display: block;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    color: #FFFFFF;
+    font-size: 18px;
+    border-radius: 3px;
+}
 
 #chengjiao{
     position: relative;
@@ -119,19 +128,19 @@
 #xuqiu{
     .title{
         display: block;
-        height: 50px;
+        height: 40px;
         li{
             float: left;
-            height: 50px;
-            line-height: 50px;
+            height: 40px;
+            line-height: 40px;
             text-align: center;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
         }
     }
     .item{
         display: block;
-        height: 106px;
+        height: 40px;
         border-top: #ddd solid 1px;
         &:hover{
             background:#f6f1ee;
@@ -140,27 +149,28 @@
         li{
             float: left;
             text-align: center;
-            display:table;
-            height: 106px;
+            display:block;
+            height: 40px;
+            line-height: 40px;
             span{
                 display: block;
-                font-size: 16px;
+                font-size: 12px;
                 height: 100%;
-                display: table-cell;
-                vertical-align: middle;
+            }
+            .btn-primary{
+                padding: 2px 20px !important;
             }
         }
         .row1{
             width: 478px;
             text-align: left;
-            font-size: 18px;
+            font-size: 14px;
             padding-left: 20px;
             color: #2c3444;
             a{
-                height: 100%;
-                display: table-cell;
-                vertical-align: middle;
-                line-height: 24px;
+                display:block;
+                width: 100%;
+                .ov-text();
                 &:hover{
                     text-decoration: underline;
                     .col-cheng();
@@ -172,21 +182,21 @@
         width: 498px;
     }
     .row2,.row3,.row4{
-        width: 150px;
+        width: 140px;
     }
     .row5{
         width: 250px;
     }
+
     .row6{
         width:396px;
         padding-left: 12px;
-        font-size: 18px;
+        font-size: 14px;
         a{
-            height: 100%;
-            display: table-cell;
+            display: block;
+            width: 100%;
             text-align: left;
-            vertical-align: middle;
-            line-height: 24px;
+            .ov-text();
             &:hover{
                 text-decoration: underline;
                 .col-cheng();
@@ -195,6 +205,9 @@
     }
     .row7{
         width: 120px;
+    }
+    .row8{
+        width: 140px;
     }
 }
 
@@ -220,13 +233,13 @@
     padding: 10px 24px;
     .title{
         line-height: 30px;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
         border-bottom: #2c3444 solid 1px;
     }
     table{
         td{
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
         }
         .xian{
@@ -237,7 +250,7 @@
             font-size: 12px;
         }
     }
-    #info{
+    #info,.info{
         padding: 20px 0;
         font-size: 14px;
         color: #2c3444;

@@ -1,0 +1,129 @@
+.projlist-box{
+	display: block;
+	li{
+		display: block;
+		height: 160px;
+		padding: 10px 12px;
+		border-bottom: 1px dashed #ddd;
+		overflow: hidden;
+		.projimg{
+			display: block;
+			width: 160px;
+			height: 160px;
+			img{
+				width: 100%;
+			}
+		}
+		.projtit{
+			display: block;
+			width: 920px;
+			padding: 8px;
+			h2{
+				height: 24px;
+				line-height: 24px;
+				font-size: 18px;
+				font-weight: bold;
+				margin-bottom: 8px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				-o-text-overflow: ellipsis;
+				white-space: nowrap;
+				span{
+					margin-right: 4px;
+				}
+			}
+			.date{
+				font-size: 14px;
+				color: #bbb;
+				margin-bottom: 8px;
+			}
+			p.info{
+				display: -webkit-box;
+			    -webkit-line-clamp: 3;
+			    -webkit-box-orient: vertical;
+				height: 54px;
+				line-height: 18px;
+				margin-bottom: 14px;
+				overflow: hidden;
+			}
+			a.check{
+				color: #f35929;
+			}
+			a.check:hover{
+				text-decoration: underline;
+			}
+		}
+		.choose{
+			display: block;
+			margin: 14px 12px;
+			a{
+				display: inline-block;
+				padding: 6px 12px;
+				color: #fff;
+			}
+			a:hover{
+				color: rgba(255, 255, 255, 0.5);
+			}
+		}
+		&:hover{
+			background: #f6f1ee;
+		}
+	}
+}
+a.projchose{
+	display: inline-block;
+	padding: 12px 18px;
+	color: #fff;
+}
+a.projchose:hover{
+	color: rgba(255, 255, 255, 0.5);
+}
+#creatorder{
+	padding: 10px 24px;
+	.title{
+		line-height: 34px;
+		font-size: 20px;
+		font-weight: 600;
+		border-bottom: #2c3444 solid 1px;
+	}
+	table{
+		border-bottom: #2c3444 solid 1px;
+		td{
+			font-size: 18px;
+			font-weight: 500;
+			input{
+				width: 120px;
+				height: 24px;
+				padding: 0 8px;
+				border: 1px solid #f35929;
+				.placeholder(#bbb) !important;
+			}
+		}
+		.tit{
+			color: #f35929;
+			border-bottom: #bbb solid 1px;
+		}
+	}
+	.square{
+		display: block;
+		height: 48px;
+		line-height: 48px;
+		span{
+			font-size: 18px;
+		}
+		a.payorder{
+			display: block;
+			width: 128px;
+			float: right;
+			margin-right: 48px;
+			text-align: center;
+			background: #f35929;
+			font-size: 18px;
+			color: #fff;
+		}
+		a.payorder:hover{
+			color: rgba(255, 255, 255, 0.5);
+			transition: 0.6s;
+		}
+	}
+}
