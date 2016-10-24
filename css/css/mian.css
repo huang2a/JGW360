@@ -4393,14 +4393,19 @@ div.jqZoomPup {
   font-weight: 500;
   border-bottom: #2c3444 solid 1px;
 }
-#xiangqing table td {
+#xiangqing #project-info-box ul li {
+  width: 50%;
+  height: 32px;
+  line-height: 32px;
   font-size: 14px;
   font-weight: 500;
+  float: left;
+  padding: 5px 0;
 }
-#xiangqing table .xian {
+#xiangqing #project-info-box .xian {
   border-top: dashed #ddd 1px;
 }
-#xiangqing table .tip {
+#xiangqing #project-info-box .tip {
   color: #7b594a;
   font-size: 12px;
 }
@@ -4419,34 +4424,28 @@ div.jqZoomPup {
   border-bottom: none;
 }
 #subnav-jc .item {
-  height: 34px;
+  height: 39px;
   border-bottom: #ddd solid 1px;
 }
 #subnav-jc .item:hover {
   background: #fff;
-  transition: background 0.3s ease-in;
-  transition: color 0.1s ease-in;
-  transition: box-shadow 0.3s ease-in;
 }
 #subnav-jc .item:hover .title {
   text-indent: 18px;
-  background: #2C3444;
-  color: #fff;
-  transition: text-indent 0.3s ease-in;
-  transition: background 0.3s ease-in;
-  transition: color 0.1s ease-in;
-  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  transition: box-shadow 0.3s ease-in;
+  background: #f6f1ee;
+  color: #2c3444;
+  border-top: #2c3444 solid 1px;
+  border-bottom: #2c3444 solid 1px;
+  border-right: #f6f1ee solid 1px;
+  border-left: #2c3444 solid 1px;
 }
 #subnav-jc .item .title {
   display: block;
   width: 100%;
-  height: 34px;
+  height: 39px;
   text-indent: 12px;
-  line-height: 34px;
-  font-size: 14px;
+  line-height: 39px;
+  font-size: 18px;
   transition: text-indent 0.3s ease-in;
 }
 #subnav-jc .item:hover .down-subnav {
@@ -4458,12 +4457,13 @@ div.jqZoomPup {
 #subnav-jc .item .down-subnav {
   position: absolute;
   top: -1px;
-  left: 258px;
+  left: 259px;
   width: 582px;
-  height: 454px;
+  height: 360px;
   border: #2c3444 solid 1px;
+  border-left: none;
   z-index: 9999;
-  background: #fff;
+  background: #f6f1ee;
   overflow: auto;
 }
 #subnav-jc .item .down-subnav .items {
@@ -4492,9 +4492,10 @@ div.jqZoomPup {
   word-wrap: nowrap;
   word-break: keep-all;
   white-space: nowrap;
+  font-size: 18px;
 }
 #subnav-jc .item .filtrate-box dd {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 22px;
 }
 #subnav-jc .item .filtrate-box dd .split {
@@ -4716,12 +4717,10 @@ div.jqZoomPup {
 }
 #subnav-jx .item:hover {
   border-bottom: #2C3444 solid 1px;
-  background: #2C3444;
-  transition: background 0.3s ease-in;
-  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  transition: box-shadow 0.3s ease-in;
+  border-top: #2c3444 solid 1px;
+  border-right: #f6f1ee solid 1px;
+  border-left: #2c3444 solid 1px;
+  background: #f6f1ee;
 }
 #subnav-jx .item:hover .title {
   text-indent: 18px;
@@ -4729,7 +4728,7 @@ div.jqZoomPup {
 }
 #subnav-jx .item:hover .text-box,
 #subnav-jx .item:hover .title {
-  color: #fff;
+  color: #2c3444;
 }
 #subnav-jx .item .title {
   display: block;
@@ -4737,7 +4736,7 @@ div.jqZoomPup {
   height: 34px;
   text-indent: 12px;
   line-height: 34px;
-  font-size: 16px;
+  font-size: 18px;
   transition: text-indent 0.3s ease-in;
 }
 #subnav-jx .item .text-box {
@@ -4749,6 +4748,7 @@ div.jqZoomPup {
   display: inline-block;
   padding-left: 5px;
   padding-bottom: 5px;
+  font-size: 14px;
 }
 #subnav-jx .item:hover .down-subnav {
   display: block;
@@ -4759,12 +4759,13 @@ div.jqZoomPup {
 #subnav-jx .item .down-subnav {
   position: absolute;
   top: -1px;
-  left: 258px;
+  left: 259px;
   width: 582px;
   height: 414px;
   border: #2c3444 solid 1px;
+  border-left: none;
   z-index: 9999;
-  background: #fff;
+  background: #f6f1ee;
   overflow: hidden;
 }
 #subnav-jx .item .down-subnav .items {
@@ -4796,9 +4797,10 @@ div.jqZoomPup {
   word-wrap: nowrap;
   word-break: keep-all;
   white-space: nowrap;
+  font-size: 18px;
 }
 #subnav-jx .item .filtrate-box dd {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 22px;
 }
 #subnav-jx .item .filtrate-box dd .split {
