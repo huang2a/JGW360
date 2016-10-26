@@ -22,14 +22,16 @@
 	    	}
 	    }
 	    .time{
-	    	position: absolute;
-		    top: 5px;
-		    left: 5px;
-		    width: 180px;
-		    background-color: rgba(243, 89, 41, 0.8);
-		    padding: 10px;
-		    color: #fff;
 		    .font12;
+		    padding:0 0 5px 0;
+		    i{
+		    	color: #f35929;
+		    	font-style: normal;
+		    }
+	    }
+	    .volume-count{
+	    	.font12;
+	    	padding-bottom: 5px;
 	    }
 	    .price{
 	    	padding-top: 10px;
@@ -58,37 +60,10 @@
 	    .title{
 	    	display: block;
 		    height: 46px;
-		    padding-top: 6px;
+		    padding: 10px 0;
 		    line-height: 24px;
 		    overflow: hidden;
 	    }
-	}
-	.volume{
-		    padding: 0 0 4px 0;
-		    .icon-autotrtopht{
-		    	background-position: 0 0;
-		    }
-		    .icon-jgt{
-		    	background-position: -26px 0
-
-		    }
-		    i{
-		    	display: inline-block;
-			    width: 16px;
-			    height: 16px;
-			    float: left;
-			    font-size: 0;
-			    border: #ddd solid 1px;
-			    background: url(../../images/shopcity/icon-service.png) no-repeat;
-		    }
-	}
-	.time{
-		position: absolute;
-	    top: 5px;
-	    left: 5px;
-	    background-color: rgba(243, 89, 41, 0.8);
-	    padding: 10px;
-	    color: #fff;
 	}
 	.bg-yucai-btn{
 		height: 40px;
@@ -104,7 +79,7 @@
 }
 
 // yucaiinfo
-#pro-detail-yc{
+#product-yc{
 	.jqzoom{
 		width: 475px;
 	    height: 475px;
@@ -113,23 +88,37 @@
 	    	height: 475px;
 	    }
 	}
-}
-.yucai-time{
-	width: 578px;
-	background: #f6f1ee;
-	border:1px solid #ddd;
-	padding: 10px;
-	line-height: 30px;
-	margin: 15px 0;
-	.time-title{
-		color: #999;
+	.title{
+		height: 50px;
+		line-height: 24px;
 	}
-	.time-nums{
-		font-size: 26px;
-		i{
-			font-style: normal;
-			font-size: 30px;
-			color: #F45929;
+	.yucai-time{
+		width: 578px;
+		background: #f6f1ee;
+		border:1px solid #ddd;
+		padding: 10px;
+		line-height: 30px;
+		margin: 10px 0;
+		.time-title{
+			color: #999;
+		}
+		.time-nums{
+			font-size: 26px;
+			i{
+				font-style: normal;
+				font-size: 30px;
+				color: #F45929;
+			}
 		}
 	}
+	.info{
+		height: 45px;
+		font-size: 15px;
+	    line-height: 22px;
+	    margin-top: 0;
+	    padding-bottom: 10px;
+	    color: #2C3444;
+	    border-bottom: 1px dotted #d9d9d9;
+	}
 }
+

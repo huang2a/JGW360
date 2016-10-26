@@ -6436,14 +6436,16 @@ a.projchose:hover {
   transition: all .6s;
 }
 #yucailist-box li .time {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 180px;
-  background-color: rgba(243, 89, 41, 0.8);
-  padding: 10px;
-  color: #fff;
   font-size: 12px;
+  padding: 0 0 5px 0;
+}
+#yucailist-box li .time i {
+  color: #f35929;
+  font-style: normal;
+}
+#yucailist-box li .volume-count {
+  font-size: 12px;
+  padding-bottom: 5px;
 }
 #yucailist-box li .price {
   padding-top: 10px;
@@ -6472,35 +6474,9 @@ a.projchose:hover {
 #yucailist-box li .title {
   display: block;
   height: 46px;
-  padding-top: 6px;
+  padding: 10px 0;
   line-height: 24px;
   overflow: hidden;
-}
-#yucailist-box .volume {
-  padding: 0 0 4px 0;
-}
-#yucailist-box .volume .icon-autotrtopht {
-  background-position: 0 0;
-}
-#yucailist-box .volume .icon-jgt {
-  background-position: -26px 0;
-}
-#yucailist-box .volume i {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  float: left;
-  font-size: 0;
-  border: #ddd solid 1px;
-  background: url(../../images/shopcity/icon-service.png) no-repeat;
-}
-#yucailist-box .time {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  background-color: rgba(243, 89, 41, 0.8);
-  padding: 10px;
-  color: #fff;
 }
 #yucailist-box .bg-yucai-btn {
   height: 40px;
@@ -6513,30 +6489,43 @@ a.projchose:hover {
   margin-right: 23px;
   text-indent: -99999px;
 }
-#pro-detail-yc .jqzoom {
+#product-yc .jqzoom {
   width: 475px;
   height: 475px;
 }
-#pro-detail-yc .jqzoom img {
+#product-yc .jqzoom img {
   width: 475px;
   height: 475px;
 }
-.yucai-time {
+#product-yc .title {
+  height: 50px;
+  line-height: 24px;
+}
+#product-yc .yucai-time {
   width: 578px;
   background: #f6f1ee;
   border: 1px solid #ddd;
   padding: 10px;
   line-height: 30px;
-  margin: 15px 0;
+  margin: 10px 0;
 }
-.yucai-time .time-title {
+#product-yc .yucai-time .time-title {
   color: #999;
 }
-.yucai-time .time-nums {
+#product-yc .yucai-time .time-nums {
   font-size: 26px;
 }
-.yucai-time .time-nums i {
+#product-yc .yucai-time .time-nums i {
   font-style: normal;
   font-size: 30px;
   color: #F45929;
+}
+#product-yc .info {
+  height: 45px;
+  font-size: 15px;
+  line-height: 22px;
+  margin-top: 0;
+  padding-bottom: 10px;
+  color: #2C3444;
+  border-bottom: 1px dotted #d9d9d9;
 }
