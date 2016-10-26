@@ -6411,3 +6411,132 @@ a.projchose:hover {
 .update .pay span a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
+#yucailist-box {
+  padding: 15px 14px;
+}
+#yucailist-box li {
+  position: relative;
+  float: left;
+  margin: 10px 11px;
+  padding: 5px;
+  background: #fff;
+  overflow: hidden;
+  width: 200px;
+  border: #ddd solid 1px;
+}
+#yucailist-box li .shop-img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  overflow: hidden;
+}
+#yucailist-box li .shop-img img {
+  width: 100%;
+  transition: all .6s;
+}
+#yucailist-box li .time {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 180px;
+  background-color: rgba(243, 89, 41, 0.8);
+  padding: 10px;
+  color: #fff;
+  font-size: 12px;
+}
+#yucailist-box li .price {
+  padding-top: 10px;
+}
+#yucailist-box li .price i {
+  font-size: 12px;
+  font-style: normal;
+  color: #2c3444;
+}
+#yucailist-box li .price .qian {
+  font-size: 20px;
+  color: #f35929;
+}
+#yucailist-box li .price .zhi {
+  font-family: '宋体';
+  width: 47px;
+  height: 14px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #e5d9ad;
+  font-size: 12px;
+  background: #faffe1;
+  color: #666;
+  line-height: 14px;
+}
+#yucailist-box li .title {
+  display: block;
+  height: 46px;
+  padding-top: 6px;
+  line-height: 24px;
+  overflow: hidden;
+}
+#yucailist-box .volume {
+  padding: 0 0 4px 0;
+}
+#yucailist-box .volume .icon-autotrtopht {
+  background-position: 0 0;
+}
+#yucailist-box .volume .icon-jgt {
+  background-position: -26px 0;
+}
+#yucailist-box .volume i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  float: left;
+  font-size: 0;
+  border: #ddd solid 1px;
+  background: url(../../images/shopcity/icon-service.png) no-repeat;
+}
+#yucailist-box .time {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: rgba(243, 89, 41, 0.8);
+  padding: 10px;
+  color: #fff;
+}
+#yucailist-box .bg-yucai-btn {
+  height: 40px;
+  padding: 12px 0 12px 10px;
+}
+#yucailist-box .yucai-btn {
+  display: inline-block;
+  width: 124px;
+  height: 40px;
+  margin-right: 23px;
+  text-indent: -99999px;
+}
+#pro-detail-yc .jqzoom {
+  width: 475px;
+  height: 475px;
+}
+#pro-detail-yc .jqzoom img {
+  width: 475px;
+  height: 475px;
+}
+.yucai-time {
+  width: 578px;
+  background: #f6f1ee;
+  border: 1px solid #ddd;
+  padding: 10px;
+  line-height: 30px;
+  margin: 15px 0;
+}
+.yucai-time .time-title {
+  color: #999;
+}
+.yucai-time .time-nums {
+  font-size: 26px;
+}
+.yucai-time .time-nums i {
+  font-style: normal;
+  font-size: 30px;
+  color: #F45929;
+}
