@@ -6527,3 +6527,24 @@ a.projchose:hover {
   color: #2C3444;
   border-bottom: 1px dotted #d9d9d9;
 }
+.u-detal table {
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px !important;
+  margin-top: 20px;
+}
+.u-detal .tr_t-tit {
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  background: #f8f8f8;
+}
+.u-detal .tr_t {
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+}
+.u-detal td {
+  width: 25%;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
