@@ -4973,6 +4973,57 @@ div.jqZoomPup {
   line-height: 20px;
   overflow: hidden;
 }
+#tuangou-jx .title:hover {
+  color: #f35929;
+}
+#tuangou-jx .item {
+  width: 189px;
+  padding: 10px;
+  float: left;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+#tuangou-jx .item:hover {
+  border-bottom-color: #f35929;
+}
+#tuangou-jx .item img {
+  width: 189px;
+  height: 189px;
+}
+#tuangou-jx .item .tg-time {
+  font-size: 12px;
+}
+#tuangou-jx .price-end {
+  padding-left: 10px;
+  color: #b5ab9f;
+  text-decoration: line-through;
+}
+#tuangou-jx .number {
+  margin-top: 10px;
+}
+#tuangou-jx .yucai-item {
+  width: 310px;
+  padding: 10px;
+  border: none;
+}
+#tuangou-jx .yucai-item img {
+  width: 310px;
+  height: 189px;
+}
+#tuangou-jx .yucai-item .tips {
+  width: 150px;
+  height: 30px;
+  background: rgba(243, 89, 41, 0.8);
+  position: absolute;
+  top: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+}
+.color-hui {
+  color: #b5ab9f;
+}
 #subnav-qyk {
   width: 258px;
   border-top: #2c3444 solid 3px;
