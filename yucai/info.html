@@ -629,14 +629,14 @@
                                 <td width="44%"><del>￥6599.00</del></td>
                               </tr>
                             </table>
-                        </div>
+                        </div><!--
                         <div class="number l-float">
                             <small>预采数量：</small><input type="text" class="num" value="1"/><span class="jian"></span><span class="jia"></span>
                             <div class="ku"><p>件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;剩余694件</p></div>
 
-                        </div>
+                        </div> -->
                         <div class="sale l-float"><small>已预约：</small><span class="on">21212</span></div>
-                        <div class="sub l-float "><a href="orderinfo.html" class="btn01">一键预约</a></div>
+                        <div class="sub l-float "><a href="##" class="btn01 popup-editInformation">一键预约</a></div>
                     </div>
 
                 </div>
@@ -913,6 +913,8 @@
 <script src="../js/jquery.livequery.js" type="text/javascript" charset="utf-8"></script>
 <script src="../js/slide.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="../js/stickUp.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/layer.js" type="text/javascript" charset="utf-8"></script>
+
 <script src="../js/mian.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 /*使用jqzoom*/
@@ -977,6 +979,20 @@ jQuery(function($) {
          marginTop: 'auto'
     });
   });
+});
+</script>
+<script>
+$('.popup-editInformation').on('click', function(){
+    layer.open({
+        type: 2,
+        skin: 'layui-user',
+        title: '预采信息填写',
+        maxmin: false,
+        shade: 0.6,
+        shadeClose: true, //点击遮罩关闭层
+        area : ['485px' , '380px'],
+        content: 'orderinfo.html'
+    });
 });
 </script>
 </body>
