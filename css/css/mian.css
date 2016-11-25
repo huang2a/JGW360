@@ -4393,18 +4393,14 @@ div.jqZoomPup {
   font-weight: 500;
   border-bottom: #2c3444 solid 1px;
 }
-#xiangqing #project-info-box ul li {
-  width: 50%;
-  height: 42px;
-  line-height: 42px;
+#xiangqing table td {
   font-size: 14px;
   font-weight: 500;
-  float: left;
 }
-#xiangqing #project-info-box .xian {
+#xiangqing table .xian {
   border-top: dashed #ddd 1px;
 }
-#xiangqing #project-info-box .tip {
+#xiangqing table .tip {
   color: #7b594a;
   font-size: 12px;
 }
@@ -4416,69 +4412,97 @@ div.jqZoomPup {
   line-height: 180%;
 }
 #subnav-jc {
-  display: block;
-  width: 260px;
-  background-color: #fff;
+  width: 258px;
+  background: #FFF;
   position: relative;
-  border-bottom: solid 1px #ddd;
-}
-#subnav-jc .list {
-  height: 39px;
-  border: solid 1px #ddd;
+  border: #ddd solid 1px;
   border-bottom: none;
 }
-#subnav-jc .list h3 {
-  height: 39px;
-  line-height: 39px;
-  font-size: 18px;
-  font-weight: 500;
-  text-align: center;
+#subnav-jc .item {
+  height: 34px;
+  border-bottom: #ddd solid 1px;
 }
-#subnav-jc .list:hover {
-  background: #f6f1ee;
-  border-top: #2c3444 solid 1px;
-  border-bottom: #2c3444 solid 1px;
-  border-right: #f6f1ee solid 1px;
-  border-left: #2c3444 solid 1px;
+#subnav-jc .item:hover {
+  background: #fff;
+  transition: background 0.3s ease-in;
+  transition: color 0.1s ease-in;
+  transition: box-shadow 0.3s ease-in;
 }
-#subnav-jc .list:hover .down-subnav {
+#subnav-jc .item:hover .title {
+  text-indent: 18px;
+  background: #2C3444;
+  color: #fff;
+  transition: text-indent 0.3s ease-in;
+  transition: background 0.3s ease-in;
+  transition: color 0.1s ease-in;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease-in;
+}
+#subnav-jc .item .title {
+  display: block;
+  width: 100%;
+  height: 34px;
+  text-indent: 12px;
+  line-height: 34px;
+  font-size: 14px;
+  transition: text-indent 0.3s ease-in;
+}
+#subnav-jc .item:hover .down-subnav {
   display: block;
 }
-#subnav-jc .list .down-subnav {
-  position: absolute;
-  top: 0;
-  left: 260px;
-  width: 236px;
-  height: 359px;
-  border: #2c3444 solid 1px;
-  border-left: none;
-  z-index: 9999;
-  background: #f6f1ee;
+#subnav-jc .item .down-subnav {
+  display: none;
 }
-#subnav-jc .list .item {
+#subnav-jc .item .down-subnav {
+  position: absolute;
+  top: -1px;
+  left: 258px;
+  width: 582px;
+  height: 454px;
+  border: #2c3444 solid 1px;
+  z-index: 9999;
+  background: #fff;
+  overflow: auto;
+}
+#subnav-jc .item .down-subnav .items {
   padding: 10px 15px;
 }
-#subnav-jc .list .item li {
+#subnav-jc .item .down-subnav .items li {
   float: left;
   width: 50%;
 }
-#subnav-jc .list .item li a {
+#subnav-jc .item .down-subnav .items li a {
   display: inline-block;
   width: 100%;
   text-align: left;
   padding: 4px 0;
   font-size: 14px;
 }
-#subnav-jc .list .item-ad {
-  position: absolute;
-  bottom: 0;
-  padding: 9px;
+#subnav-jc .item .filtrate-box dt {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 10px 0 5px;
+  border-bottom: 1px dashed #d9dce1;
+  margin-bottom: 5px;
 }
-#subnav-jc .list .item-ad li {
-  margin-bottom: 10px;
+#subnav-jc .item .filtrate-box dt a {
+  color: #000;
+  word-wrap: nowrap;
+  word-break: keep-all;
+  white-space: nowrap;
 }
-#subnav-jc .list .item-ad img {
-  width: 100%;
+#subnav-jc .item .filtrate-box dd {
+  font-size: 12px;
+  line-height: 22px;
+}
+#subnav-jc .item .filtrate-box dd .split {
+  display: inline-block;
+  font-style: normal;
+  width: 10px;
+  text-align: center;
+  color: #e5e5e5;
 }
 #jc-rk {
   border-top: 4px #2c3444 solid;
@@ -4692,10 +4716,12 @@ div.jqZoomPup {
 }
 #subnav-jx .item:hover {
   border-bottom: #2C3444 solid 1px;
-  border-top: #2c3444 solid 1px;
-  border-right: #f6f1ee solid 1px;
-  border-left: #2c3444 solid 1px;
-  background: #f6f1ee;
+  background: #2C3444;
+  transition: background 0.3s ease-in;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease-in;
 }
 #subnav-jx .item:hover .title {
   text-indent: 18px;
@@ -4703,7 +4729,7 @@ div.jqZoomPup {
 }
 #subnav-jx .item:hover .text-box,
 #subnav-jx .item:hover .title {
-  color: #2c3444;
+  color: #fff;
 }
 #subnav-jx .item .title {
   display: block;
@@ -4711,7 +4737,7 @@ div.jqZoomPup {
   height: 34px;
   text-indent: 12px;
   line-height: 34px;
-  font-size: 18px;
+  font-size: 16px;
   transition: text-indent 0.3s ease-in;
 }
 #subnav-jx .item .text-box {
@@ -4723,7 +4749,6 @@ div.jqZoomPup {
   display: inline-block;
   padding-left: 5px;
   padding-bottom: 5px;
-  font-size: 14px;
 }
 #subnav-jx .item:hover .down-subnav {
   display: block;
@@ -4734,13 +4759,12 @@ div.jqZoomPup {
 #subnav-jx .item .down-subnav {
   position: absolute;
   top: -1px;
-  left: 259px;
+  left: 258px;
   width: 582px;
   height: 414px;
   border: #2c3444 solid 1px;
-  border-left: none;
   z-index: 9999;
-  background: #f6f1ee;
+  background: #fff;
   overflow: hidden;
 }
 #subnav-jx .item .down-subnav .items {
@@ -4772,10 +4796,9 @@ div.jqZoomPup {
   word-wrap: nowrap;
   word-break: keep-all;
   white-space: nowrap;
-  font-size: 18px;
 }
 #subnav-jx .item .filtrate-box dd {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 22px;
 }
 #subnav-jx .item .filtrate-box dd .split {
@@ -6319,6 +6342,129 @@ a.projchose:hover {
 .advice a:hover.submit {
   color: rgba(255, 255, 255, 0.5);
   transition: .4s;
+}
+.linkbox {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+.linkbox .tit {
+  display: block;
+  overflow: hidden;
+  border-top: 2px solid #252f40;
+  height: 24px;
+  line-height: 24px;
+  padding: 8px;
+  color: #f35929;
+  font-size: 16px;
+}
+.linkbox .picbox {
+  display: block;
+  overflow: hidden;
+  border: 1px dashed #ddd;
+  box-sizing: border-box;
+}
+.linkbox .picbox li {
+  display: block;
+  overflow: hidden;
+  width: 23%;
+  height: 120px;
+  margin: 8px 1%;
+  float: left;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.linkbox .picbox li a img {
+  width: 100%;
+  height: 100%;
+}
+.linkbox .txtbox {
+  display: block;
+  overflow: hidden;
+  border: 1px dashed #ddd;
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+.linkbox .txtbox li {
+  display: block;
+  overflow: hidden;
+  width: 200px;
+  padding: 8px 0 8px 34px;
+  float: left;
+  background: url(../../images/linktit.png) 12px center no-repeat;
+}
+.linkbox .txtbox li a:hover {
+  text-decoration: underline;
+}
+.linkbox .linknum {
+  display: block;
+  overflow: hidden;
+  float: right;
+  margin-top: 12px;
+}
+.linkbox .linknum a {
+  display: inline-block;
+  float: left;
+  margin-right: 4px;
+  padding: 4px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.linkbox .linknum a.active,
+.linkbox .linknum a:active {
+  color: #f35929;
+  border: none;
+}
+.linkbox .linknum a:hover {
+  background-color: #2c3444;
+  color: #fff;
+}
+.linkbox .formbox {
+  display: block;
+  overflow: hidden;
+  border: 1px dashed #ddd;
+  box-sizing: border-box;
+  padding: 8px;
+}
+.linkbox .formbox h2 {
+  color: #333;
+  font-weight: bold;
+  margin: 8px 0;
+}
+.linkbox .formbox .col-l {
+  display: block;
+  overflow: hidden;
+  width: 460px;
+  float: left;
+  padding-right: 40px;
+}
+.linkbox .formbox .col-l p {
+  display: block;
+  overflow: hidden;
+  line-height: 24px;
+  margin: 12px 0;
+}
+.linkbox .formbox .col-l p a {
+  color: #3265cb;
+}
+.linkbox .formbox .col-r {
+  display: block;
+  overflow: hidden;
+  width: 670px;
+  float: left;
+  padding-left: 10px;
+  border-left: 1px dashed #ddd;
+}
+.linkbox .formbox .col-r .inputbox {
+  display: block;
+  overflow: hidden;
+  padding: 8px 0;
+}
+.linkbox .formbox .col-r .inputbox label.intro {
+  vertical-align: top;
+}
+.linkbox .formbox .col-r .inputbox input {
+  width: 200px;
 }
 .update {
   display: block;
