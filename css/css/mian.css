@@ -6363,13 +6363,14 @@ a.projchose:hover {
   overflow: hidden;
   border: 1px dashed #ddd;
   box-sizing: border-box;
+  padding: 8px 12px;
 }
 .linkbox .picbox li {
   display: block;
   overflow: hidden;
-  width: 23%;
+  width: 273px;
   height: 120px;
-  margin: 8px 1%;
+  margin: 8px 10px;
   float: left;
   border: 1px solid #ddd;
   box-sizing: border-box;
@@ -6400,7 +6401,7 @@ a.projchose:hover {
   display: block;
   overflow: hidden;
   float: right;
-  margin-top: 12px;
+  margin: 8px 0 12px 0;
 }
 .linkbox .linknum a {
   display: inline-block;
