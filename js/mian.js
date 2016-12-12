@@ -1,22 +1,22 @@
 // search
-$(function(){
-  $("#searchSelected").click(function(){
-    $("#searchTab").show();
-    $(this).addClass("searchOpen");
-  });
+// $(function(){
+//   $("#searchSelected").click(function(){
+//     $("#searchTab").show();
+//     $(this).addClass("searchOpen");
+//   });
 
-  $("#searchTab li").hover(function(){
-    $(this).addClass("selected");
-  },function(){
-    $(this).removeClass("selected");
-  });
+//   $("#searchTab li").hover(function(){
+//     $(this).addClass("selected");
+//   },function(){
+//     $(this).removeClass("selected");
+//   });
 
-  $("#searchTab li").click(function(){
-    $("#searchSelected").html($(this).html());
-    $("#searchTab").hide();
-    $("#searchSelected").removeClass("searchOpen");
-  });
-});
+//   $("#searchTab li").click(function(){
+//     $("#searchSelected").html($(this).html());
+//     $("#searchTab").hide();
+//     $("#searchSelected").removeClass("searchOpen");
+//   });
+// });
 // banner
 $('.ck-slide').ckSlide({
     autoPlay: true,//默认为不自动播放，需要时请以此设置
