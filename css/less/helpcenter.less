@@ -163,3 +163,131 @@
 		transition: .4s;
 	}
 }
+
+//友情链接
+.linkbox{
+	display: block;
+	overflow: hidden;
+	margin-bottom: 18px;
+	.tit{
+		display: block;
+		overflow: hidden;
+		border-top: 2px solid #252f40;
+		height: 24px;
+		line-height: 24px;
+		padding: 8px;
+		.col-cheng;
+		.font16;
+	}
+	.picbox{
+		display: block;
+		overflow: hidden;
+		border: 1px dashed #ddd;
+		box-sizing: border-box;
+		padding: 8px 12px;
+		li{
+			display: block;
+			overflow: hidden;
+			width: 273px;
+			height: 120px;
+			margin: 8px 10px;
+			.l-left;
+			border: 1px solid #ddd;
+			box-sizing: border-box;
+			a{
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+	.txtbox{
+		display: block;
+		overflow: hidden;
+		border: 1px dashed #ddd;
+		padding: 8px 12px;
+		box-sizing: border-box;
+		li{
+			display: block;
+			overflow: hidden;
+			width: 200px;
+			padding: 8px 0 8px 34px;
+			.l-left;
+			background: url(../../images/linktit.png) 12px center no-repeat;
+			a:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	.linknum{
+		display: block;
+		overflow: hidden;
+		width: 100%;
+		.l-right;
+		margin: 8px 0 12px 0;
+		a{
+			display: inline-block;
+			.l-right;
+			margin-right: 4px;
+			padding: 4px 8px;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+		}
+		a.active,a:active{
+			.col-cheng;
+			border: none;
+		}
+		a:hover{
+			.bg-hui;
+			.col-bai;
+		}
+	}
+	.formbox{
+		display: block;
+		overflow: hidden;
+		border: 1px dashed #ddd;
+		box-sizing: border-box;
+		padding: 8px;
+		h2{
+			color: #333;
+			font-weight: bold;
+			margin: 8px 0;
+		}
+		.col-l{
+			display: block;
+			overflow: hidden;
+			width: 460px;
+			.l-left;
+			padding-right: 40px;
+			p{
+				display: block;
+				overflow: hidden;
+				line-height: 24px;
+				margin: 12px 0;
+				a{
+					color: #3265cb;
+				}
+			}
+		}
+		.col-r{
+			display: block;
+			overflow: hidden;
+			width: 670px;
+			.l-left;
+			padding-left: 10px;
+			border-left: 1px dashed #ddd;
+			.inputbox{
+				display: block;
+				overflow: hidden;
+				padding: 8px 0;
+				label.intro{
+					vertical-align: top;
+				}
+				input{
+					width: 200px;
+				}
+			}
+		}
+	}
+}
