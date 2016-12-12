@@ -6400,12 +6400,13 @@ a.projchose:hover {
 .linkbox .linknum {
   display: block;
   overflow: hidden;
+  width: 100%;
   float: right;
   margin: 8px 0 12px 0;
 }
 .linkbox .linknum a {
   display: inline-block;
-  float: left;
+  float: right;
   margin-right: 4px;
   padding: 4px 8px;
   border: 1px solid #ddd;
