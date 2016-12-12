@@ -27,6 +27,15 @@
       width: 100%;
       min-width: 1200px;
     }
+    #login-end{
+          position: absolute;
+          top: -16px;
+    }
+    #login-end td a:hover{
+      background: #fff;
+      text-decoration: underline;
+      color: #f35929;
+    }
   </style>
 </head>
 <body>
@@ -35,6 +44,23 @@
       <div class="main l-float">
         <div class="top-logo l-left">
           <a class="l-left" href="index.html">建工网首页</a>
+          <div class="map">
+          <a id="popup-map-btn" href="##">广州【切换城市】</a>
+          <div id="popup-map-box">
+              <em class="close" id="popup-map-close">X</em>
+              <ul>
+                <li>
+                  <span class="title">广东:</span><a href="">深圳</a><a href="">珠海</a><a href="">佛山</a><a href="">江门</a><a href="">肇庆</a><a href="">惠州</a><a href="">东莞</a><a href="">中山</a><a href="">汕头</a><a href="">湛江</a><a href="">清远</a><a href="">其他</a>
+                </li>
+                <li>
+                  <span class="title">广东</span><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a>
+                </li>
+                <li>
+                  <span class="title">广东</span><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="top-nav-right scrollx">
           <a href="####">网站导航</a>
@@ -175,18 +201,19 @@
         </div>
         <div class="top-nav l-right">
           <li>
-            <span>咨询电话：400-772-0288</span>
-          </li>
-          <li>
             <a href="login/index.html">请登录</a>
             |
           </li>
           <li>
-            <a href="register/index.html">免费注册</a>
+            <a class="bg-cheng fontz12 col-bai" href="register/index.html" style="border-radius: 5px;padding: 1px 2px;line-height: 18px;height: 18px">免费注册</a>
             |
           </li>
           <li>
             <a href="usercenter/index.html">【个人中心】</a>
+            |
+          </li>
+          <li>
+            <a href="##">咨询电话：400-772-0288</a>
           </li>
         </div>
       </div>
@@ -195,48 +222,14 @@
       <div class="logo-box l-left">
         <a href="index.html">
           <img src="images/icon-logo.jpg" height="91" width="231" alt=""></a>
-        <div class="map">
-          <a id="popup-map-btn" href="##">广州【切换城市】</a>
-          <div id="popup-map-box">
-            <em class="close" id="popup-map-close">X</em>
-            <ul>
-              <li>
-                <span class="title">广东:</span><a href="">深圳</a><a href="">珠海</a><a href="">佛山</a><a href="">江门</a><a href="">肇庆</a><a href="">惠州</a><a href="">东莞</a><a href="">中山</a><a href="">汕头</a><a href="">湛江</a><a href="">清远</a><a href="">其他</a>
-              </li>
-              <li>
-                <span class="title">广东</span><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a>
-              </li>
-              <li>
-                <span class="title">广东</span><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a><a href="">中山</a><a href="">广州</a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
       <div class="l-seach-box l-left">
         <div class="u-search l-float">
-          <form method="get" name="" action="">
-            <div id="searchTxt" class="searchTxt" onMouseOver="this.className='searchTxt searchTxtHover';" onMouseOut="this.className='searchTxt';">
-              <div class="radius" style="top:-2px;"></div>
-              <div class="radius" style="top:31px;"></div>
-              <div class="searchMenu">
-                <div class="searchSelected icon-drop-down" id="searchSelected">搜商品</div>
-                <div style="display:none;" class="searchTab" id="searchTab">
-                  <div class="radius" style="top:259px;"></div>
-                  <div class="radius" style="top:259px;left:59px;"></div>
-                  <ul>
-                    <li>搜商品</li>
-                    <li>搜店铺</li>
-                    <li>搜资讯</li>
-                  </ul>
-                </div>
-              </div>
-              <input value="冲孔灌注桩施工" onfocus="if (value =='冲孔灌注桩施工'){value =''}" onblur="if (value ==''){value='冲孔灌注桩施工'}" />
+            <div class="search-class"><span class="active">找施工</span><em>|</em><span>找机械</span><em>|</em><span>找建材</span><em>|</em><span>找商家</span></div>
+            <div class="search-input">
+                <input class="input" type="text" placeholder="请输入关键字搜索" />
+                <a class="search" href="">搜索</a>
             </div>
-            <div class="searchBtn">
-              <button id="searchBtn" title="搜索" type="submit"></button>
-            </div>
-          </form>
         </div>
         <p class="l-seach-hot">
           <a href="">专用水泥</a>
@@ -248,7 +241,7 @@
         </p>
       </div>
       <div class="wechat l-right" style="width: 254px;padding-right: 0;">
-        <a href="map/index.html"><img style="margin-right: 34px;" src="images/icon-map.png" height="81" width="135" alt=""></a>
+        <a href="map/index.html"><img style="margin-right: 30px;" src="images/icon-map.png" height="81" width="135" alt=""></a>
         <img src="bannerImg/wechar01.jpg" height="81" width="81" alt="">
       </div>
     </div>
@@ -664,13 +657,28 @@
             <img src="bannerImg/sim-banner01.jpg" alt=""></div>
           <div class="l-right">
             <p class="font12 col-hui">Hi! 你好</p>
-            <p class="font12 col-cheng">注册成为建工网会员即可发布信息和交易产品</p>
+            <p class="font12 col-cheng">注册成为建工网会员即</p>
           </div>
         </div>
-        <div class="btn">
+        <!-- <div class="btn">
           <a class="bg-cheng fontz12 col-bai" href="">登录</a>
           <a class="bg-cheng fontz12 col-bai" href="">免费注册</a>
           <a class="bg-cheng fontz12 col-bai" href="">加入建工通</a>
+        </div> -->
+        <div class="btn">
+          <a class="bg-cheng fontz12 col-bai" href="">我的店铺</a>
+          <div class="l-right" style="position: relative;">
+              <table id="login-end">
+                  <tr>
+                    <td><a href="">账号设置</a></td>
+                    <td><a href="">店铺管理</a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="">我的订单(<em class="col-cheng">1</em>)</a></td>
+                    <td><a href="">我的消息(<em class="col-cheng">1</em>)</a></td>
+                  </tr>
+              </table>
+          </div>
         </div>
       </div>
       <div class="l-entrance-box l-float">

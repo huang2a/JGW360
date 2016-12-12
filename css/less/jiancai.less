@@ -5,12 +5,12 @@
     position: relative;
     border-bottom: solid 1px #ddd;
     .list{
-        height: 39px;
+        height: 35px;
         border: solid 1px #ddd;
         border-bottom: none;
         h3{
-            height: 39px;
-            line-height: 39px;
+            height: 35px;
+            line-height: 35px;
             font-size: 18px;
             font-weight: 500;
             text-align: center;
@@ -143,21 +143,30 @@
 
 // 预采
 #yucai{
-    padding: 4px 0;
+    padding: 6px 0 3px 0;
     .bg-yucai-btn{
-        height: 40px;
+        position: absolute;
+        z-index: 9999;
+        bottom: -8px;
+        width: 310px;
+        height: 38px;
         padding: 12px 0 12px 10px;
-        background: url(../../images/jiancai/icon-yucai-btn.png) left center no-repeat;
+        background: url(../../images/jiancai/icon-yucai-btn.png) #fff left center no-repeat;
     }
     .item{
         position: relative;
         width:320px;
-        margin: 20px auto;
-        overflow: hidden;
+        margin: 8px auto 21px auto;
     }
     .title{
+        text-decoration: none;
+        position: absolute;
+        bottom: 54px;
+        width: 100%;
+        color: #fff;
+        .rgba-background(rgba(243, 89, 41, 0.8));
         &:hover{
-            .col-cheng();
+            .col-bai();
         }
         .hover-link();
     }
@@ -171,10 +180,12 @@
     .time{
         position: absolute;
         top: 0;
-        left: 0;
-        background-color: rgba(243,89,41,0.8);
+        right: 0;
+        background-color: rgba(243, 89, 41, 0.8);
         padding: 10px;
+        font-size: 12px;
         .col-bai();
+        .rgba-background(rgba(243, 89, 41, 0.8));
     }
 }
 

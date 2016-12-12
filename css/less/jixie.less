@@ -11,7 +11,7 @@
             border-bottom: #2C3444 solid 1px;
             border-top: #2c3444 solid 1px;
             border-right: #f6f1ee solid 1px;
-            border-left: #2c3444 solid 1px;            
+            border-left: #2c3444 solid 1px;
             background: #f6f1ee;
             .title{
                 text-indent: 18px;
@@ -170,10 +170,22 @@
 
 // 为你推荐
 .tuijian-box{
-    li{
+
+    .item {
+        width: 189px;
+        padding: 10px;
         float: left;
-        width: 168px;
-        overflow: hidden;
+        border-right: 1px solid #ddd;
+         img {
+            width: 189px;
+            height: 189px;
+        }
+        &:hover {
+            border-bottom-color: #f35929;
+        }
+    }
+    .title:hover {
+        color: #f35929;
     }
     .dis-b{
         position: relative;
@@ -255,7 +267,7 @@
 #jixie-bl{
     li{
         float: left;
-        width: 238.812px;
+        width: 238px;
         border-right: #ddd  solid 1px;
         overflow: hidden;
         img{
@@ -314,13 +326,9 @@
         }
         .item{
             width: 189px;
-            padding: 10px; 
+            padding: 10px;
             float: left;
             border-right: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
-            &:hover{
-                border-bottom-color:  #f35929;
-            }
            img{
                 width: 189px;
                 height: 189px;
@@ -340,7 +348,7 @@
         .yucai-item{
             width: 310px;
             padding: 10px;
-            border: none; 
+            border: none;
             img{
                 width: 310px;
                 height: 189px;
@@ -355,6 +363,7 @@
                 text-align: center;
                 line-height: 30px;
                 .font14;
+                .rgba-background(rgba(243, 89, 41, 0.8));
             }
         }
 }
