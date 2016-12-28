@@ -4366,6 +4366,10 @@ div.jqZoomPup {
   color: #2c3444;
   line-height: 180%;
 }
+#xiangqing #info img,
+#xiangqing .info img {
+  max-width: 100%;
+}
 #subnav-jc {
   display: block;
   width: 260px;
