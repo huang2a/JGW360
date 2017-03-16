@@ -1,6 +1,6 @@
 .usercentent-sub{
-    border:#ddd solid 1px;
-    border-bottom: transparent;
+    // border:#ddd solid 1px;
+    border-bottom: #ddd solid 1px;
     h3{
         color: #fff;
         line-height: 40px;
@@ -8,17 +8,41 @@
         .bg-hui();
         .font18();
     }
-    ul{
-        li{
-            padding: 10px 0 10px 20px;
+    >ul{
+        >li{
             background: #f6f1ee;
-            border-bottom: #ddd solid 1px;
+            border-left: #ddd solid 1px;
+            border-right: #ddd solid 1px;
+            border-top: #ddd solid 1px;
+            border-bottom: none;
             .font16();
+            .text-ac();
             a:hover,.active{
                 text-decoration: underline;
                 .col-cheng();
             }
         }
+    }
+    .sideshow{
+
+    }
+    .showcase{
+        display: none;
+        overflow: hidden;
+        border: none;
+        background: #fcfbfa;
+        border: #E7E7E7 solid 1px;
+        li{
+            background: none;
+            border: none;
+        }
+    }
+    .arrowup{
+        background: #f6f1ee url(../../images/usercenter/ic-arrowup.png) 14px center no-repeat;
+
+    }
+    .arrowdown{
+        background: #f6f1ee url(../../images/usercenter/ic-arrowdown.png) 14px center no-repeat;
     }
 }
 #userBasic{
@@ -75,7 +99,7 @@
                 margin: 4px auto
             }
             float: left;
-            width: 60px;
+            width: 28px;
             margin-right: 6px;
         }
     }
@@ -84,10 +108,27 @@
         text-align: center;
     }
 }
+.corner-bottom{
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    display: block;
+    width: 220px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    background: url(../../images/usercenter/corner-bottom.png) center right no-repeat;
+}
 .tabel-list{
+    border-top: #ddd solid 1px;
+    border-left: #ddd solid 1px;
     th,td{
-        border: #ddd solid 1px;
         text-align: center;
+        border-right: #ddd solid 1px;
+        border-bottom: #ddd solid 1px;
+        padding:10px 5px;
     }
     th{
         background: #fafafa;
@@ -119,3 +160,78 @@
         }
     }
 }
+
+
+
+
+.accordion {
+    width: 100%;
+    background: #FFF;
+ }
+
+.accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    color: #4D4D4D;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: none;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordion .open>.link.arrowup {
+    background: #f6f1ee url(../../images/usercenter/ic-arrowdown.png) 14px center no-repeat;
+}
+
+
+
+/**
+ * Submenu
+ -----------------------------*/
+ .submenu {
+    display: none;
+    background: #fcfbfa !important;
+    border: none !important;
+    border-top: #E7E7E7 solid 1px !important;
+ }
+
+ .submenu> li {
+    padding: 0 !important;
+    border:none !important;
+    background: none !important;
+ }
+
+ .submenu a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+ }

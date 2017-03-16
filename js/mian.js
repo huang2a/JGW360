@@ -216,4 +216,47 @@ $(document).ready(function(){
 
 });
 
+// 侧栏下拉
+$(function() {
+  var Accordion = function(el, multiple) {
+    this.el = el || {};
+    this.multiple = multiple || false;
 
+    // Variables privadas
+    var links = this.el.find('.link');
+    // Evento
+    links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+  }
+
+  Accordion.prototype.dropdown = function(e) {
+    var $el = e.data.el;
+      $this = $(this),
+      $next = $this.next();
+    $next.slideToggle();
+    $this.parent().toggleClass('open');
+
+    if (!e.data.multiple) {
+      $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+    };
+  }
+
+  var accordion = new Accordion($('#accordion'), false);
+});
+
+// 个人中心tab切换
+function selectTag(showContent,selfObj){
+ // 操作标签
+ var tag = document.getElementById("tabitem").getElementsByTagName("li");
+ var taglength = tag.length;
+ for(i=0; i<taglength; i++){
+  tag[i].className = "";
+ }
+ selfObj.parentNode.className = "selected";
+ // 操作内容
+ for(i=0; j=document.getElementById("tabcon"+i); i++){
+  j.style.display = "none";
+ }
+ document.getElementById(showContent).style.display = "block";
+
+
+}

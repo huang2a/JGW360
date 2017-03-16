@@ -68,3 +68,37 @@ input,textarea{
 　　input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 　　color:#9C9C9C;
 　　}
+
+// 定义浏览器滚动条
+::-webkit-scrollbar{
+    width:12px;
+    height:100px
+}
+::-webkit-scrollbar-button:vertical{
+    display:none
+}
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track{
+    background-color:#e2e2e2
+}
+::-webkit-scrollbar-thumb{
+    border-radius:0;
+    background-color:rgba(0,0,0,.3)
+}
+::-webkit-scrollbar-thumb:vertical:hover{
+    background-color:rgba(0,0,0,.35)
+}
+::-webkit-scrollbar-thumb:vertical:active{
+    background-color:rgba(0,0,0,.38)
+}
+// 定义选中时候样式
+::selection {
+    color:#FFFFFF;
+    background-color:#f35929;
+    text-shadow:none;
+}
+::-moz-selection {
+    color:#FFFFFF;
+    background-color:#f35929;
+    text-shadow:none;
+}

@@ -229,15 +229,15 @@
         <div class="l-nav-box bg-hui">
             <div class="main l-float">
                 <div class="all-shopclass bg-cheng l-left">
-                    <span class="title col-bai font18 text-ac"><a href="adminTemplate/index.html" target="_blank">供应商后台管理</a></span>
+                    <span class="title col-bai font18 text-ac"><a href="index.html" target="_blank">个人中心</a></span>
                 </div>
                 <div id="nav" class="col-bai l-left">
                     <ul>
                         <li>
-                            <a class="active" href="index.html">个人中心</a>
+                            <a href="buyer/index.html">买家中心</a>
                         </li>
                         <li>
-                          <a href="Setting/Basic01.html">账号设置</a>
+                          <a href="seller/index.html">卖家中心</a>
                         </li>
                         <li>
                           <a href="MyMessage/mymessage01.html">我的消息</a>
@@ -245,8 +245,11 @@
                         <li>
                           <a href="adminTemplate/setting.html">我的店铺</a>
                         </li>
-                        <li style="float: right;">
-                          <a href="">马上账号认证>></a>
+                        <li>
+                          <a href="adminTemplate/setting.html">店铺管理</a>
+                        </li>
+                        <li style="float: right;" class="bg-cheng">
+                          <a href="">加入供应商</a>
                         </li>
                     </ul>
                 </div>
@@ -262,34 +265,87 @@
         <div class="l-left w160">
             <div class="usercentent-sub l-float mb20">
                 <h3>个人管理</h3>
-                <ul>
-                    <li><a target="_blank" href="../shopcity/shopcar.html">我的购物车</a></li>
-                    <li><a href="Order/orderList.html">我的订单</a></li>
-                    <li><a href="collect/shopcollect.html">我的收藏 </a></li>
-                    <li><a href="">我的下载</a></li>
-                    <li><a href="">我的专题消息</a></li>
-                    <li><a href="">我的评价</a></li>
-                    <li><a href="">我的足迹</a></li>
-                    <li><a href="offer/index.html">我的报价</a></li>
-                </ul>
-            </div>
-            <div class="usercentent-sub l-float mb20">
-                <h3>个人基本功能</h3>
-                <ul>
-                    <li><a href="">我的发布</a></li>
-                    <li><a href="">我的报价</a></li>
-                    <li><a href="">动态更新 </a></li>
-                    <li><a href="">我的下载</a></li>
-                    <li><a href="">我的专题消息</a></li>
-                    <li><a href="">我的评价</a></li>
-                    <li><a href="">退款维权</a></li>
+                <ul id="accordion" class="accordion">
+                    <li><a class="link" target="_blank" href="../shopcity/shopcar.html">我的购物车</a></li>
+                    <li>
+                        <div class="link arrowup">我的订单</div>
+                        <ul class="submenu">
+                            <li><a href="#">全部订单</a></li>
+                            <li><a href="#">购物车</a></li>
+                            <li><a href="#">待卖家确认</a></li>
+                            <li><a href="#">待收货</a></li>
+                            <li><a href="">待评论</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="link" href="collect/shopcollect.html">我的收藏 </a></li>
+                    <li><a class="link" href="">我的下载</a></li>
+                    <li><a class="link" href="">我的专题消息</a></li>
+                    <li><a class="link" href="">我的评价</a></li>
+                    <li><a class="link" href="">我的足迹</a></li>
+                    <li><a class="link" href="offer/index.html">我的报价</a></li>
                 </ul>
             </div>
         </div>
         <div class="l-right w1020">
-            <div class="border mb26">
+            <div class="border">
                 <div id="userBasic" class="l-float">
-                    <table class="user-table" width="958">
+                    <table width="100%" border="0">
+                      <tr>
+                        <td width="17%" rowspan="4">
+                            <div class="user-box">
+                                <div class="masking">
+                                </div>
+                                <div class="img">
+                                    <img src="../word/shoplist01.png" alt="" width="96" height="96">
+                                </div>
+                            </div>
+                        </td>
+                        <td width="28%" height="34">1432000000 <a class="dis-i pdl4 pdr4 pd4 col-cheng font14 ml10" href="">完善个人信息</a></td>
+                        <td width="55%" rowspan="6" style="border-left: #ddd solid 1px;">
+                            <div class="l-right shortcut-release">
+                                <p class="pd10">快速发布一个项目需求</p>
+                                <a class="bg-cheng font18 col-bai btn" href="">立即发布需求</a>
+                                <p class="mt15"><img src="../images/usercenter/shortcut-release.jpg" height="52" width="463" alt=""></p>
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="34">
+                            <span class="bar-title">安全等级</span>
+                            <div class="p-bar ml10" title="完成邮箱未认证、身份未认证即可提升安全等级">
+                                <div style="width: 32%" class="p-bar-cheng"></div>
+                            </div>
+                            <em class="col-cheng font12">10</em>分
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="34">
+                            <span class="col-cheng font12"><img class="l-left" src="../word/shoujirenzheng.jpg" height="20" width="14" alt=""><em>手机已认证</em></span>
+                            <span class="col-hui font12 ml10"><img src="../word/shoujirenzheng02.jpg" height="20" width="14" alt=""><em>邮箱未认证</em></span>
+                            <span class="col-hui font12 ml10"><img src="../word/shoujirenzheng03.jpg" height="20" width="14" alt=""><em>身份未认证</em></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="34">店铺信息：未开通 <a class="dis-i bg-cheng pdl4 pdr4 pd4 col-bai font14 radius5 ml10" href="">我要开店</a></td>
+                      </tr>
+                      <tr>
+                        <td height="34">会员服务：<span class="dis-i bg-cheng pdl4 pdr4 pd4 col-bai font12 radius5">普</span></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="34">
+                            <div class="user-privilege l-float">
+                                <ul>
+                                    <li><img src="../images/usercenter/user-privilege01.png" height="24" width="24" alt=""></li>
+                                    <li><img src="../images/usercenter/user-privilege02.png" height="24" width="24" alt=""></li>
+                                    <li><img src="../images/usercenter/user-privilege03.png" height="24" width="24" alt=""></li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </table>
+                    <!-- <table class="user-table" width="958">
                       <tr>
                         <td width="137" rowspan="3">
                             <div class="user-box">
@@ -300,8 +356,6 @@
                                 </div>
                             </div>
                         </td>
-                        <td width="140" height="40" class="hover"><a href="../shopcity/shopcar.html" target="_blank">我的购物车（<em class="col-cheng">2</em>）</a></td>
-                        <td width="140" class="hover"><a href="">未付款（<em class="col-cheng">2</em>）</a></td>
                         <td width="220">
                             <span class="bar-title">会员等级</span>
                             <div class="p-bar" title="还差3012经验升级">
@@ -318,8 +372,6 @@
                         </td>
                       </tr>
                       <tr>
-                        <td height="40" class="hover"><a href="">正在派送（<em class="col-cheng">2</em>）</a></td>
-                        <td class="hover"><a href="">待评价（<em class="col-cheng">2</em>）</a></td>
                         <td>
                             <span class="bar-title">关注度</span>
                             <div class="p-bar" title="关注度已达到4星">
@@ -334,12 +386,6 @@
                             </div>
                             <em class="col-zhong font12">4星</em>
                         </td>
-                      </tr>
-                      <tr>
-                        <td height="40" class="hover"><a href="">团购订单（<em class="col-cheng">2</em>）</a></td>
-                        <td class="hover"><a href="">我的预采（<em class="col-cheng">2</em>）</a></td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
                       </tr>
                     </table>
                     <div class="l-float">
@@ -362,36 +408,13 @@
                             <a class="bg-cheng font18 col-bai btn" href="">立即发布需求</a>
                             <p class="mt15"><img src="../images/usercenter/shortcut-release.jpg" height="52" width="463" alt=""></p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
-            <div class="columu-box w100 mb26">
-              <div class="columu-title border-b columu-border bg-column">
-                <h3 class="">我购买的服务</h3>
-              </div>
-              <div class="columu-main">
-                <table width="100%" class="tabel-list">
-                  <tr>
-                    <th height="35" scope="col">服务单号 </th>
-                    <th width="30%" colspan="2" scope="col">服务内容</th>
-                    <th width="10%" scope="col">接收人 </th>
-                    <th width="10%" scope="col">金额</th>
-                    <th width="15%" scope="col">下单时间 </th>
-                    <th scope="col">状态</th>
-                    <th width="10%" scope="col">操作</th>
-                  </tr>
-                  <tr>
-                    <td height="122">35493836974</td>
-                    <td><img src="../word/shoplist01.png" height="95" width="95" alt=""></td>
-                    <td>冲孔灌注桩施工设备</td>
-                    <td>黄先生 </td>
-                    <td> 20000 </td>
-                    <td>2015.5.1 </td>
-                    <td width="10%">已接收 </td>
-                    <td><a class="col-cheng" href="">删除</a></td>
-                  </tr>
-                </table>
-              </div>
+            <div class="border mb26" style="border-top: none;">
+                <a class="text-ac dis-b" href="">
+                    <img title="立即加入供应商" src="../word/jiaruzhinan.jpg" alt="">
+                </a>
             </div>
             <div class="columu-box w100 mb26">
               <div class="columu-title border-b columu-border bg-column">
@@ -405,48 +428,150 @@
                 <a href=""><img src="bannerImg/ad01.jpg" height="140" width="200" alt=""></a>
               </div>
             </div>
+            <div class="l-float">
+                <div class="l-left">
+                    <div class="columu-box w710 mb26">
+                        <div class="columu-title border-t border-b bg-column">
+                            <h3 class="">最近浏览服务</h3>
+                          </div>
+                          <div class="shoplist-box" style="padding:0;">
+                              <ul class="l-float">
+                                <li>
+                                  <a class="shop-img" href="../shopinfo.html"><img src="../word/shoplist01.png" height="250" width="200" alt=""></a>
+                                  <p class="price l-float"><span class="qian l-left">￥800</span><span class="zhi l-right">9.62折</span></p>
+                                  <a class="title pd4 font20 col-hui text-al" href="">珠海长兴建材冲孔灌注桩</a>
+                                  <p class="volume l-float"><span class="col-slan pd4">2016-11-14</span><a href="javascript:void(0)" class="dis-i pdl4 pdr4 col-bai bg-cheng pd4 radius5 l-right">删除</a></p>
+                                </li>
+                                <li>
+                                  <a class="shop-img" href="../shopinfo.html"><img src="../word/shoplist01.png" height="250" width="200" alt=""></a>
+                                  <p class="price l-float"><span class="qian l-left">￥800</span><span class="zhi l-right">9.62折</span></p>
+                                  <a class="title pd4 font20 col-hui text-al" href="">珠海长兴建材冲孔灌注桩</a>
+                                  <p class="volume l-float"><span class="col-slan pd4">2016-11-14</span><a href="javascript:void(0)" class="dis-i pdl4 pdr4 col-bai bg-cheng pd4 radius5 l-right">删除</a></p>
+                                </li>
+                                <li>
+                                  <a class="shop-img" href="../shopinfo.html"><img src="../word/shoplist01.png" height="250" width="200" alt=""></a>
+                                  <p class="price l-float"><span class="qian l-left">￥800</span><span class="zhi l-right">9.62折</span></p>
+                                  <a class="title pd4 font20 col-hui text-al" href="">珠海长兴建材冲孔灌注桩</a>
+                                  <p class="volume l-float"><span class="col-slan pd4">2016-11-14</span><a href="javascript:void(0)" class="dis-i pdl4 pdr4 col-bai bg-cheng pd4 radius5 l-right">删除</a></p>
+                                </li>
+                                <li>
+                                  <a class="shop-img" href="../shopinfo.html"><img src="../word/shoplist01.png" height="250" width="200" alt=""></a>
+                                  <p class="price l-float"><span class="qian l-left">￥800</span><span class="zhi l-right">9.62折</span></p>
+                                  <a class="title pd4 font20 col-hui text-al" href="">珠海长兴建材冲孔灌注桩</a>
+                                  <p class="volume l-float"><span class="col-slan pd4">2016-11-14</span><a href="javascript:void(0)" class="dis-i pdl4 pdr4 col-bai bg-cheng pd4 radius5 l-right">删除</a></p>
+                                </li>
+                                <li>
+                                  <a class="shop-img" href="../shopinfo.html"><img src="../word/shoplist01.png" height="250" width="200" alt=""></a>
+                                  <p class="price l-float"><span class="qian l-left">￥800</span><span class="zhi l-right">9.62折</span></p>
+                                  <a class="title pd4 font20 col-hui text-al" href="">珠海长兴建材冲孔灌注桩</a>
+                                  <p class="volume l-float"><span class="col-slan pd4">2016-11-14</span><a href="javascript:void(0)" class="dis-i pdl4 pdr4 col-bai bg-cheng pd4 radius5 l-right">删除</a></p>
+                                </li>
+                                <li>
+                                  <a class="shop-img" href="../shopinfo.html"><img src="../word/shoplist01.png" height="250" width="200" alt=""></a>
+                                  <p class="price l-float"><span class="qian l-left">￥800</span><span class="zhi l-right">9.62折</span></p>
+                                  <a class="title pd4 font20 col-hui text-al" href="">珠海长兴建材冲孔灌注桩</a>
+                                  <p class="volume l-float"><span class="col-slan pd4">2016-11-14</span><a href="javascript:void(0)" class="dis-i pdl4 pdr4 col-bai bg-cheng pd4 radius5 l-right">删除</a></p>
+                                </li>
+
+                              </ul>
+                            </div>
+                    </div>
+                    <div class="columu-box w710 mb26">
+                        <div class="columu-title border-t border-b bg-column">
+                            <h3 class="">最近浏览商品</h3>
+                          </div>
+                          <div class="shoplist-box" style="padding:0;">
+                              <ul class="l-float">
+                                <li>
+                                  <a class="shop-img" href="../shopinfo.html"><img src="../word/shoplist01.png" height="250" width="200" alt=""></a>
+                                  <p class="price l-float"><span class="qian l-left">￥800</span><span class="zhi l-right">9.62折</span></p>
+                                  <a class="title pd4 font20 col-hui text-al" href="">珠海长兴建材冲孔灌注桩</a>
+                                  <p class="volume l-float"><span class="col-slan pd4">2016-11-14</span><a href="javascript:void(0)" class="dis-i pdl4 pdr4 col-bai bg-cheng pd4 radius5 l-right">删除</a></p>
+                                </li>
+                                <li>
+                                  <a class="shop-img" href="../shopinfo.html"><img src="../word/shoplist01.png" height="250" width="200" alt=""></a>
+                                  <p class="price l-float"><span class="qian l-left">￥800</span><span class="zhi l-right">9.62折</span></p>
+                                  <a class="title pd4 font20 col-hui text-al" href="">珠海长兴建材冲孔灌注桩</a>
+                                  <p class="volume l-float"><span class="col-slan pd4">2016-11-14</span><a href="javascript:void(0)" class="dis-i pdl4 pdr4 col-bai bg-cheng pd4 radius5 l-right">删除</a></p>
+                                </li>
+                                <li>
+                                  <a class="shop-img" href="../shopinfo.html"><img src="../word/shoplist01.png" height="250" width="200" alt=""></a>
+                                  <p class="price l-float"><span class="qian l-left">￥800</span><span class="zhi l-right">9.62折</span></p>
+                                  <a class="title pd4 font20 col-hui text-al" href="">珠海长兴建材冲孔灌注桩</a>
+                                  <p class="volume l-float"><span class="col-slan pd4">2016-11-14</span><a href="javascript:void(0)" class="dis-i pdl4 pdr4 col-bai bg-cheng pd4 radius5 l-right">删除</a></p>
+                                </li>
+                                <li>
+                                  <a class="shop-img" href="../shopinfo.html"><img src="../word/shoplist01.png" height="250" width="200" alt=""></a>
+                                  <p class="price l-float"><span class="qian l-left">￥800</span><span class="zhi l-right">9.62折</span></p>
+                                  <a class="title pd4 font20 col-hui text-al" href="">珠海长兴建材冲孔灌注桩</a>
+                                  <p class="volume l-float"><span class="col-slan pd4">2016-11-14</span><a href="javascript:void(0)" class="dis-i pdl4 pdr4 col-bai bg-cheng pd4 radius5 l-right">删除</a></p>
+                                </li>
+                                <li>
+                                  <a class="shop-img" href="../shopinfo.html"><img src="../word/shoplist01.png" height="250" width="200" alt=""></a>
+                                  <p class="price l-float"><span class="qian l-left">￥800</span><span class="zhi l-right">9.62折</span></p>
+                                  <a class="title pd4 font20 col-hui text-al" href="">珠海长兴建材冲孔灌注桩</a>
+                                  <p class="volume l-float"><span class="col-slan pd4">2016-11-14</span><a href="javascript:void(0)" class="dis-i pdl4 pdr4 col-bai bg-cheng pd4 radius5 l-right">删除</a></p>
+                                </li>
+                                <li>
+                                  <a class="shop-img" href="../shopinfo.html"><img src="../word/shoplist01.png" height="250" width="200" alt=""></a>
+                                  <p class="price l-float"><span class="qian l-left">￥800</span><span class="zhi l-right">9.62折</span></p>
+                                  <a class="title pd4 font20 col-hui text-al" href="">珠海长兴建材冲孔灌注桩</a>
+                                  <p class="volume l-float"><span class="col-slan pd4">2016-11-14</span><a href="javascript:void(0)" class="dis-i pdl4 pdr4 col-bai bg-cheng pd4 radius5 l-right">删除</a></p>
+                                </li>
+
+                              </ul>
+                            </div>
+                    </div>
+                </div>
+                <div class="l-right">
+                    <div class="border mb26 w280">
+                      <div class="userpage-list">
+                        <h2 class="bg-column">最新招标信息</h2>
+                        <ul>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[造价100万]</span>佛山勤天汇（二期）商业体（勤天汇房地产开发有限公司）</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[造价1100万]</span>海大路改扩建工程（湛江市麻章区交通局）</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[造价130万]</span>深圳福永怀德中学建设工程（深圳宝安福永街道办事处）</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[造价142万]</span>揭阳揭东区东方紫园（金基房地产开发有限公司）</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[造价1030万]</span>广州市石桥公园公共人防工程</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[造价42万]</span>东莞南城第一幼儿园（办事处重点工程建设办公室）</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[造价5231万]</span>深圳福永怀德中学建设工程（深圳宝安福永街道办事处）</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[造价4231万]</span>揭阳揭东区东方紫园（金基房地产开发有限公司）</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="border mb26 w280">
+                      <div class="userpage-list">
+                        <h2 class="bg-column">最新项目信息</h2>
+                        <ul>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[造价100万]</span>佛山勤天汇（二期）商业体（勤天汇房地产开发有限公司）</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[造价1100万]</span>海大路改扩建工程（湛江市麻章区交通局）</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[造价130万]</span>深圳福永怀德中学建设工程（深圳宝安福永街道办事处）</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[造价142万]</span>揭阳揭东区东方紫园（金基房地产开发有限公司）</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[造价1030万]</span>广州市石桥公园公共人防工程</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[造价42万]</span>东莞南城第一幼儿园（办事处重点工程建设办公室）</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[造价5231万]</span>深圳福永怀德中学建设工程（深圳宝安福永街道办事处）</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[造价4231万]</span>揭阳揭东区东方紫园（金基房地产开发有限公司）</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="border mb26 w280">
+                      <div class="userpage-list">
+                        <h2 class="bg-column">最新二手求购</h2>
+                        <ul>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[推土机]</span>收购二手机械 山推SD16/SD16L</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[推土机]</span>收购二手机械 山推SD16/SD16L</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[推土机]</span>收购二手机械 山推SD16/SD16L</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[推土机]</span>收购二手机械 山推SD16/SD16L</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[推土机]</span>收购二手机械 山推SD16/SD16L</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[推土机]</span>收购二手机械 山推SD16/SD16L</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[推土机]</span>收购二手机械 山推SD16/SD16L</a></li>
+                          <li><a href="javascript:void(0)"><span class="col-cheng pdr4">[推土机]</span>收购二手机械 山推SD16/SD16L</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="main mb26 bg-f8 ">
-      <div class="columu-box  border-b columu-border">
-        <div class="columu-title bg-column border-b">
-          <h3 class="">最近浏览</h3>
-        </div>
-        <div class="shoplist-box">
-          <ul class="l-float">
-            <li>
-              <a class="shop-img" href="shopinfo.html"><img src="../word/shoplist01.png" height="250" width="200" alt=""></a>
-              <p class="price l-float"><span class="qian l-left">￥800</span><span class="zhi l-right">9.62折</span></p>
-              <a class="title pd4 font20 col-hui text-al" href="">珠海长兴建材冲孔灌注桩</a>
-              <p class="volume l-float"><i class="icon-autotrophy" title="建工自营产品"></i><span class="l-right">成交量：232</span></p>
-            </li>
-            <li>
-              <a class="shop-img" href="shopinfo.html"><img src="../word/shoplist01.png" height="250" width="200" alt=""></a>
-              <p class="price l-float"><span class="qian l-left">￥800</span><span class="zhi l-right">9.62折</span></p>
-              <a class="title pd4 font20 col-hui text-al" href="">珠海长兴建材冲孔灌注桩</a>
-              <p class="volume l-float"><i class="icon-jgt" title="建工通商家"></i><span class="l-right">成交量：232</span></p>
-            </li>
-            <li>
-              <a class="shop-img" href="shopinfo.html"><img src="../word/shoplist01.png" height="250" width="200" alt=""></a>
-              <p class="price l-float"><span class="qian l-left">￥800</span><span class="zhi l-right">9.62折</span></p>
-              <a class="title pd4 font20 col-hui text-al" href="">珠海长兴建材冲孔灌注桩</a>
-              <p class="volume l-float"><i class="icon-jgt" title="建工通商家"></i><span class="l-right">成交量：232</span></p>
-            </li>
-            <li>
-              <a class="shop-img" href="shopinfo.html"><img src="../word/shoplist01.png" height="250" width="200" alt=""></a>
-              <p class="price l-float"><span class="qian l-left">￥800</span><span class="zhi l-right">9.62折</span></p>
-              <a class="title pd4 font20 col-hui text-al" href="">珠海长兴建材冲孔灌注桩</a>
-              <p class="volume l-float"><i class="icon-jgt" title="建工通商家"></i><span class="l-right">成交量：232</span></p>
-            </li>
-            <li>
-              <a class="shop-img" href="shopinfo.html"><img src="../word/shoplist01.png" height="250" width="200" alt=""></a>
-              <p class="price l-float"><span class="qian l-left">￥800</span><span class="zhi l-right">9.62折</span></p>
-              <a class="title pd4 font20 col-hui text-al" href="">珠海长兴建材冲孔灌注桩</a>
-              <p class="volume l-float"><i class="icon-jgt" title="建工通商家"></i><span class="l-right">成交量：232</span></p>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
     <div class="l-fooder-box bg-fooder">
         <div class="main border-b pdb30 l-float">

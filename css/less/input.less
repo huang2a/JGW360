@@ -43,7 +43,9 @@
         padding:2px\0;
         margin-top: 6px\0;
     }
-
+    textarea.form-control{
+        height: auto !important;
+    }
     .form-control:focus{
         outline: none;
         border: 1px solid #0BC4E2;
@@ -68,6 +70,23 @@
         width: 400px;
         float: left;
     }
+    .w140{
+        padding-left: 10px;
+        width: 140px;
+        float: left;
+    }
+    .w40{
+        padding-left: 10px;
+        width: 40px;
+        float: left;
+        margin-right: 10px;
+    }
+    .w80{
+        padding-left: 10px;
+        width: 80px;
+        float: left;
+        margin-right: 10px;
+    }
     .w110{
         width: 110px;
         float: left;
@@ -77,6 +96,9 @@
         width: 60px;
         float: left;
         margin-right: 10px;
+    }
+    .text-l38{
+        line-height: 38px;
     }
     label {
         display: inline-block;
@@ -94,6 +116,10 @@
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         padding: 0;
+    }
+    .form-radio{
+        float: left;
+        margin-top: 0 !important;
     }
     .text{
         padding-top: 6px;
@@ -148,6 +174,57 @@
                 width: auto;
                 vertical-align: middle;
             }
+        }
+    }
+    .headpic{
+        position: relative;
+        display: inline-block;
+        width: 124px;
+        overflow: hidden;
+        text-decoration: none;
+        text-indent: 0;
+        line-height: 20px;
+        margin-left: 200px;
+        .l-left;
+        .pic{
+            display: inline-block;
+            height: 124px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            img{
+                vertical-align: top;
+                width: 100%;
+            }
+        }
+    }
+    .headfile{
+        position: relative;
+        display: inline-block;
+        .col-qlan;
+        overflow: hidden;
+        text-decoration: none;
+        text-indent: 0;
+        line-height: 20px;
+        margin-left: 8px;
+        .l-left;
+        top: 2px;
+    }
+    .headfile input {
+        position: absolute;
+        font-size: 100px;
+        right: 0;
+        top: 0;
+        opacity: 0;
+        color: #ffffff;
+    }
+    .headsec{
+        display: block;
+        width: 300px;
+        >p{
+            display: block;
+            overflow: hidden;
+            margin: 8px 0;
+            line-height: 24px;
         }
     }
 }
