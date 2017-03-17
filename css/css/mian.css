@@ -1182,6 +1182,9 @@ textarea:-ms-input-placeholder {
 .w312 {
   width: 312px;
 }
+.w322 {
+  width: 322px;
+}
 .w330 {
   width: 330px;
 }
@@ -2315,6 +2318,10 @@ textarea:-ms-input-placeholder {
 .shoplist-box li:hover .wordlist-btn {
   bottom: -1px;
   transition: bottom 0.2s ease-out;
+}
+.shoplist-box4 li {
+  margin: 10px 14px !important;
+  padding: 9px !important;
 }
 .shoplist-box-hot li {
   width: 240px !important;
