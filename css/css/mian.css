@@ -4090,6 +4090,9 @@ a.joinsupply {
   color: #f35929;
   text-decoration: underline;
 }
+.userpage-list li span {
+  display: inline-block;
+}
 .statistics {
   display: inline-block;
   overflow: hidden;
